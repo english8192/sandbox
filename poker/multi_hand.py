@@ -29,7 +29,7 @@ def full_house(dict):
             fh_card_values.append(list(work_dict.keys())[0])
             return ("full house",fh_card_values)
         else:
-            return
+            return None
 
 def trips(dict):
     for key,value in dict.items():
@@ -44,7 +44,7 @@ def two_pair(dict):
         tp_card_values.append(list(work_dict.keys())[1])
         return ("two pair", tp_card_values)
     else:
-        return 
+        return None
 def pair(dict):
 # return list(dict.keys())[0] could do this as well
 
@@ -52,7 +52,7 @@ def pair(dict):
         pair=next(iter(dict))
         return ("pair", pair) # this skips creating an intermediary list and just uses a iter object
     else:
-        return
+        return None
 
 
 def find_multi_hand(card_value_list: List[int]) -> Tuple[str,Union[List,int]]:
@@ -83,4 +83,5 @@ def find_multi_hand(card_value_list: List[int]) -> Tuple[str,Union[List,int]]:
 
     elif pair_result:
         return pair_result
+    
 
