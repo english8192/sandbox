@@ -19,9 +19,10 @@ def split_suits(suit_tup_list):
 def count_suits(grouped_data):
     count_dict={k:len(v) for k,v in grouped_data.items() if len(v) >= 5}
     if count_dict:
+        print("FLUSH FLUSH FLUSH FLUSH\nFLUSH FLUSH FLUSH FLUSH")
         flush_suit=list(count_dict.keys())[0]
         print(flush_suit)
-        flush_high_rank=count_dict[flush_suit][0][0] #access firs item of list for specific suit, access the rank of the first item, it should already be sorted highest to lowest rank.
+        flush_high_rank=grouped_data[flush_suit][0][0] #access firs item of list for specific suit, access the rank of the first item, it should already be sorted highest to lowest rank.
         return flush_suit, flush_high_rank
     return None
 # fix arw

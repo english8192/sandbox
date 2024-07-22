@@ -13,13 +13,19 @@ class Card:
     
 class Deck(list):
     def __init__(self):
+        super().__init__() # inherit evertying from the base class: list
+        self.populate_deck()
+        
+    def populate_deck(self):
+        self.clear()
         for rank in Card.ranks:
             value=Card.ranks[rank]
             for suit in Card.suits:
                 suitname=Card.suits[suit]
                 card=Card(rank,value,suit,suitname)
                 self.append(card)
-        
+
+                
     def get_card_info(self,card):
 
         #card_info=f"rank:{card.rank}\nvalue:{card.value}\nsuit:{card.suitname}\n"
@@ -27,6 +33,7 @@ class Deck(list):
         return card_info
     
     def shuffle(self,n=52):
+        print(f"n = {n}")
         shuffle_list=[]
         while len(shuffle_list) < 52:
             n-=1
@@ -34,10 +41,10 @@ class Deck(list):
             random_index=random.randint(0,n)
             shuffle_list.append(self[random_index])
             self.remove(self[random_index])
-            #print(f"unshuff list: {len(self)}  shuffled list: {len(shuffle_list)}")
+            print(f"unshuff list: {len(self)}  shuffled list: {len(shuffle_list)}")
 
         self[:]=shuffle_list
-        return shuffle_list
+        return self
     
 
     def draw(self,num_cards,location):
@@ -90,11 +97,35 @@ def get_values(card_list):
         v_list.append(card.value)
     return v_list
 
+def player_card_info(player):
+    print(f"----------------{player.name}---------------")
+    all=community.get_seven_cards(player)
+    for card in all: 
+        print(deck.get_card_info(card))
 
-        
+    value_list=get_values(all)
+    print(value_list)
+
+    print(flush.flush(all))
+
+
+    straight_status=straight.find_straight(value_list)
+    multi_hand_status=multi_hand.find_multi_hand(value_list)
+    print("\n")
+    if straight_status:
+        print(straight_status)
+    else:
+        print(multi_hand_status)
+
+
+
+
+
+
 deck=Deck()
 
 deck.shuffle()
+
 
 
 bob=Player("BOB")
@@ -122,28 +153,11 @@ community.draw_river(deck)
 # john_all=community.get_seven_cards(john)
 
 
-def player_card_info(player):
-    print(f"----------------{player.name}---------------")
-    all=community.get_seven_cards(player)
-    for card in all: 
-        print(deck.get_card_info(card))
-
-    value_list=get_values(all)
-    print(value_list)
-
-    print(flush.flush(all))
-
-
-    straight_status=straight.find_straight(value_list)
-    multi_hand_status=multi_hand.find_multi_hand(value_list)
-    print("\n")
-    if straight_status:
-        print(straight_status)
-    else:
-        print(multi_hand_status)
-
-for player in player_list:
-    player_card_info(player)
+print(f"——————————————————————————————————————————————————————————————————————————-")
+for i in range(2):
+    deck.shuffle()
+    for player in player_list:
+        player_card_info(player)
 
 
 
