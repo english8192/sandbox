@@ -13,7 +13,6 @@ class Card:
     
 class Deck(list):
     def __init__(self):
-        super().__init__() # inherit evertying from the base class: list
         self.populate_deck()
         
     def populate_deck(self):
@@ -27,13 +26,12 @@ class Deck(list):
 
                 
     def get_card_info(self,card):
-
         #card_info=f"rank:{card.rank}\nvalue:{card.value}\nsuit:{card.suitname}\n"
         card_info = f"{card.rank} of {card.suitname}\n"
         return card_info
     
     def shuffle(self,n=52):
-        print(f"n = {n}")
+        self.populate_deck()
         shuffle_list=[]
         while len(shuffle_list) < 52:
             n-=1
@@ -41,7 +39,7 @@ class Deck(list):
             random_index=random.randint(0,n)
             shuffle_list.append(self[random_index])
             self.remove(self[random_index])
-            print(f"unshuff list: {len(self)}  shuffled list: {len(shuffle_list)}")
+            #print(f"unshuff list: {len(self)}  shuffled list: {len(shuffle_list)}")
 
         self[:]=shuffle_list
         return self
@@ -62,6 +60,9 @@ class Player:
         self.hand=[]
         self.stack=0
         self.status=''
+        self.hand_info=None
+    def discard(self):
+        self.hand=[]
         
 
     
@@ -89,13 +90,25 @@ class Community:
         #self.seven_cards = [item for sublist in self.seven_cards for item in sublist] #self.seven_cards will be a list of lists due to the flop turn and river being list so we have to flatten it
 
         return self.seven_cards
-
+    def discard(self):
+        self.flop=[]
+        self.turn= []
+        self.river= []
+        self.seven_cards=[]
         
+
+
+
+
 def get_values(card_list):
     v_list=[]
     for card in card_list:
         v_list.append(card.value)
     return v_list
+
+def determine_hand(player,community):
+#need to add the other hand scripts to add the hand type + highest card to the player.hand_info attribute
+
 
 def player_card_info(player):
     print(f"----------------{player.name}---------------")
@@ -123,53 +136,27 @@ def player_card_info(player):
 
 
 deck=Deck()
-
-deck.shuffle()
-
-
-
 bob=Player("BOB")
 dick=Player("DICK")
 john=Player("JOHN")
 
-player_list=[bob,dick,john]
 
-community=Community()
-
-for player in player_list:
-    deck.draw(2,player.hand)
+player_list=[bob]
 
 
-
-
-community.draw_flop(deck)
-community.draw_turn(deck)
-community.draw_river(deck)
-
-
-
-#bob_all=community.get_seven_cards(bob)
-# dick_all=community.get_seven_cards(dick)
-# john_all=community.get_seven_cards(john)
-
-
-print(f"——————————————————————————————————————————————————————————————————————————-")
 for i in range(2):
     deck.shuffle()
+    community=Community()
+    community.draw_flop(deck)
+    community.draw_turn(deck)
+    community.draw_river(deck)
     for player in player_list:
+        deck.draw(2,player.hand)
+
         player_card_info(player)
+        player.discard()
+    community.discard()
 
-
-
-
-
-
-
-# print(f"Deck size: {len(deck)}\n")
-# print(f"bob's hand size:{len(bob.hand)}\n")
-
-# for card in bob.hand:
-#     print(deck.get_card(card))
 
 
 
