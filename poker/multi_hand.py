@@ -1,5 +1,6 @@
 import random 
 from typing import *
+from icecream import ic
 
 def cards_pair_or_more(card_list:List) -> Dict[int,int]:
     counts = {card: card_list.count(card) for card in set(card_list)} #turn input card list into a dict with number of instance for each rank
@@ -65,10 +66,11 @@ def find_multi_hand(card_value_list: List[int]) -> Tuple[str,Union[List,int]]:
     trips_result      = trips(freq_dict)
     two_pair_result   = two_pair(freq_dict)
     pair_result       = pair(freq_dict)
-    print(freq_dict)
-    if not freq_dict: #if no pairs or more are found ie freq_dict is empty, return the highest card
-        return ("high card",max(card_value_list))
+    #ic(freq_dict)
 
+    if not freq_dict: #if no pairs or more are found ie freq_dict is empty, return the highest card
+        high_card_result = ("high card",max(card_value_list))
+        return high_card_result
     elif quads_result:
         return quads_result
     

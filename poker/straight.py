@@ -1,6 +1,6 @@
 import random
 from typing import *
-
+from icecream import ic
 
 
 def find_straight(card_value_list: List[int]) -> List[int]:
@@ -20,29 +20,28 @@ def find_straight(card_value_list: List[int]) -> List[int]:
     for index,card_value in seven_cards1:
         if index < len(seven_cards) - 1:
         
-            #print(f"index={index}")
-            #print(f"card_value={card_value}")
             space = card_value - seven_cards_list[index+1][1]
-            #print(f"{card_value} - {seven_cards_list[index+1][1]} = {space}")
             if space == 1 :
 
                 spaces_sum += space
-                #print(f"spaces_sum : {spaces_sum}\n")
                 straight_list.append(card_value)
                 if spaces_sum == 4:
                     straight_list.append(seven_cards_list[index+1][1])
-                    #print(straight_list)
                     break
             else:
                 spaces_sum = 0
                 straight_list=[]
 
     if len(straight_list) == 5:
-        return f"STRAIGHT {max(straight_list)} high"
+        #ic("Other straight")
+        straight_result = ("STRAIGHT", max(straight_list))
+        return straight_result
 
         
     elif all(card in seven_cards for card in ace_straight): #hard check for A2345
-        return f"STRAIGHT {max(straight_list)} high"
+        #ic("Ace straight")
+        straight_result = ("STRAIGHT", max(straight_list))
+        return straight_result
     else:
         return
 

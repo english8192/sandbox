@@ -1,5 +1,8 @@
 import random
-import multi_hand,straight,flush
+from icecream import ic
+
+import multi_hand,straight,flush,straight_flush
+
 
 
 class Card:
@@ -106,29 +109,37 @@ def get_values(card_list):
         v_list.append(card.value)
     return v_list
 
-def determine_hand(player,community):
-#need to add the other hand scripts to add the hand type + highest card to the player.hand_info attribute
+################################################################
 
 
-def player_card_info(player):
+
+
+def determine_hand(player,players_seven):
+    player_and_comm_cards=players_seven
+    value_list=get_values(player_and_comm_cards)
+    #ic(value_list)
+    flush_result = flush.find_flush(player_and_comm_cards)
+    straight_result = straight.find_straight(value_list)
+    straight_flush_result = straight_flush.find_straight_flush(flush_result, straight_result)
+    if straight_flush_result:
+        ic(display_player_card_info(player,players_seven))
+    multi_hand_result = multi_hand.find_multi_hand(value_list)
+
+#need to add the other hand scripts to add the hand type +
+#  highest card to the player.hand_info attribute
+
+
+#################################################################
+
+
+
+
+def display_player_card_info(player,seven_cards):
     print(f"----------------{player.name}---------------")
-    all=community.get_seven_cards(player)
-    for card in all: 
+    for card in seven_cards: 
         print(deck.get_card_info(card))
 
-    value_list=get_values(all)
-    print(value_list)
 
-    print(flush.flush(all))
-
-
-    straight_status=straight.find_straight(value_list)
-    multi_hand_status=multi_hand.find_multi_hand(value_list)
-    print("\n")
-    if straight_status:
-        print(straight_status)
-    else:
-        print(multi_hand_status)
 
 
 
@@ -141,19 +152,23 @@ dick=Player("DICK")
 john=Player("JOHN")
 
 
-player_list=[bob]
+player_list=[bob,dick]
 
 
-for i in range(2):
+for i in range(3215):
     deck.shuffle()
     community=Community()
     community.draw_flop(deck)
     community.draw_turn(deck)
     community.draw_river(deck)
+
     for player in player_list:
         deck.draw(2,player.hand)
 
-        player_card_info(player)
+        players_seven = community.get_seven_cards(player) # Could potentially move this into the determine() function
+
+        #display_player_card_info(player,players_seven) #just for display
+        determine_hand(player,players_seven)
         player.discard()
     community.discard()
 
