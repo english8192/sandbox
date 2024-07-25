@@ -112,7 +112,17 @@ def get_values(card_list):
 ################################################################
 
 
-
+hand_tiers = {
+    "Straight Flush": 9,
+    "Quads": 8,
+    "Full House": 7,
+    "Flush": 6,
+    "Straight": 5,
+    "Trips": 4,
+    "Two Pair": 3,
+    "Pair": 2,
+    "High Card": 1
+}
 
 def determine_hand(player,players_seven):
     hand_result=1
@@ -136,6 +146,10 @@ def determine_hand(player,players_seven):
 
     player.hand_info = hand_result
     return hand_result
+
+def determine_winner(list_of_hands):
+
+
 
 #need to add the other hand scripts to add the hand type +
 #  highest card to the player.hand_info attribute
