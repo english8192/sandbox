@@ -115,15 +115,27 @@ def get_values(card_list):
 
 
 def determine_hand(player,players_seven):
+    hand_result=1
     player_and_comm_cards=players_seven
     value_list=get_values(player_and_comm_cards)
     #ic(value_list)
     flush_result = flush.find_flush(player_and_comm_cards)
     straight_result = straight.find_straight(value_list)
     straight_flush_result = straight_flush.find_straight_flush(flush_result, straight_result)
+
     if straight_flush_result:
-        ic(display_player_card_info(player,players_seven))
-    multi_hand_result = multi_hand.find_multi_hand(value_list)
+        hand_result = straight_flush_result
+    elif flush_result:
+        hand_result = flush_result
+    elif straight_result:
+        hand_result = straight_result
+    else:
+        multi_hand_result = multi_hand.find_multi_hand(value_list)
+        hand_result = multi_hand_result
+
+
+    player.hand_info = hand_result
+    return hand_result
 
 #need to add the other hand scripts to add the hand type +
 #  highest card to the player.hand_info attribute
@@ -142,10 +154,6 @@ def display_player_card_info(player,seven_cards):
 
 
 
-
-
-
-
 deck=Deck()
 bob=Player("BOB")
 dick=Player("DICK")
@@ -153,9 +161,10 @@ john=Player("JOHN")
 
 
 player_list=[bob,dick]
+player_list=[bob]
 
 
-for i in range(3215):
+for i in range(500):
     deck.shuffle()
     community=Community()
     community.draw_flop(deck)
@@ -169,6 +178,7 @@ for i in range(3215):
 
         #display_player_card_info(player,players_seven) #just for display
         determine_hand(player,players_seven)
+        ic(player.name,player.hand_info)
         player.discard()
     community.discard()
 

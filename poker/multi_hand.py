@@ -14,7 +14,7 @@ def cards_pair_or_more(card_list:List) -> Dict[int,int]:
 def quads(dict):
     for key,value in dict.items():
         if value == 4:
-            return ("quads",key)
+            return ("QUADS",key)
         
 def full_house(dict):
     fh_card_values=[]
@@ -28,14 +28,14 @@ def full_house(dict):
                 break
         if fh_card_values:
             fh_card_values.append(list(work_dict.keys())[0])
-            return ("full house",fh_card_values)
+            return ("FULL HOUSE",fh_card_values)
         else:
             return None
 
 def trips(dict):
     for key,value in dict.items():
         if value == 3:
-            return ("trips",key)
+            return ("TRIPS",key)
         
 def two_pair(dict):
     tp_card_values=[]
@@ -43,7 +43,7 @@ def two_pair(dict):
     if len(work_dict) > 1:
         tp_card_values.append(list(work_dict.keys())[0])
         tp_card_values.append(list(work_dict.keys())[1])
-        return ("two pair", tp_card_values)
+        return ("TWO PAIR", tp_card_values)
     else:
         return None
 def pair(dict):
@@ -51,7 +51,7 @@ def pair(dict):
 
     if dict:    #will break if the dictionary fed in is empty
         pair=next(iter(dict))
-        return ("pair", pair) # this skips creating an intermediary list and just uses a iter object
+        return ("PAIR", pair) # this skips creating an intermediary list and just uses a iter object
     else:
         return None
 
@@ -69,7 +69,7 @@ def find_multi_hand(card_value_list: List[int]) -> Tuple[str,Union[List,int]]:
     #ic(freq_dict)
 
     if not freq_dict: #if no pairs or more are found ie freq_dict is empty, return the highest card
-        high_card_result = ("high card",max(card_value_list))
+        high_card_result = ("HIGH CARD",max(card_value_list))
         return high_card_result
     elif quads_result:
         return quads_result
