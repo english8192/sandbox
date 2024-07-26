@@ -112,16 +112,16 @@ def get_values(card_list):
 ################################################################
 
 
-hand_tiers = {
-    "Straight Flush": 9,
-    "Quads": 8,
-    "Full House": 7,
-    "Flush": 6,
-    "Straight": 5,
-    "Trips": 4,
-    "Two Pair": 3,
-    "Pair": 2,
-    "High Card": 1
+hand_strengths = {
+    "STRAIGHT FLUSH": 9,
+    "QUADS": 8,
+    "FULL HOUSE": 7,
+    "FLUSH": 6,
+    "STRAIGHT": 5,
+    "TRIPS": 4,
+    "TWO PAIR": 3,
+    "PAIR": 2,
+    "HIGH CARD": 1
 }
 
 def determine_hand(player,players_seven):
@@ -147,8 +147,20 @@ def determine_hand(player,players_seven):
     player.hand_info = hand_result
     return hand_result
 
-def determine_winner(list_of_hands):
+def determine_winner(hand_type_list):
+    strength_list= []
+    def hand_name_to_strength(name):
+        strength = hand_strengths[name[0]]
+        return strength
+    for hand in hand_type_list:
+        item=(hand_name_to_strength(hand),hand[1])
+        strength_list.append(item)
+    strength_list = sorted(strength_list,reverse=True)    
+    ic(strength_list)
+    winner= strength_list[0]
+    #map the strngth version of lhand
 
+    return winner
 
 
 #need to add the other hand scripts to add the hand type +
@@ -172,28 +184,38 @@ deck=Deck()
 bob=Player("BOB")
 dick=Player("DICK")
 john=Player("JOHN")
+stanley=Player("STANLEY")
+michael=Player("MICHAEL")
+tom=Player("TOM")
+gomer=Player("GOMER")
+fritz=Player("FRITZ")
 
 
-player_list=[bob,dick]
-player_list=[bob]
+player_list=[bob,dick,john,stanley,michael,tom,gomer,fritz]
 
 
-for i in range(500):
+for i in range(1):
     deck.shuffle()
     community=Community()
     community.draw_flop(deck)
     community.draw_turn(deck)
     community.draw_river(deck)
-
+    hand_type_list=[]
     for player in player_list:
         deck.draw(2,player.hand)
 
         players_seven = community.get_seven_cards(player) # Could potentially move this into the determine() function
 
         #display_player_card_info(player,players_seven) #just for display
-        determine_hand(player,players_seven)
+        hand_type=determine_hand(player,players_seven)
+        hand_type_list.append(hand_type)
         ic(player.name,player.hand_info)
+    
+    determine_winner(hand_type_list)
+        
+    for player in player_list: 
         player.discard()
+
     community.discard()
 
 

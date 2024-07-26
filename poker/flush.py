@@ -26,8 +26,8 @@ def count_suits(grouped_data):
         flush_high_rank=grouped_data[flush_suit][0][0]  
         #access first item of list for specific suit, access the rank of the first item, it should already be sorted highest to lowest rank.
         flush_list = sorted([grouped_data[flush_suit][i-1][0] for i in range(5)],reverse=True)
-        flush_result = ("FLUSH",flush_suit,flush_high_rank)
-        return flush_result,flush_list
+        flush_result = ("FLUSH",flush_list,flush_suit)
+        return flush_result
     return None
 
 def find_flush(card_list):

@@ -11,5 +11,5 @@ def find_straight_flush(flush_result,straight_result):
         straight_value_list = straight_result[1]
 
         if flush_value_list == straight_value_list: #compare them
-            straight_flush_result = ("Straight Flush",flush_result[0][0],straight_result[0][1])
+            straight_flush_result = ("STRAIGHT FLUSH",flush_result[0],straight_result[1])
             return straight_flush_result
