@@ -34,13 +34,14 @@ def find_straight(card_value_list: List[int]) -> List[int]:
 
     if len(straight_list) == 5:
         #ic("Other straight")
-        straight_result = ("STRAIGHT", straight_list)
+        straight_result = (5,straight_list,"STRAIGHT")
         return straight_result
 
         
     elif all(card in seven_cards for card in ace_straight): #hard check for A2345
         #ic("Ace straight")
-        straight_result = ("STRAIGHT", straight_list)
+        straight_list=[5,4,3,2,14]
+        straight_result = (5,straight_list,"STRAIGHT")
         return straight_result
     else:
         return

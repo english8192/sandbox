@@ -11,10 +11,16 @@ def cards_pair_or_more(card_list:List) -> Dict[int,int]:
 
     return remove_singles
 
-def quads(dict):
+def quads(card_value_list,dict):
     for key,value in dict.items():
-        if value == 4:
-            return ("QUADS",key)
+        if value == 4:        
+            work_list = [i for i in card_value_list if i!=key]
+            quads_list = [i for i in card_value_list if i==key]
+            quads_list.append(max(work_list))
+            quads_and_kicker= quads_list.copy()
+            return (8,quads_and_kicker,"QUADS")
+    return
+
         
 def full_house(dict):
     fh_card_values=[]
@@ -22,36 +28,58 @@ def full_house(dict):
     if len(work_dict) > 1:
         for key,value in work_dict.items():
             if value == 3:
-                three_fh=key
-                fh_card_values.append(three_fh)
+                fh_card_values.append(key) #this is bad
+                fh_card_values.append(key)
+                fh_card_values.append(key)
                 work_dict.pop(key)
                 break
         if fh_card_values:
-            fh_card_values.append(list(work_dict.keys())[0])
-            return ("FULL HOUSE",fh_card_values)
+            pair_value = list(work_dict.keys())[0]
+            fh_card_values.append(pair_value)
+            fh_card_values.append(pair_value)
+        
+            return (7,fh_card_values,"FULL HOUSE")
         else:
             return None
 
-def trips(dict):
+def trips(card_value_list,dict):
+    
     for key,value in dict.items():
-        if value == 3:
-            return ("TRIPS",key)
-        
-def two_pair(dict):
+        if value == 3:        
+            work_list = [i for i in card_value_list if i!=key]
+            trips_list = [i for i in card_value_list if i==key]
+            trips_list.extend(sorted(work_list,reverse=True)[:2])
+            trips_and_kickers= trips_list.copy()
+            return (4,trips_and_kickers,"TRIPS")
+    return
+
+def two_pair(card_value_list,dict):
     tp_card_values=[]
     work_dict=dict.copy()
+
     if len(work_dict) > 1:
-        tp_card_values.append(list(work_dict.keys())[0])
-        tp_card_values.append(list(work_dict.keys())[1])
-        return ("TWO PAIR", tp_card_values)
+        higher_pair = list(work_dict.keys())[0]
+        lower_pair = list(work_dict.keys())[1]
+        work_list = [i for i in card_value_list if i!=higher_pair and i != lower_pair]
+        tp_card_values.append(higher_pair)
+        tp_card_values.append(higher_pair)
+        tp_card_values.append(lower_pair)
+        tp_card_values.append(lower_pair)
+        tp_card_values.append(max(sorted(work_list,reverse=True)))
+        return (3,tp_card_values,"TWO PAIR")
     else:
         return None
-def pair(dict):
+    
+def pair(card_value_list,dict):
 # return list(dict.keys())[0] could do this as well
-
+    pair_and_kickers=[]
     if dict:    #will break if the dictionary fed in is empty
         pair=next(iter(dict))
-        return ("PAIR", pair) # this skips creating an intermediary list and just uses a iter object
+        pair_and_kickers.append(pair)
+        pair_and_kickers.append(pair)    
+        work_list = [i for i in card_value_list if i!=pair]
+        pair_and_kickers.extend(sorted(work_list,reverse=True)[:3])    
+        return (2,pair_and_kickers,"PAIR") # this skips creating an intermediary list and just uses a iter object
     else:
         return None
 
@@ -59,17 +87,18 @@ def pair(dict):
 def find_multi_hand(card_value_list: List[int]) -> Tuple[str,Union[List,int]]:
     #get the frequency dictionary from the input list
     freq_dict = cards_pair_or_more(card_value_list)
+    #ic(freq_dict)
 
 
-    quads_result      = quads(freq_dict)
+    quads_result      = quads(card_value_list,freq_dict)
     full_house_result = full_house(freq_dict)
-    trips_result      = trips(freq_dict)
-    two_pair_result   = two_pair(freq_dict)
-    pair_result       = pair(freq_dict)
+    trips_result      = trips(card_value_list,freq_dict)
+    two_pair_result   = two_pair(card_value_list,freq_dict)
+    pair_result       = pair(card_value_list,freq_dict)
     #ic(freq_dict)
 
     if not freq_dict: #if no pairs or more are found ie freq_dict is empty, return the highest card
-        high_card_result = ("HIGH CARD",max(card_value_list))
+        high_card_result = (1,sorted(card_value_list,reverse=True)[:5],"HIGH CARD",)
         return high_card_result
     elif quads_result:
         return quads_result

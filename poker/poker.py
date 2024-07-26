@@ -13,6 +13,9 @@ class Card:
         self.value = value
         self.suit = suit
         self.suitname = suitname
+
+# class Hand:
+
     
 class Deck(list):
     def __init__(self):
@@ -64,8 +67,12 @@ class Player:
         self.stack=0
         self.status=''
         self.hand_info=None
+        self.role = None
     def discard(self):
         self.hand=[]
+        self.hand_info=None
+        #self.role = None
+        self.status = None
         
 
     
@@ -109,23 +116,9 @@ def get_values(card_list):
         v_list.append(card.value)
     return v_list
 
-################################################################
-
-
-hand_strengths = {
-    "STRAIGHT FLUSH": 9,
-    "QUADS": 8,
-    "FULL HOUSE": 7,
-    "FLUSH": 6,
-    "STRAIGHT": 5,
-    "TRIPS": 4,
-    "TWO PAIR": 3,
-    "PAIR": 2,
-    "HIGH CARD": 1
-}
 
 def determine_hand(player,players_seven):
-    hand_result=1
+    hand_result=None
     player_and_comm_cards=players_seven
     value_list=get_values(player_and_comm_cards)
     #ic(value_list)
@@ -147,28 +140,19 @@ def determine_hand(player,players_seven):
     player.hand_info = hand_result
     return hand_result
 
-def determine_winner(hand_type_list):
-    strength_list= []
-    def hand_name_to_strength(name):
-        strength = hand_strengths[name[0]]
-        return strength
-    for hand in hand_type_list:
-        item=(hand_name_to_strength(hand),hand[1])
-        strength_list.append(item)
-    strength_list = sorted(strength_list,reverse=True)    
-    ic(strength_list)
-    winner= strength_list[0]
-    #map the strngth version of lhand
 
+def determine_winner(player_list):
+    current_hands = {player.name:player.hand_info for player in player_list}
+    sorted_list= sorted(current_hands.items(),key = lambda x:x[1],reverse=True) #sort by second item (skips the name value in the dict.items)
+    top_fivecard_hand = sorted_list[0][1][1]    #finds the best five card hands of the players (may be held by more than one player)
+    top_hands = [i for i in sorted_list if i[1][1] == top_fivecard_hand] #gets all players who hold that best hand (to find ties)
+
+    if len(top_hands) > 1:
+        winner = top_hands
+        return winner
+
+    winner = sorted_list[0]
     return winner
-
-
-#need to add the other hand scripts to add the hand type +
-#  highest card to the player.hand_info attribute
-
-
-#################################################################
-
 
 
 
@@ -178,95 +162,4 @@ def display_player_card_info(player,seven_cards):
         print(deck.get_card_info(card))
 
 
-
-
-deck=Deck()
-bob=Player("BOB")
-dick=Player("DICK")
-john=Player("JOHN")
-stanley=Player("STANLEY")
-michael=Player("MICHAEL")
-tom=Player("TOM")
-gomer=Player("GOMER")
-fritz=Player("FRITZ")
-
-
-player_list=[bob,dick,john,stanley,michael,tom,gomer,fritz]
-
-
-for i in range(1):
-    deck.shuffle()
-    community=Community()
-    community.draw_flop(deck)
-    community.draw_turn(deck)
-    community.draw_river(deck)
-    hand_type_list=[]
-    for player in player_list:
-        deck.draw(2,player.hand)
-
-        players_seven = community.get_seven_cards(player) # Could potentially move this into the determine() function
-
-        #display_player_card_info(player,players_seven) #just for display
-        hand_type=determine_hand(player,players_seven)
-        hand_type_list.append(hand_type)
-        ic(player.name,player.hand_info)
-    
-    determine_winner(hand_type_list)
-        
-    for player in player_list: 
-        player.discard()
-
-    community.discard()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# class Deck(self):
-#     shuffle
-#     draw
-
-
-
-# class Player(self):
-
-
-# class Hand(self):
-
-# class Community(self):
+# if __name__ == "__main__":
