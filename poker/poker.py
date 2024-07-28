@@ -68,11 +68,17 @@ class Player:
         self.status=''
         self.hand_info=None
         self.role = None
+        self.infront = 0
     def discard(self):
         self.hand=[]
         self.hand_info=None
         #self.role = None
         self.status = None
+
+    def bet(self,amount):
+        self.infront= amount
+        self.stack -= amount
+    
         
 
     

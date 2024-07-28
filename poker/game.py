@@ -19,76 +19,57 @@ player_list=[bob,dick,john,stanley,michael,tom,gomer,fritz]
 
 
 
+def get_player_by_role(role,dict):        
+    player=dict[role]
+    ic(player.name)
+    return player
+
+
+
+
 def assign_roles(player_list): #convert parts of this using map()
     x=(len(player_list)-3)
     if not [i.role for i in player_list if i.role != None]: #if no roles have been set yet
-        ic("first time set")
         player_list[0].role="DEALER"
         player_list[1].role="LITTLE"
         player_list[2].role="BIG"
-
-
         for player in player_list:
             if player.role == None:
                 player.role = f"D-{x}"
                 x-=1
+        role_dict = {player.role:player for player in player_list} 
+        return role_dict
+
     else:
-        ic("every subsequent set")
-        temp_role=[]
-        for player in player_list:
-            new_role_index = (((player_list.index(player))-1) % len(player_list))
+        rolelist_current= [player.role for player in player_list] #list of players current roles
+        rolelist_next = [rolelist_current[(((rolelist_current.index(x))-1)%len(rolelist_current))] for x in rolelist_current] #create a new list that shifts the role back one index position
+        for player, role in zip(player_list,rolelist_next): #assign the players the newly shifted roles
+            player.role = role 
+        role_dict = {player.role:player for player in player_list} 
+        return role_dict
 
-            temp_role.append(player_list[new_role_index].role)
-            
+    # #just for display  
+    # print("after move")
+    # for player in player_list:
+    #     ic(player.name,player.role)
+    # print("\n")
 
-        for player in player_list:
-            player.role = temp_role[player_list.index(player)]
 
-    print("after move")
+
+
+
+def give_stacks(player_list,amount):
     for player in player_list:
-        ic(player.name,player.role)
-    print("\n")
+        player.stack = amount
+        
 
-
-# def assign_roles2(player_list): #convert parts of this using map()
-#     x=(len(player_list)-3)
-#     if not [i.role for i in player_list if i.role != None]: #if no roles have been set yet
-#         ic("first time set")
-#         player_list[0].role="DEALER"
-#         player_list[1].role="LITTLE"
-#         player_list[2].role="BIG"
-
-
-#         for player in player_list:
-#             if player.role == None:
-#                 player.role = f"D-{x}"
-#                 x-=1
-#     else:
-#         print("subsequent moves")
-#         rolelist1= [player.role for player in player_list]
-#         ic(rolelist1)
-#         rolelist2 = [rolelist1[rolelist1.index(((x-1)%(len(rolelist1))))] for x in range((len(rolelist1)))]
-
-#         ic(rolelist2)
-
-#     print("after move")
-#     for player in player_list:
-#         ic(player.name,player.role)
-#     print("\n")
+role_dict=assign_roles(player_list)
+give_stacks(player_list, 10000)
 
 
 
-
-
-
-def move_role_chips(player_list):
-    player_list
-
-
-
+get_player_by_role("LITTLE").infront = 50
 deck.shuffle()
-assign_roles(player_list)
-assign_roles(player_list)
 
 community=p.Community()
 community.draw_flop(deck)
@@ -115,6 +96,24 @@ community.discard()
 print("\n")
 
 
+#------------------------------------------------------------------------------------------------------------------
+'''
+bigblind=100
+littleblind=50
 
+1. player
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 
 
