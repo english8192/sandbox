@@ -1,8 +1,8 @@
+test
 Blue Tang
 Purple Tang
 Whitemargin Unicornfish
 Orangespine Unicornfish
-Orangespine Unicornfish (Striped)
 Sailfin Tang
 Lined Surgeonfish
 Yellow Tang
@@ -29,7 +29,6 @@ McCosker's Flasher Wrasse
 Breastspot Cleanerfish
 Spanish Hogfish
 Bicolor Parrotfish
-Bicolor Parrotfish (Red)
 Knobsnout Parrotfish
 Red Parrotfish
 Bower's Parrotfish
@@ -64,10 +63,8 @@ Conspicuous Angelfish
 Barred Knifejaw
 Spotted Knifejaw
 Longtooth Grouper
-Longtooth Grouper (Green)
 Sea Goldie (Male)
 Sea Goldie (Female)
-Sea Goldie (Carp Pattern)
 Coral Cod
 Purple Queen
 Giant Grouper
@@ -99,7 +96,6 @@ Mandarinfish
 Japanese Jack Mackerel
 Golden Trevally
 Bigeye Trevally
-Bigeye Trevally (Spotted)
 Giant Trevally
 Amberstripe Scad
 White Trevally
@@ -151,7 +147,6 @@ Cobia
 Mahi-Mahi
 Antarctic Cod
 Antarctic Silverfish
-Antarctic Silverfish (Red)
 Bering Wolffish
 Six-Lined Prickleback
 Striped Marlin
@@ -179,7 +174,6 @@ Skilfish
 Banded Archerfish
 Angelfish
 Oscar
-Oscar (Green)
 Butterfly Peacock Bass
 Blue Discus
 Betta
@@ -195,7 +189,6 @@ Japanese Lates
 Nile Perch
 Barramundi
 Great White Shark
-Great White Shark (Leucistic)
 Shortfin Mako Shark
 Thanatos
 Basking Shark
@@ -217,9 +210,7 @@ Great Hammerhead
 Japanese Sawshark
 Japanese Bullhead Shark
 Zebra Shark
-Zebra Shark (White)
 Whale Shark
-Whale Shark (Green)
 Tasselled Wobbegong
 Japanese Angel Shark
 Bluntnose Sixgill Shark
@@ -239,7 +230,6 @@ Blue-Spotted Ribbontail Ray
 Broad Cowtail Ray
 Sixgill Stingray
 Polka-Dot Stingray
-Polka-Dot Stingray (Pink)
 Japanese Sleeper Ray
 Ocellated Eagle Ray
 Bowmouth Guitarfish
@@ -247,7 +237,6 @@ Dwarf Sawfish
 Australian Ghostshark
 Silver Chimaera
 Pacific Spookfish
-Pacific Spookfish (Gold)
 Green Sturgeon
 Lady Dorthea
 American Paddlefish
@@ -256,13 +245,10 @@ Pacific White-Sided Dolphin
 Common Dolphin
 Commerson's Dolphin
 Orca
-Orca (White)
 Beluga
 Narwhal
-Narwhal (Blue)
 Spectacled Porpoise
 Humpback Whale
-Humpback Whale (Young)
 Black Harbinger
 Blue Whale
 Ancient Mother
@@ -282,7 +268,6 @@ Tiger Puffer
 Grey-Spotted Puffer
 Blackspotted Puffer
 Mbu Pufferfish
-Mbu Pufferfish (Green)
 Yellow Boxfish (Young)
 Long-Spine Porcupinefish
 Spot-Fin Porcupinefish
@@ -291,7 +276,7 @@ Apollo
 Giant Sunfish
 Opah
 Slender Ribbonfish
-Polka-Dot Ribbonfish (Young)
+Polka-Dot Ribbonfish
 Giant Oarfish
 Olive Flounder
 Marbled Flounder
@@ -320,7 +305,6 @@ Shishamo
 Whitespotted Conger
 Kidako Moray
 Ribbon Eel
-Ribbon Eel (Yellow)
 Japanese Eel
 Giant Mottled Eel
 Green Sea Turtle
@@ -370,7 +354,6 @@ Circular Seabat
 Pelican Eel
 Splendid Alfonsino
 Common Fangtooth
-Common Fangtooth (Polka Dots)
 Pineconefish
 Big Roughy
 Samurai Squirrelfish
@@ -439,8 +422,7 @@ Payara
 Dorado
 Alligator Gar
 Spotted Gar
-Pirarucu
-Pirarucu (Blue)
+Arapaima
 Silver Arowana
 Black Arowana
 Clown Featherback
@@ -505,7 +487,6 @@ Odontochelys
 Protostega
 Archelon
 Sacabambaspis
-Sacabambaspis (Gray)
 Enoploura Popei
 Clydagnathus
 Iniopteryx
@@ -514,7 +495,6 @@ Menaspis Armata
 Dipnorhynchus
 Chambered Nautilus
 Ammonoidea
-Ammonoidea (White)
 Baculites
 Heteroceras
 Diplomoceras
@@ -550,29 +530,3 @@ Kronosaurus
 Plesiosaurus
 Platecarpus
 Mosasaurus
-Raja Emas
-Raja Pelangi
-Grand Ancestor
-Grand Composer
-Lancia Presto
-Lancia Anabile
-Simurgh Daria
-Simurgh Shamal
-Rosier Rose
-Roiser Beryllos
-Jawhara Tajir
-Jawhara Malik
-Mertz
-Mezzte
-Yurlungur
-Glumungur
-Yurl (blue)
-Yurl (orange)
-Yurl (green)
-Glum (blue)
-Glum (red)
-Glum (green)
-Amamotsumi
-Menohatsumi
-Lamba Apsara
-Lamba Garuda
