@@ -1,0 +1,75 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: JetBrains Mono, sans-serif;
+    font-weight: 500;
+    text-shadow: darkslategray;
+    line-height: 1.6;
+    background-color: darkslategrey;
+    color: rgba(255, 255, 255, 0.473);
+    padding: 20px;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+button{
+    padding: 20px;
+}
+
+#correct{
+    color: white;
+    background-color: green
+    
+    
+}
+
+#incorrect{
+    color: white;
+    background-color: rgb(145, 0, 0)
+
+    
+    
+}
+#correctCount {
+    color: green;
+}
+#incorrectCount {
+    color: red;
+}
+
+.stats {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+#answer {
+
+    padding-top: 100px;
+    font-weight: 1000;
+    color: rgb(15, 184, 0);
+}

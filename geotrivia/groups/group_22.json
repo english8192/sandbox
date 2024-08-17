@@ -1,0 +1,202 @@
+[
+    {
+        "question": "What country is the cell phone company Nokia from?",
+        "answer": "Finland"
+    },
+    {
+        "question": "What is the heaviest building in the world?",
+        "answer": "The Palace of the Parliament, Bucharest, Romania"
+    },
+    {
+        "question": "Which time zone is the city of Chicago in?",
+        "answer": "Central Time Zone"
+    },
+    {
+        "question": "What are the three largest countries by land area in Europe?",
+        "answer": "Russia, Ukraine and France"
+    },
+    {
+        "question": "What country produces Rioja wines?",
+        "answer": "Spain"
+    },
+    {
+        "question": "What is the world`s largest island?",
+        "answer": "Greenland"
+    },
+    {
+        "question": "What two US state names end with the letter Y?",
+        "answer": "Kentucky and New Jersey"
+    },
+    {
+        "question": "How many US state names begin with `New`?",
+        "answer": "Four"
+    },
+    {
+        "question": "Which island is the boot of Italy kicking?",
+        "answer": "Sicily"
+    },
+    {
+        "question": "What is the largest island in the contiguous US states?",
+        "answer": "Long Island"
+    },
+    {
+        "question": "Where was the first capsule hotel?",
+        "answer": "Osaka, Japan -- Also known as pod hotels, capsule hotels are quirky, minimalist hotels that are not for the claustrophobic."
+    },
+    {
+        "question": "Where is the world`s shortest escalator located?",
+        "answer": "Kawasaki, Japan -- Known as the Puchicalator, it is located in the basement floor of More`s department store."
+    },
+    {
+        "question": "What is the only highway in the U.S. with metric road signs?",
+        "answer": "Interstate 19, Arizona -- It is a 102 km (63-mile) stretch of highway in from Tucson, to Nogales near the Mexican border."
+    },
+    {
+        "question": "What U.S. city is known for its tiny, whimsical fairy doors?",
+        "answer": "Ann Arbor, Michigan -- The city is home to dozens of tiny fairy doors, tucked away in everything from shops to random trees."
+    },
+    {
+        "question": "What country is home to cowboys known as `gauchos`?",
+        "answer": "Argentina -- The cowboys` horseback riding skills helped tilt The Argentina War of Independence in favor of Argentinian patriots."
+    },
+    {
+        "question": "Where is the Sriracha hot sauce factory located?",
+        "answer": "Irwindale, California -- David Tran, a Vietnamese immigrant first started selling the red chili sauce out of his van in the 1970s."
+    },
+    {
+        "question": "Which state is located directly to the east of Washington D.C.?",
+        "answer": "Maryland"
+    },
+    {
+        "question": "Harrisburg is the capital of which US state?",
+        "answer": "Pennsylvania"
+    },
+    {
+        "question": "What is the capital of California?",
+        "answer": "Sacramento"
+    },
+    {
+        "question": "Which US state`s highest mountain is Mt. Elbert?",
+        "answer": "Colorado"
+    },
+    {
+        "question": "Which US state is nicknamed the `Land of the Midnight Sun`?",
+        "answer": "Alaska"
+    },
+    {
+        "question": "Which US state is nicknamed the `Yellowhammer State`?",
+        "answer": "Alabama"
+    },
+    {
+        "question": "Sugarloaf Key, Plantation Key and Boca Chica Key all belong to what group of islands?",
+        "answer": "Florida Keys"
+    },
+    {
+        "question": "The Ozark Mountains are found predominantly in which two US states?",
+        "answer": "Missouri and Arkansas"
+    },
+    {
+        "question": "In what body of water can one find the Dry Tortugas islands?",
+        "answer": "Gulf of Mexico"
+    },
+    {
+        "question": "Which is the largest state in the US?",
+        "answer": "Alaska"
+    },
+    {
+        "question": "Which state is home to the Fort Apache Indian Reservation?",
+        "answer": "Arizona"
+    },
+    {
+        "question": "Hollywood is a district of what US city?",
+        "answer": "Los Angeles"
+    },
+    {
+        "question": "What is Australia`s top export?",
+        "answer": "Coal briquettes -- Australia is the world`s largest exporter of coal briquettes. It exports most of its goods to China and Japan."
+    },
+    {
+        "question": "In what three places did the Republic of Texas maintain legations?",
+        "answer": "They were located at Pickering Place, London, England, Washington, D.C. and 1 Place Vendome, Paris, France."
+    },
+    {
+        "question": "What country was the modern bicycle invented in?",
+        "answer": "Germany"
+    },
+    {
+        "question": "Which was the last contiguous U.S. territory to obtain statehood?",
+        "answer": "Arizona"
+    },
+    {
+        "question": "What U.S. state is home to `The Raisin Capital of the World`?",
+        "answer": "California"
+    },
+    {
+        "question": "Where is the largest natural amphitheater in the U.S.?",
+        "answer": "Los Angeles, California"
+    },
+    {
+        "question": "What is the longest river in Canada?",
+        "answer": "Mackenzie River"
+    },
+    {
+        "question": "Which country was known as South West Africa until 1990?",
+        "answer": "Namibia"
+    },
+    {
+        "question": "What is the world`s oldest currency still in use?",
+        "answer": "British Pound"
+    },
+    {
+        "question": "Where are the `Seven Colored Earths`?",
+        "answer": "Mauritius"
+    },
+    {
+        "question": "In which Canadian province do the Appalachian Mountains end?",
+        "answer": "Newfoundland and Labrador"
+    },
+    {
+        "question": "What country is nicknamed `The Land of Smiles`?",
+        "answer": "Thailand"
+    },
+    {
+        "question": "Which two African countries merged into Tanzania?",
+        "answer": "Tanganyika and Zanzibar"
+    },
+    {
+        "question": "What strait separates Spain from Morocco?",
+        "answer": "Strait of Gibraltar"
+    },
+    {
+        "question": "In terms of area, what is the largest borough in New York City?",
+        "answer": "Queens"
+    },
+    {
+        "question": "What sea borders China to the east and north, and South Korea to the west?",
+        "answer": "Yellow Sea"
+    },
+    {
+        "question": "What desert gets its name from the Arabic word meaning `desert`?",
+        "answer": "Sahara"
+    },
+    {
+        "question": "Diamond Head is a popular surfer destination off the coast of which US state?",
+        "answer": "Hawaii"
+    },
+    {
+        "question": "What lake in Oregon was created about 7,000 years ago by the eruption of Mount Mazama?",
+        "answer": "Crater Lake"
+    },
+    {
+        "question": "Addis Ababa is the capital of which African country?",
+        "answer": "Ethiopia "
+    },
+    {
+        "question": "What is the capital of Ethiopia?",
+        "answer": "Addis Ababa"
+    },
+    {
+        "question": "On which of the Canary Island would you find the holiday destination of Corralejo?",
+        "answer": "Fuerteventura"
+    }
+]
