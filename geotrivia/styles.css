@@ -16,11 +16,16 @@ body {
     padding: 20px;
 }
 
+
+.questionBox{
+    width: 650px;
+}
 /* Layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -94,5 +99,18 @@ button{
 
 .active {
     background-color: green;
-    color: white;f
+    color: white;
+}
+
+#incorrectList {
+
+    font-size: 0.5rem;
+    font-weight: 750;
+    color:  rgb(255, 92, 92);
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 650px;
+}
+
+incorrectquestion{
+    display: block;
 }

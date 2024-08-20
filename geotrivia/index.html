@@ -14,18 +14,19 @@
 <p class = "stats" id = "correctCount"></p>
 <p class = "stats" id = "incorrectCount"></p>
 
-<p id = "question"></p>
-<!-- <input type="text" id="answerInput" onkeypress="handleKeyPress(event)" >-->
+<div class="questionBox">
+    <p id = "question"></p>
+</div>
 
 <button onclick="showAnswer()">Show Answer</button>
 <button id="correct" onclick="correctClicked()">Correct</button>
 <button id="incorrect" onclick="incorrectClicked()">Incorrect</button>
 <p id = "answer"></p>
+<div id="incorrectList"></div>
 
 </div>
+
 <div id = "groupButtons"></div>
-
-
 
 
 </body>

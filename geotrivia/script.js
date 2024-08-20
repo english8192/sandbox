@@ -6,6 +6,7 @@ let incorrectCount=0
 let gameState= 1
 let numGroups = 74
 let filePaths = Array()
+let incorrectList = []
 
 async function loadData(filePaths) {
     try {
@@ -44,7 +45,7 @@ function displayQuestion() {
     if (!currentQuestion) return; // Stop if there are no more questions
     document.getElementById("question").textContent = currentQuestion[0];
     document.getElementById("answer").textContent = ""
-    console.log("displayQuestion")
+    //console.log("displayQuestion")
     return currentQuestion
 }
 
@@ -64,6 +65,10 @@ function incorrectClicked() {
     if (gameState != 0 ) {
         incorrectCount++ ;
         document.getElementById("incorrectCount").textContent = incorrectCount
+        let currentIncorrectQuestion = document.createElement("incorrectQuestion")
+        currentIncorrectQuestion.textContent = currentQuestion
+        incorrectQuestionContainer.appendChild(currentIncorrectQuestion)
+
         displayQuestion();
   }
 }
@@ -73,6 +78,8 @@ function resetCounts() {
     document.getElementById("correctCount").textContent = correctCount
     incorrectCount = 0 ;
     document.getElementById("incorrectCount").textContent = incorrectCount
+    //remove the incorrect question list from the previous round
+    incorrectQuestionContainer.innerHTML = ''
 }
 
 
@@ -123,7 +130,7 @@ function chooseQuestionLists() {
 
 
 const groupLabels = getGroupNames() //array of filenames groups/group_44.json
-
+incorrectQuestionContainer = document.getElementById('incorrectList')
 const buttonsContainer = document.getElementById('groupButtons') // group button container elemetn
 
 function toggleButton(event) {
