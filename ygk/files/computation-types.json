@@ -1,0 +1,14 @@
+{
+    "Pythagorean triples": ":  Sets of small integers that satisfy the equation of the Pythagorean theorem,a2+b2=c2, and could therefore be the side lengths of aright triangle.  The simplest ones are{3, 4, 5},{5, 12, 13},{7, 24, 25}, and{8, 15, 17}.  Note that any multiple of a Pythagorean triple is also a Pythagorean triple, so (for instance){6, 8, 10},{15, 20, 25}, and{300, 400, 500}are also ones by virtue of {3, 4, 5} being one.",
+    "Matrices": ":  Every team should be able toadd,subtract,multiply, take thedeterminantof,transpose, andinvertmatrices, particularly 2×2 ones.",
+    "Vectors": ":  Every team should be able tofind themagnitude(length) of a vector, andadd,subtract, find theanglebetween, find thedot productof, and find thecross productof two vectors.",
+    "Solids": ":  Teams should be able to calculate thevolumeandsurface areaofsimple geometric figuresincluding thesphere,cone,cylinder,pyramid,hemisphere,prism, andparallelepiped.",
+    "Plane figures": ":  Teams should be able to calculate theareasoftriangles,trapezoids,parallelograms,rhombi,regular polygons, andcirclesusing several methods.",
+    "Similar figures": ":  The areas of similar figures are related by thesquareof any corresponding length, and the volumes are related by thecubeof any corresponding length.  For instance, if a square has a diagonal that is 30% longer than another square, it has an area that is 1.30 × 1.30 = 1.69 times as great (69% greater).  Similar reasoning applies to perimeters, side lengths, diameters, and so forth.",
+    "Combinatorics": ":  Teams should be able to compute the number ofpermutationsandcombinationsofnobjects takenmat a time.  They should also have memorized the first six (or so) values of thefactorial functionto make this easier.",
+    "Logarithms": ":  Teams should be familiar withbasic operations of logarithmic math:  simplifying the logarithm of a product, difference, or power, andconvertingfrom one base to another.",
+    "Complex numbers": ":  Teams should be familiar with the symbolirepresenting an imaginary square root of –1,basic operations on complex numbers, graphing complex numbers, and converting complex numbers topolar form.",
+    "Divisibility rules": ":  Teams should be able to quickly apply thedivisibility rulesfor small integers (2 through 11) to large integers.",
+    "Polynomials": ":  Teams should be able to quicklyadd,subtract,multiply,divide,factor, and find therootsof low-degreepolynomials, and understand how the degree behaves under the first four operations.",
+    "Calculus": ":  Teams should be able to find thederivative,integral,slope at a point,local extrema,points of inflection, andcritical pointsofpolynomial,trigonometric, and other common functions."
+}
