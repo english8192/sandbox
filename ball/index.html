@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Graphics Program</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            position: absolute;
+
+            border: 1px solid #000;
+        }
+        .stats {
+            position: relative;
+            right: 100px;
+            width: 200px;
+            display: grid;
+            gap: 20px;
+
+        }
+
+        .controls {
+            position: relative;
+            right : 200px;
+            display: grid;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000" height="1000"></canvas>
+    <!-- <div class = "stats">
+    <p id="speedX"></p>
+    <p id="shapeX"></p>
+    
+    <p id="speedY"></p>
+    <p id="shapeY"></p>
+    </div>
+    <div class ="controls">
+        <p>speedX:</p>
+        <input class="control-slider" type="range" id="slider" min="0" max="25" value="3" control = 'speedX'>
+        <p>shapeWidth:</p>
+        <input class="control-slider" type="range" id="slider" min="1" max="100" value="50" control = 'shapeWidth'>
+        <p>speedY:</p>
+        <input class="control-slider" type="range" id="slider" min="0" max="25" value="3" control = 'speedY'>
+        <p>shapeHeight:</p>
+        <input class="control-slider" type="range" id="slider" min="1" max="100" value="50" control = 'shapeHeight'>
+
+    </div> -->
+    <script type = "module" src = "main.js"></script>
+    <script type = "module" src = "shape.js"></script>
+
+</body>
+</html>
