@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Display</title>
+    <style>
+        body {
+            background-color: #0033a0; /* Jeopardy blue background */
+            color: white;
+            font-family: 'ITC Korinna', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+        #container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+        }
+        #question, #answer {
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        #category-dollars {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            font-size: 1em;
+            font-weight: normal;
+            color: #cccccc;
+        }
+        button {
+            font-size: 1.2em;
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+        #showAnswer, #nextQuestion {
+            position: fixed;
+            bottom: 20px;
+        }
+        #showAnswer {
+            right: 200px;
+        }
+        #nextQuestion {
+            right: 20px;
+        }
+        #fileInput {
+            position:fixed;
+            bottom: 40px;
+            left: 40%
+        }
+        #loadFile {
+            position:fixed;
+            bottom: 20px;
+            right: 40%
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="category-dollars"></div>
+        <div id="question">Question will appear here</div>
+        <div id="answer" style="display:none;">Answer will appear here</div>
+    </div>
+    <button id="showAnswer">Show Answer</button>
+    <button id="nextQuestion">Next Question</button>
+    <div>
+        <input type="file" id="fileInput">
+        <button id="loadFile">Load File</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4238 @@
+[
+    {
+        "category": "VIGOROUS VOCAB",
+        "dollar_value": "200",
+        "question": "It can mean powerful or influential, y'know, like certain \"potables\"",
+        "answer": "potent"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "On a cold wintry night, warm up with a traditional hot butteredthisdrink",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Ilchester is a cheese created in 1962 by adding this potent potable to Cheddar",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Gusano Rojo is a popular brand of this tequila relative known for sometimes having a worm in the bottle",
+        "answer": "mescal"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "This type of booze is also a letter in the NATO phonetic alphabet",
+        "answer": "whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This yellow-green liqueur is made by Carthusian monks",
+        "answer": "Chartreuse"
+    },
+    {
+        "category": "GAME STOP",
+        "dollar_value": "1000",
+        "question": "A hand in this card game with 2 potent potables in its name comes to a halt after a player \"knocks\"",
+        "answer": "gin rummy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Puerto Rico & Cuba are known for light-bodied forms of this liquor; Jamaica goes heavier",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This blue ribbon beer company also provides hard coffee & stronger seltzer",
+        "answer": "Pabst"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Mexicans drink the most per capita of this spirit named for a Jalisco town; Americans, the most overall",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Pat O'Brien's in New Orleans is famous for this stormy cocktail that has its own tall glass",
+        "answer": "a Hurricane"
+    },
+    {
+        "category": "A SPARKLING CATEGORY",
+        "dollar_value": "400",
+        "question": "Prosecco is a popular one of these 2-word potent potables",
+        "answer": "a sparkling wine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It's the main alcoholic ingredient in a pina colada",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "To make a Long Island iced tea, combine vodka, tequila & other booze with sour mix & this soft drink",
+        "answer": "Coke"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "A classic martini gets an olive, but a Gibson martini has a pearl one of these instead",
+        "answer": "an onion"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "This Greek liqueur is flavored with anise, a Mediterranean plant",
+        "answer": "ouzo"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "\"Look out for the bull\" was Schlitz' longtime slogan for this beer with a high alcohol content",
+        "answer": "malt liquor"
+    },
+    {
+        "category": "THAT'S SOME STRONG LANGUAGE!",
+        "dollar_value": "400",
+        "question": "It can describe the powerful effect of a drug or for us, certain \"potables\"",
+        "answer": "potent"
+    },
+    {
+        "category": "POTENTATE POTABLES",
+        "dollar_value": "400",
+        "question": "Around 1500 Czar Ivan III introduced a state monopoly to control the production of this potent potable",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "To make a sea breeze, mix 2 parts vodka, 3 parts grapefruit juice & 1 part this juice--for the red color",
+        "answer": "cranberry juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The name of this Scandinavian spirit derived from grain or potatoes is a shortening of the Latin for \"water of life\"",
+        "answer": "aquavit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "You might croon like Elvis, or maybe not, after having a Blue Hawaii made with this blue liqueur",
+        "answer": "Cura\u00e7ao"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "(Sarah of the Clue Crew demonstrates.)  a snifter of this clear anise liqueur may be served con la mosca, meaning \"with the fly\"; each fly is really one of thethree espresso beans",
+        "answer": "sambuca"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Tuborg Pilsner has been brewed in this country since 1880",
+        "answer": "Denmark"
+    },
+    {
+        "category": "FEEL THE ROBERT BURNS!",
+        "dollar_value": "2000",
+        "question": "This personification of potent potables was used in a 1782 Burns poem",
+        "answer": "John Barleycorn"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "In 1916 this soft drink introduced its iconic contoured bottle",
+        "answer": "Coca-Cola"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "\"Oh, yeahhh!\" Artificially fruit-flavored & made from powder, it's the state soft drink of Nebraska",
+        "answer": "Kool-Aid"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Italian name of the machine seenhere, or the strong beverage it's used to make",
+        "answer": "espresso"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "A Shirley Temple is traditionally made with ginger ale & a splash of this sweet pomegranate syrup",
+        "answer": "grenadine"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Lassi is a popular chilled drink from India usually made with this dairy product",
+        "answer": "yogurt"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The Big Bukowski is an offering at the L.A. literary pub called \"Catcher in\" this, a kind of whiskey",
+        "answer": "rye"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In 1960 this stout brewery introduced Harp Lager",
+        "answer": "Guinness"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Yes, Alexander, the French spirit eau-de-vie is a type of this",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "More similar to beer than wine in production, it begins with steamed rice & mold",
+        "answer": "sake"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "130 different herbs go into the green type of this liqueur made by French monks",
+        "answer": "Chartreuse"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "What's now this \"club\" that many join happily was first distilled in Ontario in 1858",
+        "answer": "a Canadian Club"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "During prohibition this family of rum makers invited Americans to Cuba for weekend-long parties",
+        "answer": "Bacardi"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "The letters \"V.O.P.\" on the label of a bottle of cognac stand for this",
+        "answer": "very old pale"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The name of this honey-whiskey liqueur is from a Scottish Gaelic phrase that means \"the drink that satisfies\"",
+        "answer": "drambuie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This Italian liqueur is made from tonda gentile hazelnuts grown in the Piedmont region",
+        "answer": "frangelico"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The 2 main styles of this liquor are Dutch & London dry",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Varicella you don't want; valpolicella, one of this country's top red wines, you do",
+        "answer": "Italy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "The brand called Mike's Hard makes cider & punch, but its logo shows this is its flagship drink",
+        "answer": "lemonade"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "A chelada is a mix of this alcoholic beverage & clamato--we know, but just try it",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Excuse the spelling, but peppar & kurant are products from this Swedish vodka brand",
+        "answer": "Absolut"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This character first ordered his martini to be shaken in 1953's \"Casino Royale\"",
+        "answer": "James Bond"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This Mark Twain character's father, Pap, is the town drunk who takes his son's last dollar to buy whiskey",
+        "answer": "Huck Finn"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "After drinking the liquor supplied by odd-looking fellows, he \"fell into a deep sleep\"",
+        "answer": "Rip Van Winkle"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "It's the potent potable mentioned in a ditty in \"Treasure Island\"",
+        "answer": "rum"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This 1957 Ray Bradbury novel is named for a potent potable made from a lawn weed",
+        "answer": "Dandelion Wine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Guyana's Demerara Distillers is known for its El Dorado brand of this potent potable",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A gin & tonic cocktail, for example, or the tall, straight-sided glass in which it's served",
+        "answer": "a highball"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "To prepare a brave bull, pour tequila in a glass & top with this coffee-flavored liqueur from Veracruz, Mexico",
+        "answer": "Kahl\u00faa"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Creme D'ananas is a liqueur flavored mainly with this fruit, not bananas",
+        "answer": "pineapple"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Black Bush is a special blend of this Irish whiskey--makes sense",
+        "answer": "Bushmills"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Mix ginger ale & grenadine & garnish with fruit & you get the alcohol-free cocktail named for this child star",
+        "answer": "Shirley Temple"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A daiquiri made without liquor is this type, like a chaste young woman",
+        "answer": "a virgin"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Ariel Blanc is a nonalcoholic type of this; I'll have the nonnonalcoholic type",
+        "answer": "wine"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "O'Douls is a brand of this with only 0.4% alcohol",
+        "answer": "beer"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This drink that shares its name with a small firework is made with grenadine, citrus soda & maraschinos",
+        "answer": "a cherry bomb"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "(Kathie Lee and Hoda give the clue.)  As Nick Charles says in \"The Thin Man\", it's all about the rhythm in the shaking--you shake a Manhattan to fox trot time but you use waltz time to shake a dry one of these gin drinks",
+        "answer": "a martini"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "(Kathie Lee and Hoda give the clue.)  After you swirl the wine, look for the rivulets that slide down the inside of the glass; they're called tears or these, which usually mean the wine is full-bodied",
+        "answer": "legs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "(Kathie Lee and Hoda give the clue.)  We tried a month of on-air sobriety, but as it turns out, antioxidants in red wine may help prevent heart disease by raising the HDL or the good type of this & lowering the bad type",
+        "answer": "cholesterol"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "(Kathie Lee and Hoda give the clue.)  A magnum of wine equals 2 standard bottles of wine; yes but you can really have a party with the size named for this Babylonian king--by the way, it's the equivalent of 20 standard bottles",
+        "answer": "Nebuchadnezzar"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "(Kathie Lee and Hoda give the clue.)  French scientists say the best method of pouring champagne is down the side of the glass, which preserves up to twice as much of this gas, keeping the fizz in your bubbly",
+        "answer": "carbon dioxide"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Vodka, triple sec & lime juice go into this drink named for a suicide pilot",
+        "answer": "a kamikaze"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In a play on a book title, it's the liquor that precedes mockingbird in the name of a cocktail",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "To make a brantini, stir together brandy, gin & a dash of the dry type of this",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "For a greyhound, combine 1 1/2 ounces of gin with 5 ounces of this",
+        "answer": "grapefruit juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "A 7 & 7 cocktail gets its name from these 2 ingredients",
+        "answer": "Seagram's 7 & 7 Up"
+    },
+    {
+        "category": "LA CATEGORIEJEOPARDY!",
+        "dollar_value": "400",
+        "question": "Les potables virils",
+        "answer": "POTENT POTABLES"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Drambuie is a brand of liqueur made with honey & this barley whisky",
+        "answer": "scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Meaning \"white of whites\", it's wine made entirely from white grapes, like a champagne made from the chardonnay grape",
+        "answer": "blanc de blancs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1200",
+        "question": "This brand of aromatic bitters is named for a town in Venezuela",
+        "answer": "Angostura"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1600",
+        "question": "Armagnac is this type of single distilled spirit",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "2000",
+        "question": "The desert plant used to make tequila is blue this",
+        "answer": "agave"
+    },
+    {
+        "category": "POTENT POTABLES, SOUTHERN STYLE",
+        "dollar_value": "200",
+        "question": "A classic Scarlett O'Hara cocktail contains a squeeze of this (remember the color of Scarlett's eyes)",
+        "answer": "lime"
+    },
+    {
+        "category": "POTENT POTABLES, SOUTHERN STYLE",
+        "dollar_value": "400",
+        "question": "The Willard Hotel in D.C. still serves this Southern bourbon classic the way Henry Clay liked it in the 1800s",
+        "answer": "a mint julep"
+    },
+    {
+        "category": "POTENT POTABLES, SOUTHERN STYLE",
+        "dollar_value": "600",
+        "question": "For a Miami Beach cocktail, you'll need scotch, grapefruit juice & the dry type of this martini ingredient",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES, SOUTHERN STYLE",
+        "dollar_value": "800",
+        "question": "A liqueur of this flavor (Kahlua, perhaps) gives that pretty muddy color to a Mississippi mud cocktail",
+        "answer": "coffee"
+    },
+    {
+        "category": "POTENT POTABLES, SOUTHERN STYLE",
+        "dollar_value": "1000",
+        "question": "The main ingredients in an Alabama slammer are amaretto, Southern Comfort & the sloe type of this",
+        "answer": "gin"
+    },
+    {
+        "category": "PRESIDENTIAL POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Alcohol may have contributed to his leaving the army in the 1850s; he came back fighting in the 1860s",
+        "answer": "Grant"
+    },
+    {
+        "category": "PRESIDENTIAL POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "He drove around his Texas ranch in a convertible & stopped to have the Secret Service refill his scotch & soda",
+        "answer": "(Lyndon) Johnson"
+    },
+    {
+        "category": "PRESIDENTIAL POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "(Jimmy of the Clue Crew uncorks a bottle in a replica distillery in Mount Vernon, VA.)  One of Washington's most successful endeavors was Mount Vernon's distillery, the largest in America at the time, which produced this potent potable",
+        "answer": "whiskey"
+    },
+    {
+        "category": "PRESIDENTIAL POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The wine tab for this Virginian president for one year in office was $7,597",
+        "answer": "(Thomas) Jefferson"
+    },
+    {
+        "category": "PRESIDENTIAL POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This future president disgraced himself as Lincoln's VP with a drunken speech on inauguration day",
+        "answer": "(Andrew) Johnson"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Tom & John are well-known types of this cool drink in the punch family; there's also a glass of the same name",
+        "answer": "a Collins"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A Salty Dog is made with gin or vodka & this tart juice (the salt frosts the rim of the glass)",
+        "answer": "grapefruit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "A Gibson is traditionally garnished with the pearl type of this",
+        "answer": "an onion"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "In its basic form, this cocktail is just rum, lime juice & sugar shaken over ice",
+        "answer": "a daiquiri"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "The name of this drink made with bourbon & mint comes from the Persian for \"rose-water\"",
+        "answer": "a mint julep"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It's the liquor in a casino cocktail, & often in a martini",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Of Schumann,  or Verdi, the luxury vodka brand",
+        "answer": "Chopin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "With brands like Old Overholt, whiskey made from this grain, not corn, was once a favorite of the American sot",
+        "answer": "rye"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "Southern sippers often make the alliterative request for this corn mash whiskey \"and branch\" (water)",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "In a SoCo & cola, SoCo is short for this",
+        "answer": "Southern Comfort"
+    },
+    {
+        "category": "POTENT POTABLES IN OTHER WORDS",
+        "dollar_value": "400",
+        "question": "Phillips head or flat blade",
+        "answer": "a screwdriver"
+    },
+    {
+        "category": "POTENT POTABLES IN OTHER WORDS",
+        "dollar_value": "800",
+        "question": "NYC borough that has the Murray Hill neighborhood",
+        "answer": "a Manhattan"
+    },
+    {
+        "category": "POTENT POTABLES IN OTHER WORDS",
+        "dollar_value": "1200",
+        "question": "Any wan Muscovite",
+        "answer": "a White Russian"
+    },
+    {
+        "category": "POTENT POTABLES IN OTHER WORDS",
+        "dollar_value": "1600",
+        "question": "A collegiatemascotfrom West Lafayette, Indiana",
+        "answer": "a Boilermaker"
+    },
+    {
+        "category": "POTENT POTABLES IN OTHER WORDS",
+        "dollar_value": "2000",
+        "question": "Paired with \"The Master\" in a Bulgakov novel",
+        "answer": "Margarita"
+    },
+    {
+        "category": "PORTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The Vikings used human blood to christen their ships; thank Odin this potent potable is traditional today",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "If 007 is coming over, better read the book \"Shaken Not Stirred: A Celebration of\" this cocktail",
+        "answer": "the martini"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "In cockney rhyming slang, this liquor is a \"gay & frisky\"",
+        "answer": "whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1200",
+        "question": "Searching for fine tequila?  Look for a label that says it's 100% this color agave",
+        "answer": "blue"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1600",
+        "question": "This word for a sweetened mixture of rum, beer & beaten egg can also mean a turned-up hairstyle",
+        "answer": "a flip"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "2000",
+        "question": "A Harvey Wallbanger just won't have the right bang without this yellow liqueur",
+        "answer": "Galliano"
+    },
+    {
+        "category": "ODD WORDS",
+        "dollar_value": "600",
+        "question": "Too much time enjoying potent potables?  You could end up with a katzenjammer, one of these",
+        "answer": "a hangover"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Varieties of this brand of scotch include Red, Black, Gold & Blue Label",
+        "answer": "Johnnie Walker"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This brand has been made at the Lynchburg, Tennessee distillery since 1866",
+        "answer": "Jack Daniels"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "I like them apples just fine when they're made into calvados, an expensive type of this spirit",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "This rum maker's website urges you to \"Drink responsibly--captain's orders!\"",
+        "answer": "Captain Morgan"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This \"avian\" vodka brand is \"created in the... Cognac region of western France under the... eye of the maitre de chai\"",
+        "answer": "Grey Goose"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In Amsterdam a Bruine Kroeg or \"brown cafe\", specializes in this potent potable",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "(Cheryl of the Clue Crew holds up a drink in a tall glass.)  A whiskey & soda is one example of this type of cocktail, also the relatively tall glass in which it is served",
+        "answer": "a highball"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1200",
+        "question": "Asking for a \"perfect martini\" isn't an impossible demand; it means to use both the dry & sweet types of this",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "2000",
+        "question": "New Orleanians know the Peychaud's brand of this liquid adds a necessary taste to a Sazerac cocktail",
+        "answer": "bitters"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "3",
+        "question": "In the 1850s Manet painted thedrinkerofthisdangerous liqueur",
+        "answer": "absinthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A knickerbocker cocktail contains gin, as well as the sweet & dry types of this",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The bestselling imported liqueur in the U.S. is this coffee-flavored one from Mexico",
+        "answer": "Kahl\u00faa"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "After imbibing this cocktail of gin or vodka & grapefruit juice, you'd better leave the driving to us",
+        "answer": "greyhound"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Peppermint & root beer are popular flavors of this strong potable, from the German for \"mouthful\"",
+        "answer": "schnapps"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "The \"original melon liqueur\" from Suntory; it'll turn you green with envy",
+        "answer": "Midori"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This potent potable's name comes from the Latin for juniper, which is used to flavor it",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Some bartenders say shaking this gin & vermouth cocktail ruins it by giving it a metallic taste from the shaker",
+        "answer": "martini"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "This cocktail made with gin & orange juice might make you do the Hawaiian dance of the same name",
+        "answer": "the Hula"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1200",
+        "question": "A mimosa is equal parts orange juice & this potent potable",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1600",
+        "question": "Use vodka instead of rum in this pineapple cocktail & it's called a Chi Chi",
+        "answer": "pina colada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "2000",
+        "question": "A beauty spot cocktail is gin, dry & sweet vermouth, orange juice & a dash of this pomegranate-flavored syrup",
+        "answer": "grenadine"
+    },
+    {
+        "category": "RUM FOR YOUR LIFE",
+        "dollar_value": "1000",
+        "question": "Mount Gay Rum has been made in this West Indies island nation off northeastern South America for 300 years",
+        "answer": "Barbados"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It's the potent potable in a traditional mint julep",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Mumm is the word & it's also a brand of this that's been around since 1827",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "\"It's another\" one of these orange juice cocktails that's mentioned in the title of an Eagles hit",
+        "answer": "Tequila Sunrise"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "At Trafalgar Horatio Nelson's body was preserved in a cask of this, probably not the Napoleon kind",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This premium hazelnut liqueur from Italy is made from a 300-year-old recipe",
+        "answer": "Frangelico"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A Chiquita cocktail combines cointreau, cream & this flavor liqueur",
+        "answer": "banana"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This type of spirit was once known as Barbados waters",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "An alliterative potable is made with \"rock\" (candy) & this type of whiskey",
+        "answer": "rye"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Boodles is a popular brand of the London dry type of this",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "In the 1930s Mouton-this was created as the label for vintages unworthy of being Mouton-Rothschild",
+        "answer": "Cadet"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The ginger ale and grenadine drink once called a pussyfoot is better known by this dimpled darling's name",
+        "answer": "a Shirley Temple"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This milk & ice cream combo sounds like the leader of an Arab tribe",
+        "answer": "a shake"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Philadelphia pharmacist Charles Hires invented this beverage in the mid-1800s",
+        "answer": "root beer"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "As a byproduct of his investigations into oxygen, Joseph Priestley invented this modern beverage",
+        "answer": "carbonated water (or club soda)"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "2",
+        "question": "An order of Franciscan friars founded in 1525 lends its name to this popular coffee drink",
+        "answer": "cappuccino"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Voltaire compared the British to this beverage of theirs: \"Froth on top, dregs at the bottom, the middle excellent\"",
+        "answer": "Beer"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The line \"A woman drove me to drink and I never even had the courtesy to thank her\" is attributed to this comic",
+        "answer": "W.C. Fields"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "According to a Latin proverb, in this \"there is truth\"",
+        "answer": "Wine"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A Mae West movie included the line \"You ought to get out of those wet clothes  and into a dry\" one of these",
+        "answer": "Martini"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "This poet thought, \"Candy is dandy, but liquor is quicker\"",
+        "answer": "Ogden Nash"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Launched in 1974, this tasty spirit combines fresh dairy cream with triple-distilled Irish whiskey",
+        "answer": "Bailey's Irish Cream"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Traditionally, they're the 2 sauces that spice up a Bloody Mary",
+        "answer": "Tabasco & Worcestershire"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "This cognac-based \"Grand\" liqueur is flavored with bitter orange peel",
+        "answer": "Grand Marnier"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Mix vodka & Kahlua & you'll have this colorful classic",
+        "answer": "Black Russian"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "The rhyming name of this tropical cocktail means \"out of this world\" in Tahitian",
+        "answer": "Mai Tai"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The Harvard is made with sweet vermouth; dry vermouth is in this cocktail with the name of a Harvard rival",
+        "answer": "Yale"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A peppermint stick is made with creme de cacao, light cream & the peppermint type of this liquor",
+        "answer": "schnapps"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "(Hi, I'm Thomas Gibson.)  A Gibson cocktail is identical to a martini, except that the olive is replaced by this",
+        "answer": "onion"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The Kentucky Colonel cocktail blends Benedictine & this type of alcohol",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "In the name of a brand of scotch, it's what J&B stands for",
+        "answer": "Justerini & Brooks"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "To make a \"creamy screwdriver\", add egg yolk & sugar to vodka & this juice",
+        "answer": "Orange juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A brave bull is made from Kahlua & this Mexican liquor -- & that's no bull",
+        "answer": "Tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Okolehao is an 80-proof liquor made from the mash of the ti plant in this U.S. state",
+        "answer": "Hawaii"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This type of whisky made in the U.K. may be blended or single-malt",
+        "answer": "Scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "O Dem Golden Slipper cocktails contain the yellow type of this herbal liqueur created by monks",
+        "answer": "Chartreuse"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Okhotnichya, a type of this clear liquor, is flavored with honey",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The finest types of this liquor are certified 100% blue agave",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Bordeaux comes in a straight-sided bottle; these wines, which include beaujolais, in a sloping one",
+        "answer": "burgundies"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A 7&7 mixes 7Up & this",
+        "answer": "Seagram's 7"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Sir John Falstaff called sherry by this name, also what he'd hit after indulging in it",
+        "answer": "sack"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The fermented drink called perry is the pear-based counterpart of this \"hard\" apple drink",
+        "answer": "Cider"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A brand of gin distilled in London shares its name with these Tower of London guards",
+        "answer": "Beefeater(s)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "It's coffee mixed with whiskey, such as Jameson's, & topped with whipped cream",
+        "answer": "Irish coffee"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Trader Vic claims credit for inventing this rum drink & says it was named by a Tahitian friend",
+        "answer": "Mai tai"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "This wine-based French aperitif usually served on the rocks is flavored with, mmm, quinine",
+        "answer": "Dubonnet"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "In Germany these party essentials are called \"Wein, Weib und Gesang\"",
+        "answer": "wine, women, and song"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It's the cocktail that James Bond likes \"shaken and not stirred\"",
+        "answer": "a martini"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This actor quipped, \"Some weasel took the cork out of my lunch\"",
+        "answer": "W.C. Fields"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In 1977 President Carter stated that this man \"put the beer industry back on its feet\"",
+        "answer": "Billy Carter"
+    },
+    {
+        "category": "QUOTABLE POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "In \"American Pie\", \"them good old boys were drinkin'\" these two things",
+        "answer": "whiskey & rye"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Robinson Crusoe wanted to brew this drink, but he had no hops, yeast or barrels to put it in",
+        "answer": "beer"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Bootlegging may have paid for the bubbly that this title Fitzgerald character served at his parties",
+        "answer": "Jay Gatsby"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "There is no \"Cask\" of this sherry at the end of the Poe story, only bricks & fresh mortar",
+        "answer": "Amontillado"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Pap took this Mark Twain character's last dollar to buy whiskey & was seen drunk the next day",
+        "answer": "Huckleberry Finn"
+    },
+    {
+        "category": "LITERARY POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Ray Bradbury named this 1957 novel after a potent potable made from a weed",
+        "answer": "Dandelion Wine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "In Cuba there are 2 main types of this spirit: Carta Blanca (white label) or Carta Oro (gold label)",
+        "answer": "Rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "They're the 2 main ingredients in the original martini",
+        "answer": "Gin & vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "A popular cocktail made with tequila, orange juice & grenadine, or a hit song by the Eagles",
+        "answer": "Tequila Sunrise"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Unlike most American whiskies, Scotch whisky is made from this grain",
+        "answer": "Barley"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "It makes a Blue Hawaii blue",
+        "answer": "Curacao"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Flavored types of this liquor, like Pertsovka, are popular in the U.S. & have long been a Russian favorite",
+        "answer": "Vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Colt 45 & Olde English 800 are brands of this \"liquor\" that's stronger than most beers",
+        "answer": "Malt liquor"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Booker's, Baker's & Knob Creek are \"small batch\" producers of this Southern elixir",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "In Spanish, the name of this cocktail means \"daisy\"",
+        "answer": "Margarita"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Despite its name, this cocktail of rye, sugar & bitters over ice is not quite out of date",
+        "answer": "Old Fashioned"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "In 1975 this company introduced the first nationally successful \"lite\" beer",
+        "answer": "Miller"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It turns a shamrock & a grasshopper green",
+        "answer": "cr\u00e8me de menthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This \"chilly\" beverage is often made of sparkling burgundy & champagne",
+        "answer": "Cold Duck"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "1 of 2 fruit juices featured in a Vodka Seabreeze",
+        "answer": "Cranberry or grapefruit juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Tempted by a Tempter? -- it's made with apricot brandy & this sweet dessert wine",
+        "answer": "Port"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It's the traditional spirit added to eggnog, though whiskey or brandy may also be used",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A Bloody Mary & a bloody bull both contain this spirit",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Harvey's Bristol Cream is a famous brand of this",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "It's the Spanish name for a popular party drink made with red wine & fruit juices",
+        "answer": "sangria"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "The name of this brandy is German for \"cherry water\"",
+        "answer": "Kirschwasser"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Perrier-Jouet's Belle Epoque brand of this sparkling wine comes in a special painted bottle",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "As many as 40 herbs & flavorings go into this wine-based martini ingredient",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "The name of mead goes back to madhu, the Sanskrit word for this mead ingredient",
+        "answer": "honey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "This country makes retsina as welll as mastika, a gin-like drink flavored with resin",
+        "answer": "Greece"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Alborg on the Jutland peninsula is a center for the manufacture of this spirit, Denmark's national drink",
+        "answer": "aquavit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Poteen is the Irish version of this illegally-made U.S. whiskey with this \"nocturnal\" name",
+        "answer": "moonshine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The Old Tom type of this liquor is perfect for making a Tom Collins",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "It's the term for pouring a wine from its bottle into a container such as a carafe",
+        "answer": "decant"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The Rothschild family bought Chateau Mouton in 1853 & this 700-year-old estate in 1868",
+        "answer": "(Ch\u00e2teau) Lafite"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "The Demerara type of this spirit is highly flavored & therefore valued for blending",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Sherry has been made in this country's province of Cadiz for centuries",
+        "answer": "Spain"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The Napa Valley in this western U.S. state is famous for its wineries",
+        "answer": "California"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Tequila is named for a town near Guadalajara in this country",
+        "answer": "Mexico"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It's traditional to float 2 or 3 of these beans on top of Sambuca liqueur",
+        "answer": "coffee beans"
+    },
+    {
+        "category": "PARTY TIME!",
+        "dollar_value": "200",
+        "question": "Type of bar at a party where guests pay for their own potent potables",
+        "answer": "a cash bar (or no-host bar)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Andrew Usher & Company is credited with beginning the practice of blending this whiskey",
+        "answer": "scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The amount of sugar added to this wine after it's disgorged determines its sweetness from brut to doux",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Commandaria is a sweet wine produced on this island now partitioned between Greeks and Turks",
+        "answer": "Cyprus"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Trader Vic's recipe for an Amsterdam Cocktail calls for the Holland type of this liquor",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Made of plums in the Balkans, slivovitz is a type of this spirit",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Pisco, a South American kind of this snifter spirit, is distilled from Muscat grapes",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A 1736 British law effectively banned this juniper-flavored spirit; it was repealed a few years later",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Moscato di Siracusa is a sweet, strong dessert wine made on this Italian island",
+        "answer": "Sicily"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "This Greek spirit is a close cousin to French pastis or Pernod",
+        "answer": "ouzo"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Cherry Heering is made by the firm of Peter Heering in this Scandinavian country",
+        "answer": "Denmark"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Once made from potatoes, this liquor associated with Russia is now produced primarily from cereal grains",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Green creme de menthe & white creme de cacao are featured in this cocktail named for an insect",
+        "answer": "A Grasshopper"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "As you might imagine, a Bacardi cocktail contains this liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "For a Fuzzy Navel, combine equal amounts of orange juice & this flavor schnapps",
+        "answer": "peach"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Served over ice, the 2 ingredients in a Rusty Nail are Scotch & this Scotch & honey liqueur",
+        "answer": "Drambuie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Grades of this bubbly beverage run from brut to doux",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It denotes a rich or sweet liqueur; one may be de cacao, de bananes or de menthe",
+        "answer": "creme"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "When this potable is \"buttered\", it contains sugar & spices as well as butter",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Norse king Fjolne is said to have been drowned in this honey-based drink",
+        "answer": "mead"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It was home-produced during Prohibition by adding essence of juniper to alcohol",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Abricotine is a liqueur made from this fruit",
+        "answer": "apricots"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "3 drinks are made from the juice of Mexican agave plants: mescal, pulque & this",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "It's the spirit traditionally featured in a Tom Collins",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Pour kahlua & vodka over ice & you'll have this \"colorful\" cocktail",
+        "answer": "a Black Russian"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Verdelho is a medium-sweet type of this wine named for a Portuguese island",
+        "answer": "Madeira"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The lager form of this is stored in casks or vats until free of sediment",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This is the most popular Collins drink",
+        "answer": "a Tom Collins"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "It's the liquor in a Moscow mule, a cocktail developed by Smirnoff in 1946",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "For this cocktail, the rim of the glass is usually dipped in lime juice and salt",
+        "answer": "a margarita"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Jerez de la Frontera is the center of trade in this Spanish wine",
+        "answer": "Sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The name of this cocktail is Spanish for \"strained pineapple\"",
+        "answer": "pina colada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "For a dry martini, add more gin & less of this wine",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "In the U.S., the 2 most popular fortified wines are port & this",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "They're the 2 ingredients served over ice in a screwdriver",
+        "answer": "orange juice & vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This liquor that originated in the West Indies was first mentioned in the 1600s in records from Barbados",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "A Stinger contains the white type of this liqueur; a Green Dragon is made with the green kind",
+        "answer": "creme de menthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Red wines in straw-covered flasks are often sold under this Italian name, whether authentic or not",
+        "answer": "Chianti"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Garnish a martini with an onion instead of an olive & it's called this",
+        "answer": "a Gibson"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The bock variety of this beverage is sweeter & darker than the lager",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The Irish form of this beverage is similar to the Scotch, without the smoky peat flavor",
+        "answer": "whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This Japanese drink is produced from steamed rice called koji",
+        "answer": "sake"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In 1605 the Marechal d'Estrees gave the recipe for this liqueur to the Carthusian Fathers",
+        "answer": "Chartreuse"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "This Scandinavian spirit is often flavored with caraway",
+        "answer": "aquavit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "One recipe for this drink calls for 3 oz. of rum & 3 tbsp. each of coconut milk & crushed pineapple",
+        "answer": "a pina colada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Made from fermented rice, it's considered one of Japan's national drinks",
+        "answer": "sake"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "It's the base liquor in a margarita",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Produced in the Normandy region of France, Calvados is a type of this liquor made with apples",
+        "answer": "Brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Creme de Rose is flavored with rose petals & Creme Yvette is flavored with these purplish flowers",
+        "answer": "violets"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The most common hard cider is the fermented juice of this fruit",
+        "answer": "an Apple"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Most of this country's best vineyards are located in the Central Valley, not far from Santiago",
+        "answer": "Chile"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "The region of France that can legally produce this brandy was strictly defined by law",
+        "answer": "Cognac"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "A September Morn cocktail contains 3 dashes of this sweet red syrup",
+        "answer": "grenadine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "George, Duke of Clarence is said to have been drowned in a cask of this sweet wine also called Malvasia",
+        "answer": "Malmsey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "One school of thought says the mint for this Kentucky Derby quaff should be crushed",
+        "answer": "Mint Julep"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Sweetened wine is added to bottles of this French wine to ferment & produce carbonation",
+        "answer": "Champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This Mexican spirit is obtained by distilling pulque",
+        "answer": "Tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "French Chablis is made of this grape that produces some of the finest California white wine",
+        "answer": "Chardonnay"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "This potent liqueur, now banned in many countries, has been called \"The Green Muse\"",
+        "answer": "Absinthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The name of this aromatic wine found in martinis comes from the German word for wormwood",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The sour mash type of this Kentucky whiskey is made by adding part of the old mash to new batches",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "It's the spirit found in a daiquiri cocktail",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This country produces a resinated wine called kokkineli in addition to the more famous retsina",
+        "answer": "Greece"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Zubrowka is a Polish form of this spirit with a bit of buffalo grass steeped in it",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Nelson's Blood is a British navy term for this spirit found in grog",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Martinis & Manhattans contain the dry & sweet types of this wine respectively",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Bourbon whiskey is made from a mash that must not be less than 51% this grain",
+        "answer": "corn"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The name of this beverage goes back to Madhu, the Sanskrit word for honey",
+        "answer": "mead"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "When found on a cognac label, the letters V.O. stand for this",
+        "answer": "very old"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "To make a tovarich cocktail, you need kummel, lime juice & this liquor",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A Miami cocktail & a Nevada cocktail contain the light type of this liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This liquor puts the sloeberry flavor in a sloeberry cocktail",
+        "answer": "sloe gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Creme de Noyaux, a liqueur made from fruit pits, tastes like these nuts",
+        "answer": "almonds"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Amoroso is a rather dry type of this fortified Spanish wine",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Usquebaugh is the original Celtic name for this potent potable",
+        "answer": "whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "While a martini is often served with an olive, a Gibson is usually served with this",
+        "answer": "an onion"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This juice is the mixer in a Scarlett O'Hara or a Cape Codder cocktail",
+        "answer": "cranberry juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "With the possible exception of Armagnac, this French brandy is considered the world's finest",
+        "answer": "Cognac"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A Peppermint Pattie can be made with creme de menthe or the peppermint type of this liquor",
+        "answer": "schnapps"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This ingredient that's fermented to make kumiss may come from a mare, a camel or a cow",
+        "answer": "milk"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Lambrusco is a semisweet red wine from the central part of this country",
+        "answer": "Italy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "It's traditional to serve scotch on January 25, this poet's birthday",
+        "answer": "Robert Burns"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Demerara, which is distilled in Guyana, is the darkest type of this liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Because it's \"strengthened\" with brandy or another spirit, sherry is described as this kind of wine",
+        "answer": "fortified"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Trader Vic's recipe for Menehune juice calls for the light Puerto Rican type of this",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "In names of cocktails, this word follows Grand Royal, Morning Glory, Pink Rose, Ramos & Sloe Gin",
+        "answer": "Fizz"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The juice of this citrus fruit is a traditional ingredient in a Bacardi cocktail",
+        "answer": "a lime"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "It's the kind of whiskey you need to make a paddy cocktail",
+        "answer": "Irish whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "When applejack is used in place of regular brandy, this cocktail becomes an Applecar",
+        "answer": "a Sidecar"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The Jamaican type of this spirit is sometimes served hot & buttered",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Zubrowka, a Polish type of this spirit, is flavored with a wild grass",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Lighter in color than porter or stout, this type of beer is America's most popular",
+        "answer": "lager"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "From the German, it's a drink made with white wine & soda water",
+        "answer": "a spritzer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It gives a Blue Hawaii its blue color",
+        "answer": "Blue Curacao"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Bourbon was named for a county in this \"Bluegrass State\"",
+        "answer": "Kentucky"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Though it's colorless, odorless & not aged, it still packs a wallop in a bloody Mary",
+        "answer": "Vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The whiskey in a seven and seven comes from this country",
+        "answer": "Canada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "At his first sip of this, Dom Perignon cried, \"I am tasting stars!\"",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A Brandy Alexander contains brandy, cream & this flavor of liqueur",
+        "answer": "chocolate"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It's the Irish ingredient in an Everybody's Irish cocktail",
+        "answer": "whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The name of this British holiday drink comes from Old Norse for \"be in good health\", ves heill",
+        "answer": "the wassail drink"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The yellow type of this liqueur with a \"colorful\" name is weaker than the green",
+        "answer": "chartreuse"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Cocktails with \"silver\" in their names, such as Silver King & Silver Streak, usually contain this liquor",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Creme d'ananas is made from this tropical fruit, not bananas",
+        "answer": "pineapple"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "This margarita ingredient is sometimes called \"cactus whiskey\"",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "In a gin and it cocktail, the \"it\" is the sweet Italian variety of this",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Cointreau & triple sec both have this fruit flavor",
+        "answer": "orange"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Many consider the dry fino type of this fortified wine the world's finest",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It's the \"rock\" in rock & rye",
+        "answer": "rock candy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "This flavor of schnapps puts the \"fuzz\" in a fuzzy navel",
+        "answer": "peach"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Cocktails with \"Jamaica\" in their names usually contain this liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Tom & John are the most famous members of this tall, cool cocktail \"family\"",
+        "answer": "Collins"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "To make a negroni, combine campari with these 2 martini ingredients",
+        "answer": "gin & vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Like anisette, pernod is often described as tasting like this candy",
+        "answer": "licorice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "You need this liquor to make a Moscow mule",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Barolo is a robust red wine from the Piedmont region of this country",
+        "answer": "Italy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Like a white rose cocktail, a white baby contains this liquor -- you might prefer the dry type",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "White creme de menthe & this liquor put the sting in a stinger",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "This Scandinavian liquor is made by redistilling alcohol made from grain or potatoes",
+        "answer": "aquavit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It's the main ingredient in a Soviet cocktail, comrade",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "You need gin & yellow chartreuse to make this cocktail named for a state; you might sip it in Sitka",
+        "answer": "an Alaska"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Trader Vic was a big fan of this liqueur which could be called \"Dixie solace\"",
+        "answer": "Southern Comfort"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Though monks don't go on honeymoons, a Honeymoon cocktail contains this liqueur created by monks",
+        "answer": "Benedictine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Some champagne made exclusively with white grapes is labeled this, French for \"white from whites\"",
+        "answer": "Blanc de Blancs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The name of this spirit comes from the Russian word for water",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This American liquor is named for a Kentucky county",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Legend assigns the invention of this to Dom Perignon in the late 1600s",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The name of this German white wine can be translated as \"blessed mother's milk\"",
+        "answer": "Liebfraumilch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Though they may have little significance, the letters VO on a brandy label stand for this",
+        "answer": "very old"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Appropriately, the cocktail named for this biblical couple is made with a liqueur called forbidden fruit",
+        "answer": "Adam & Eve"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This ingredient in a Bacardi cocktail should be made by Bacardi",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This liqueur puts the green in a greenback & a green fizz",
+        "answer": "creme de menthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Cocktails with \"London\" in their names are often made with this liquor",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A thistle cocktail calls for sweet vermouth & this liquor --\"fling\" in some bitters, too",
+        "answer": "Scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Some Mai Tai recipes call for both the light & dark varieties of this liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Mix Kahlua with this Mexican liquor & you'll have a brave bull",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "A juniper berry medicine used by the Dutch is believed to be the ori of this liquor",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "It puts the fizz in a mimosa & a French 75",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "B & B is made with equal parts of these 2 liquors",
+        "answer": "Benedictine & brandy"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "During the 1992 Super Bowl, this drink introduced its new slogan \"Gotta Have It\"",
+        "answer": "Pepsi"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "3-letter word for any drink m up of water, sweetener & citrus juice",
+        "answer": "ade"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "It \"does a body good\" because it contains protein, calcium, phosphorus, vitamins A & D & lactose",
+        "answer": "milk"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Cranprune, a mix of cranberries & prunes, used to be a regular in this company's drink line",
+        "answer": "Ocean Spray"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Hi-C & Minute Maid are owned by this soft drink maker",
+        "answer": "Coca-Cola"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "This is the mixture in a 7 & 7 cocktail",
+        "answer": "7 Up"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Many believe the martini was named for this company famous for its vermouth",
+        "answer": "Martini & Rossi"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The name of this cocktail is Spanish for \"strained pineapple\"",
+        "answer": "pi\u00f1a colada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Like a Grasshopper, a Green Dragon gets its color from this liqueur",
+        "answer": "creme de menthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A Bijou cocktail calls for the green variety of this liqueur, a Yellow Parrot, for the yellow",
+        "answer": "chartreuse"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "A Hokkaido cocktail calls for gin, triple sec & this fermented rice beverage",
+        "answer": "sake"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Versions of this cocktail flavored with lemon include \"Papaya\" & \"Singapore\"",
+        "answer": "a sling"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Add this ingredient to a Black Russian & you'll have a White Russian",
+        "answer": "milk (or cream)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "To make a Bobby Burns cocktail, mix sweet vermouth, Benedictine & this liquor",
+        "answer": "scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Root beer & peppermint are popular flavors of this liquor whose name is from the German for \"mouthful\"",
+        "answer": "schnapps"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Whiskey & soda over ice, or a tall glass in which to serve it",
+        "answer": "highball"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Sabra is a chocolate- & orange-flavored liqueur made in this country",
+        "answer": "Israel"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "A Danish Mary is the same as a bloody Mary except instead of vodka, it contains this Scandinavian liquor",
+        "answer": "aquavit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "To make a jellybean, mix blackberry brandy with this licorice-flavored liqueur",
+        "answer": "anisette"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Completes what v.s.o.p. stands for on a cognac bottle: \"very superior old...\"",
+        "answer": "pale"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Red wine punch whose named is from the Spanish word for \"bleeding\"",
+        "answer": "sangria"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Greta Garbo's first on-screen spoken words were, \"Give me\" one of these",
+        "answer": "a whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The ingredient that turns a Golden Fizz gold",
+        "answer": "an egg yolk"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A World War I cognac cocktail named for the motorcycle accessory its inventor used to reach the tavern",
+        "answer": "a Sidecar"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "As you might expect, you need 1 1/2 ounces of this liquor to make a shillelagh",
+        "answer": "Irish whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A fallen angel cocktail calls for lemon juice or this juice",
+        "answer": "lime juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Of single sec, double sec or , the one you're likely to find in a margarita",
+        "answer": "triple sec"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In the name of a gin cocktail, this ordinal number precedes \"heaven\"",
+        "answer": "7th"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "The apricot flavor of this liquor is one of the main ingredients in a fairy belle cocktail",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "In Mexico a submarino is made by submerging a glass of this in a beer",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "An America beer such as Anchor known for releasing a hissing sound when the keg is tapped",
+        "answer": "a steam beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Term meaning \"water of life\" that refers to any local spirits in Scandinavia",
+        "answer": "aquavit"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "If you have some Madeira, my dear, you're drinking from an island of this country",
+        "answer": "Portugal"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Formulated in Normandy in 1510, this liquor is named for the monks who invented it",
+        "answer": "Benedictine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The \"fish house\" type of this drink served in a bowl contains rum & brandy, but luckily, no fish",
+        "answer": "punch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "To make an El Diablo, you need lime, creme de cassis, ginger ale & this Mexican liquor",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "In names of cocktails, this color precedes baby, rose, & Russian",
+        "answer": "white"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A \"widow's dream\" is a cocktail that contains this B&B ingredient",
+        "answer": "benedictine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "This cocktail made with lime juice, Southern Comfort & cranberry juice is named for a Southern belle",
+        "answer": "the Scarlett O'Hara"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "To make a tovarich cocktail, you need Kummel, lime juice, & this liquor, comrade",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This aromatic wine's name comes from the German for wormwood, one of its former ingredients",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "In a TV ad, Leslie Nielsen called this company's light beer \"the official beer of the '90s\"",
+        "answer": "Coors Light"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "Perth, in this country, is the home of Dewar's",
+        "answer": "Scotland"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Of all the countries in the Western Hemisphere, this South American one produces the most wine",
+        "answer": "Argentina"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "From the Latin for \"to open\" it's a drink taken before a meal to sharpen the appetite",
+        "answer": "an ap\u00e9ritif"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Of sec,  or doux, the driest champagne",
+        "answer": "brut"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The traditional squat brandy glass, its rim turns in to hold the bouquet",
+        "answer": "a snifter"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A whiskey & ginger ale cocktail named for part of the equine anatomy",
+        "answer": "a horse's neck"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Tequila is a version of this stronger liquor which shares its name with a hallucinogenic plant",
+        "answer": "mezcal"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "As you might expect, a bee's knees is sweetened with this",
+        "answer": "honey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "To make a sloeberry cocktail, add a dash or 2 of bitters to this liqueur",
+        "answer": "sloe gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Of creme fraiche, creme brulee or , the one that fits the category",
+        "answer": "creme d'ananas"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Type of liquor you must have to make a zombie",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "An orange blossom is made with gin & orange juice while a gimlet is made with gin & this juice",
+        "answer": "lime"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Its name comes from Scottish Gaelic for \"the drink that satisfies\", dram buidheach",
+        "answer": "Drambuie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In names of cocktails, this color precedes \"baby\", \"rose\" & \"lady\"",
+        "answer": "pink"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Naturally, this liqueur whose name is German for caraway seeds is flavored with caraway seeds",
+        "answer": "Kummel"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Of Argentina, Greece & , the country with the lowest per capita wine consumption",
+        "answer": "the U.S."
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "According to its label, Southern Comfort originated on the banks of this river",
+        "answer": "the Mississippi"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "This word that follows golden, silver & gin in cocktail names refers to the addition of soda water",
+        "answer": "fizz"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The flowers of this plant give beer its bitter taste",
+        "answer": "hops"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This brandy made from hard cider was called Jersey lightning in Colonial times",
+        "answer": "applejack"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This juice makes a Cape Codder cocktail red",
+        "answer": "cranberry juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "The name of this California co. means a wooden seat built into a wall near an open fireplace",
+        "answer": "Inglenook"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It can be stout, pilsner or lager",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The Bartender's Guide calls it the Russian national drink",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Scotch gets its smoky flavor from this malted grain dried over peat fires",
+        "answer": "barley"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Bottled in Britain, this brand of gin calls itself, \"the world's most imported gin\"",
+        "answer": "Beefeater"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Mix cream, rum, Cointreau & Blue Cura\u00e7ao & you'll have this tropical cocktail named for a state",
+        "answer": "a Blue Hawaii"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The name for this red wine comes from the Latin for \"clear\"",
+        "answer": "a claret"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Fresh cream is added to creme de cacao & green creme de menthe to make this \"insect\" drink",
+        "answer": "a grasshopper"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Liquor made from a mash that's 51% corn--the rest can be rye, wheat, oak or barley",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Kirsch is a colorless brandy made with this fruit",
+        "answer": "cherries"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "\"Golden\" brewer of Canada who established the 1st steamship service between Montreal & Quebec",
+        "answer": "Molson"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Armagnac is a brandy name for a region in this country where its made",
+        "answer": "France"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Vodka is often substituted for this potent potable in a martini",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "2",
+        "question": "He became the cellarer of the Benedictine Abbey of Hautvillers, about 1670",
+        "answer": "Dom P\u00e9rignon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Yukon Jack is a whisky liqueur imported from this country",
+        "answer": "Canada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The main ingredient in a Chinese cocktail is the Jamaica type of this",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "The recipe for a basic stinger calls for equal parts white creme de menthe & this",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Some folks put sugar in a champagne cocktail before adding the traditional dash of this",
+        "answer": "(Angostura) bitters"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "A Gin Rickey usually contains the juice of this fruit",
+        "answer": "lime"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "To make lemon juice into lemonade, these 2 ingredients must be added",
+        "answer": "sugar and water"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This powder mixed with milk is made from ground, kiln-dried, sprouted barley",
+        "answer": "malt"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "The color of this coffee drink reminded Italians of the color of a monk's habit, hence its name",
+        "answer": "cappuccino"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Introduced into Spain by Cortes, in the 17th century it became a fashionable drink",
+        "answer": "chocolate"
+    },
+    {
+        "category": "NON-POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Named for the peer it was created for, this black tea is often flavored with oil of bergamot",
+        "answer": "Earl Grey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Ads for this urge consumers to \"Live a Cutty above\"",
+        "answer": "Cutty Sark"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "To make a Jack Daniel's Tennessee mud, add Jack Daniel's & amaretto to a mug of this & top w/whipped cream",
+        "answer": "coffee"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "To \"V.O.\" in this company's V.O. Whisky stands for \"Very Own\"",
+        "answer": "Seagram's"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "1 of the simplest potent potables, it's occasionally used as a gin substitute in cocktails",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "You don't have to wear black velvet to drink Black Velvet, a whisky imported from this country",
+        "answer": "Canada"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Mix egg white, gin, apple brandy, lemon juice & grenadine & you get this color \"Lady\"",
+        "answer": "pink"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "It puts the kick in a Moscow mule",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Classes of this fortified wine include Fino, Amontillado & Oloroso",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "A motorcycle accessory, or a cocktail made of brandy, Cointreau & lemon juice",
+        "answer": "a sidecar"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "The 2 varieties of red port are ruby & this",
+        "answer": "tawny"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Chihuahua beer is brewed & bottled for people, not puppies, in this country",
+        "answer": "Mexico"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Harveys Bristol Cream is a pale variety of this",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Type of pet pictured on the Dubonnet label",
+        "answer": "a cat"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Subdistricts of this fine French wine region include M\u00e9doc, Graves & Sauternes",
+        "answer": "Bordeaux"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Mount Gay rum has been made on this West Indian island for over 175 years",
+        "answer": "Barbados"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It puts the fizz in a gin fizz",
+        "answer": "Soda Water/Club Soda"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A favorite drink in colonial New England was \"Blackstrap\", a mixture of molasses & this potent potable",
+        "answer": "Rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "From the Latin for \"openers\", they include Campari & Dubonnet",
+        "answer": "Aperitifs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Korbel, Cook's & Piper-Heidsieck",
+        "answer": "Champagne Brands"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Federal regulations say it must be distilled from a mash of not less than 51% corn",
+        "answer": "Bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Today all brands of this whiskey except Bushmills are made in Midleton near Cork",
+        "answer": "Irish whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "For 20 years this scotch's ads have featured \"Achievers\" who tell \"Why I Do What I Do\"",
+        "answer": "Dewar's"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Alcoholic beverage made from fermented honey, it's announcer Johnny Gilbert's favorite",
+        "answer": "mead"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Zubrowka is this type of potent potable flavored with buffalo grass",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "The label of this liqueur indicates it's \"made with orange & fine old cognac brandy\"",
+        "answer": "Grand Marnier"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Supposedly it was named for a fellow who drank several & then banged into a wall",
+        "answer": "Harvey Wallbanger"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Falstaff called this wine \"sack\"; in its native Spain it's \"Jerez\"",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Referring perhaps to the tall masts, this tall beer glass is named for a kind of ship",
+        "answer": "schooner"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Originally made with Rhine wine & seltzer or club soda, it's from the German word for \"squirt\"",
+        "answer": "spritzer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "The best of this brandy made in the Charente district, is called \"Grande Champagne\"",
+        "answer": "Cognac"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The potent potable you need to make coq au vin bourguignonne",
+        "answer": "burgundy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The part of an egg that goes into a Ramos fizz",
+        "answer": "the white"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "There's a sleeping hombre wearing a sombrero on the label of this Mexican coffee-flavored liqueur",
+        "answer": "Kahl\u00faa"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Glemlivet, Glennfidich & Ballatine's are all brands of this",
+        "answer": "Scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "The type of liquor you need to make a Tom Collins",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Caramel is added to make the darker varieties of this liquor made from molasses",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Type of white wine  that comes in Alsatian & Johannisberg varieties",
+        "answer": "Riesling"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Named for a Portuguese island, this fortified wine traveled well & was popular in colonial America",
+        "answer": "Madeira"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Trader Vic's Bartender's Guide says don't use bottled lime juice unless you're making this drink",
+        "answer": "gimlet"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "In 1915 the French outlawed this wormwood-flavored liqueur 1st made commercially by Pernod in 1797",
+        "answer": "absinthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "",
+        "answer": "="
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "",
+        "answer": "="
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Tanqueray\r\nBeefeater,\r\nGilbey's",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Tia Maria,\r\nNocello, \r\nChambord",
+        "answer": "liqueurs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Mumm,\r\nMartell,\r\nRemy Martin",
+        "answer": "cognacs (brandys)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Type of alcoholic beverage appropriately drunk from a snifter",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This wine from a Portuguese island is fortified so it's 18-20% alcohol",
+        "answer": "Madeira"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Anhegser-Busch is marketing this type of less-sweet beer that's been a big hit for Asahi in Japan",
+        "answer": "dry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Flavor of liqueur you'd mix with vodka to make a Black Russian",
+        "answer": "coffee"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "The formula for this liquor used in a Scarlett O'Hara is secret, but it's probably bourbon based",
+        "answer": "Southern Comfort"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "If she were alive to see her picture on the Bombay gin label, she might not be amused",
+        "answer": "Queen Victoria"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Stolichnaya's Pertsovka vodka gets its spicy flavor from these, pictured on the label",
+        "answer": "red peppers"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Of a barrel, firkin or , the one that can hold the most liquor",
+        "answer": "hogshead"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The original was supposedly a horse laxative; now it's a knockout punch thrown into a cocktail",
+        "answer": "Mickey Finn"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The main grain of both beer & scotch",
+        "answer": "barley"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A B. & B. cocktail consists of 1/2 brandy & 1/2 this herb-flavored liqueur",
+        "answer": "Benedictine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "Type of liquor that's the subject of thefollowing1983 hit by Shelly West:\"Jose Cuervo /\r\nYou are a friend of mine /\r\nI like to drink you with...\"",
+        "answer": "tequila"
+    },
+    {
+        "category": "JEOPARDY! CATEGORIES",
+        "dollar_value": "400",
+        "question": "Alliterative title for categories concerning alcoholic beverages",
+        "answer": "POTENT POTABLES"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Since it's made with this, Barenjager liqueur comes with a plastic bee stuck on the label",
+        "answer": "honey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Myers's rum is distilled on this island, man",
+        "answer": "Jamaica"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The Bible says, \"Money answereth all things,\" while this \"maketh merry\"",
+        "answer": "wine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Carolans, Emmets & Baileys are all brands of this type of liqueur",
+        "answer": "(Irish) cream"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "To make mulled wine, you spice it, sweeten it & do this",
+        "answer": "heat it"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "If you want to turn a black Russian into a white Russian, add this",
+        "answer": "milk/cream"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "In a pousse-cafe, these float in different colored layers in a tall glass",
+        "answer": "liqueurs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "The brand of vodka that \"Leaves You Breathless\"",
+        "answer": "Smirnoff"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It puts the pink in a pink lady",
+        "answer": "grenadine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Bananas Caribe is prepared with this potent potable",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The actual color of most white Zinfandel wines",
+        "answer": "pink"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Some cheaper grades of champagne sparkle because this gas has been added",
+        "answer": "carbon dioxide"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Friendly name for liqueurs",
+        "answer": "cordial"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Percentage of alcohol in 190 proof liquor",
+        "answer": "95%"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "A fifth equals about 1/5 of this",
+        "answer": "a U.S. gallon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Claiming U.S. creation of this \"Gaelic\" drink, San Francisco's Buena Vista Cafe sells some 2,200 cups daily",
+        "answer": "Irish coffee"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This strong, dark type of beer takes its name from Einbeck, Germany, where it was first made",
+        "answer": "bock beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "It's usually made with bourbon, sugar, mint, and crushed ice",
+        "answer": "a mint julep"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Whiskey sours and daiquiris are similar except that daiquiris contain this instead of whiskey",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Invented in ancient Greece, the wine press was more productive than this time-honored method",
+        "answer": "stomping by the feet"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The name for this liquor is a corruption of French for \"juniper\", whose berries flavor it",
+        "answer": "gin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Alexis Lichine says it's \"like liquid fire in the throat\" when tossed down after licking salt",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Term for a jigger of liquor, even in the dark",
+        "answer": "shot"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Tia Maria is a West Indian liqueur made with this liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The word spelled W-H-I-S-K-E-Y in the U.S. lacks this letter in Canada & Scotland",
+        "answer": "the E"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Spanish for \"bleeding\", it can be a mixture of red wine, citrus juice, sugar & spices",
+        "answer": "sangria"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Brand of Portuguese wine that comes in a pottery crock or a bottle painted to look like one",
+        "answer": "Lancers & Fiasco"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "It isn't proper to drink Danish aquavit w/o 1st raising your glass to another person & saying this",
+        "answer": "sk\u00e5l"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "In its ads, this beer proclaims, \"This world calls for\" it",
+        "answer": "L\u00f6wenbr\u00e4u"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Germans call it \"liquid bread\"",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Of an old fashioned, whiskey sour or highball glass, the one with a stem",
+        "answer": "a whiskey sour"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "The 1733 Molasses Act heavily taxed both molasses & this import from the Spanish & French W. Indies",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Grand Marnier, triple sec & cointreau all feature this fruit flavor",
+        "answer": "orange"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "American Brands makes Sunshine cookies, Jergens lotion & this biggest selling bourbon",
+        "answer": "Jim Beam"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Originally a 16th c. medicine made by a  monk, it's said only 3 people at a time know its complete formula",
+        "answer": "Benedictine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "A light Bohemian beer with a strong hops flavor, or the tall glass it's served in",
+        "answer": "Pilsner"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "It's said the heat from a ship's hold improved the taste of this Portuguese island dessert wine",
+        "answer": "Madeira"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "A dog's nose is a jigger of gin mixed with a cold glass of this brew",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A drink made of brandy, sugar, hot water & spices is traditionally called this",
+        "answer": "hot toddy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This brand of vodka shares its name with a Russian peninsula that borders the Bering Sea",
+        "answer": "Kamchatka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Calling itself \"Prince Charles Edward's Liqueur\", it's made of Scotch malt whiskys & heather honey",
+        "answer": "Drambuie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Cordial made from currants, it's 1 of the ingredients in a Kir or Kir Royale",
+        "answer": "Cr\u00e8me de cassis"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It's the French region synonymous with sparkling wine",
+        "answer": "Champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Kirin is a beer from this country",
+        "answer": "Japan"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Taxes on this liquor are reported to provide 17% of the U.S. Virgin Islands gov't budget",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In the song, \"American Pie\", it's what \"them good ole boys were drinkin'\"",
+        "answer": "whiskey & rye"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "A district in Tuscany lent its name to this wine which comes in a straw-covered flask",
+        "answer": "chianti"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Meister Brau,\r\nLowenbrau,\r\nMichelob",
+        "answer": "beers"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Carlo Rossi,\r\nPaul Masson,\r\nRobert Mondavi",
+        "answer": "wines/winemakers"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Recipes for a Highland Fling designate this type of liquor",
+        "answer": "Scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Among this company's brands are Four Roses, 7 Crown, & V.O.",
+        "answer": "Seagrams"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Grabbing the bottle which holds 26.6 ounces, or protecting yourself from self-incrimination",
+        "answer": "taking the fifth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "In separate TV ads, he tells kids to say no to alcohol & sings \"Tonight\" for Michelob",
+        "answer": "Phil Collins"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "To make a traditional daiquiri you need this kind of liquor",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "According to California law, a California wine must contain this % of California grapes",
+        "answer": "100%"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A sailor might know that a Yo Ho cocktail is 1/3 apple brandy, 1/3 Swedish punch, & 1/3 this",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Wine chills quickest, many times faster than in a refrigerator, when immersed in this",
+        "answer": "ice cold water"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "A \"twist\" refers to this part of a citrus fruit",
+        "answer": "the rind (peel)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Drambuie is made from Scotch whiskey & this natural sweetener",
+        "answer": "honey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Even in Russia, vodka is more commonly made from this than potatoes",
+        "answer": "grain"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "From Latin for \"heart\", it's the heart-warming synonym for \"liqueurs\"",
+        "answer": "cordials"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "\"Book of Royal Lists\" says Prince Charles almost died from drinking this bubbly at a polo match",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Made from angostura bark, this \"is sine qua non for both a real Manhattan & a real Old Fashioned\"",
+        "answer": "angostura bitters"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Its name is German for \"cherry water\", but Kirschwasser is this type of liquor",
+        "answer": "a brandy (eaux-de-vie)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The beer that's advertised as \"Denmark's greatest export since the Vikings\"",
+        "answer": "Carlsberg"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "An island in the Netherlands Antilles gave its name to this orange-flavored liqueur",
+        "answer": "Cura\u00e7ao"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "A \"Grasshopper\" gets its green color from this mint liqueur",
+        "answer": "cr\u00e8me de menthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "U.S. city where Iron City beer is brewed",
+        "answer": "Pittsburgh"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Sweet wines whose labels say they're from Boone's Farm are really from these 2 brothers' \"Farm\"",
+        "answer": "Ernest & Julio Gallo"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "To make a lot of bullshot, you combine a lot of vodka with a lot of this",
+        "answer": "beef bouillon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Larry Gatlin asked \"Do they have\" this brand of wine \"in heaven? If they don't, who the hell wants to go?\"",
+        "answer": "Mogen David"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It puts the kick in Welsh Rabbit",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Lying north of Burgundy & east of Paris, this region turns its black pinot noir grapes into sparkling wines",
+        "answer": "Champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Early Times,\r\nAncient Age &\r\nOld Crow",
+        "answer": "bourbon"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Red Bull,\r\nKing Cobra &\r\nColt 45",
+        "answer": "malt liquors"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Schapiro's,\r\nCarmel &\r\nMogen David",
+        "answer": "kosher wine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Suntory,\r\nGilbey's &\r\nAbsolut",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It's added to a gin fizz to make it fizz",
+        "answer": "carbonated soda (or soda water or carbonated water)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Whether called a golden spike, golden screw. or screwdriver, it just contains these 2 liquids",
+        "answer": "vodka & orange juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "From Latin \"to open\", it's a drink taken to open a meal",
+        "answer": "an ap\u00e9ritif"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Mixer's measure that can run about1/32of an ounce, not 100 yards",
+        "answer": "a dash"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It's said Jefferson Davis used to lace this bourbon drink with a tablespoonful of French brandy",
+        "answer": "a mint julep"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Adding this part of an egg puts the gold in a Golden Fizz",
+        "answer": "the yolk"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Trader Vic's uses both Puerto Rican & Jamaican kinds to add the punch to Caribbean Punch",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Quite logically, these are the 2 types of Chartreuse liqueur",
+        "answer": "green & gold or yellow"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Frankly, my dear, I don't give a damn if you don't like this red Southern Comfort cocktail",
+        "answer": "a Scarlett O'Hara"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "The 2 creme liqueurs in a  Grasshopper",
+        "answer": "creme de menthe & creme de cacao"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Flavor shared by tia maria & gallweys",
+        "answer": "coffee"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The French term for a wine waiter",
+        "answer": "sommelier"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Italian for \"sparkling\", its use is applied to genuine sparkling wines",
+        "answer": "spumante"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Traditionally, in England, 2 jiggers equal 1 jack, & 2 jacks equal this",
+        "answer": "a jill"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "This grain is the main ingredient of both Irish & Scotch whiskey",
+        "answer": "barley"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Aptly, port wine originated in this country",
+        "answer": "Portugal"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Song whose chorus beings \"Hoo-ray & up she rises\" is about this imbiber",
+        "answer": "a drunken sailor"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "To make a \"Rusty Nail\" you combine Scotch & this Scottish liqueur",
+        "answer": "Drambuie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Creature whose breath said to have made Confucius' mother conceive is symbol of this Japanese beer",
+        "answer": "kirin"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "TV's \"Little Ol' Winemaker\" promoted this brand",
+        "answer": "Italian Swiss Colony"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Both curacao & cointreau are flavored with this fruit",
+        "answer": "orange"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Term for the year of the grape crop used in a wine",
+        "answer": "vintage"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Drink made with brandy, rum, hot milk, beaten egg, nutmeg & sugar; or an MGM cartoon team",
+        "answer": "Tom & Jerry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Exotic cocktail that sounds like it could be Frank Sinatra singing about his cravat",
+        "answer": "a Mai Tai"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "This cream-topped \"Gaelic\" drink was supposedly 1st made at the Buena Vista Cafe in San Francisco",
+        "answer": "Irish coffee"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "\"The angels' share\" is the 1/4 lost through evaporation when wine is distilled into this",
+        "answer": "cognac (brandy)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "\"Cocktail King\" C. Ribalagua supposedly squeezed 80 million limes & made 10 million of these rum drinks",
+        "answer": "daiquiris"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Differences in this property of liqueurs makes the layered look in a rainbow cordial possible",
+        "answer": "the density"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "At 1 of Elsa Maxwell's famous parties, guests \"milked\" this bubbly wine from an artificial cow",
+        "answer": "champagne"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Wines ranging from ripple to French Colombard are made by these Modesto brothers",
+        "answer": "the Gallo brothers (Ernest & Julio)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "From Old French for \"liquid\", term for alcoholic beverages made from spirits & fruit syrups",
+        "answer": "liqueur"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Made in a town 30 mi. NW of Guadalajara, authentic bottles of this drink must have \"DGN\" on label",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "1st name of detective parody Crummond, or a drink made from vodka & beef boullion",
+        "answer": "Bullshot"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Bourbon mash contains at least 51% of this \"Indian\" grain",
+        "answer": "corn"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "To do this, lick salt off hand, quickly swallow shot of liquor, then suck on lime slice",
+        "answer": "how to drink tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "In the U.S., when fermentation occurs on the top of a malt brew, it's classed as this",
+        "answer": "an ale"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A Dog's Nose, a Bee's Knees, or a Horse's Neck",
+        "answer": "the names of cocktails"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Pernod & ouzo are modified forms of this powerful, often-banned liquor",
+        "answer": "absinthe"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Of , whiskey, or brandy, the one said to be least likely to give you a hangover",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Author who mockingly called his absinthe & champagne recipe \"Death in the Afternoon\"",
+        "answer": "Ernest Hemingway"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Mixer that Hannibal bathed in & Napoleon III decreed should be bottled \"for the good of France\"",
+        "answer": "Perrier water"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "British bass, for example, served unpasteurized at room temperature",
+        "answer": "ale"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "The 2 B's in B & B liqueur",
+        "answer": "brandy & Benedictine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "When his name is used to describe a brandy, it usually means it's over 5 years old",
+        "answer": "Napoleon brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "The sweeter these are originally, the higher the alcoholic content of the wine will be",
+        "answer": "grapes"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Kamchatka, Popov, or Mr. Boston, for example",
+        "answer": "vodkas"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "2 products which merge in a \"Seven and Seven\"",
+        "answer": "Seagram's 7 & 7-Up"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Classic formula for this rum drink is \"1 of sour, 2 of sweet, 3 of strong, & 4 of weak\"",
+        "answer": "daiquiri"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This winemaker will \"sell no wine before its time\"",
+        "answer": "Paul Mason"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Gin, applejack, egg white, lemon juice, & pomegranate, or a Japanese singing duo",
+        "answer": "a Pink Lady"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "A glass of wine is properly held by this part",
+        "answer": "the stem"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Secret ass'n of distillers & gov't officials that embezzled liquor taxes under President Grant",
+        "answer": "the Whiskey Ring"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "The 2 grains providing flavor basis to whiskeys indigenous to America",
+        "answer": "corn & rye"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "For wines, it never means the opposite of wet",
+        "answer": "dry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Bacardi, America's single best-selling brand of liquor, is this type",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This series built around wine currently makes your TV a potent portable",
+        "answer": "Falcon Crest"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Brooklynite Jennie Churchill, Winston's mother, created this whiskey & vermouth cocktail",
+        "answer": "Manhattan"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Slivovitz is a brandy made from this fruit",
+        "answer": "plum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "\"Time gentlemen please\" is the closing cry in these British bars",
+        "answer": "pubs (public houses)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Percent of alcohol in 80 proof liquor",
+        "answer": "40%"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Sherry brandy flamed for cherries jubilee",
+        "answer": "kirschwasser"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Drink supposedly named for California surfer who lost coordination by drinking screwdrivers with Galliano",
+        "answer": "the Harvey Wallbanger"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "It makes M.A.D.D. members mad",
+        "answer": "drunk drivers (drinking and driving)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "St. Paul wrote to Timothy: \"Drink no longer water but use a little\" of this \"for thy stomach's sake\"",
+        "answer": "wine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "A tall cocktail of rum, liqueur & fruit juice, or a walking corpse",
+        "answer": "a zombie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Eastern European country in which Tokay wine originated",
+        "answer": "Hungary"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Nickname of British admiral Vernon who watered down sailors' liquor rations",
+        "answer": "Grog"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "President Carter thought the lunch associated with this drink shouldn't be tax exempt",
+        "answer": "a martini"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Though widely associated with potatoes, this colorless liquor is often made from grains",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "From Dutch meaning \"burned wine\", it's an after-dinner favorite",
+        "answer": "brandy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "German for \"billy goat\" this type of dark beer is only available seasonally",
+        "answer": "bock beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The most common of these used today is Angostura",
+        "answer": "bitters"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This peach-flavored bourbon is popular on both sides of the Mason-Dixon Line",
+        "answer": "Southern Comfort"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Liquor thatthissong's about:\"Jose Cuervo you are a friend of mine / I like to drink you with a little salt and lime / Did I kiss all the cowboys? / Did I shoot out the lights? / Did I dance on the bar? / Did I start a fight?\"",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "European country that produces the most wine",
+        "answer": "Italy"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "It's done to spiced wine to make it \"mulled\"",
+        "answer": "you heat it"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Tonic contains this medicinal ingredient",
+        "answer": "quinine"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This whiskey, blended with soda, is title of a Kingston Trio hit",
+        "answer": "Scotch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "A wine & soda water cocktail",
+        "answer": "a wine spritzer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Don the Beachcomber claims to have invented this powerfully \"ghoulish\" rum drink",
+        "answer": "a Zombie"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Only a handful of monks know the formula for this liqueur named for its green color",
+        "answer": "Chartreuse"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The grain from which sake wine is made",
+        "answer": "rice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Though most today don't drink because of Muslim law, these people first discovered distillation",
+        "answer": "the Arabs"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Kosher wine company owned by Coca-Cola of New York",
+        "answer": "Mogen David"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Flavoring common to pernod, ouzo, & arak",
+        "answer": "licorice (anise)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Blended brandy that comes from a French district of the same name",
+        "answer": "Cognac"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Blended creme de menthe, creme de cacao & cream; or an insect",
+        "answer": "a grasshopper"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "\"Liquid bread\", it was often drunk at breakfast in medieval Europe",
+        "answer": "ale (beer)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Based on bar survey, it's America's most popular cocktail",
+        "answer": "a martini"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Lynchburg, TN distillery that holds whiskey license #1, oldest in USA",
+        "answer": "Jack Daniel"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1",
+        "question": "Type of wine that originated in Jerez, Spain",
+        "answer": "sherry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Device used to pop your wine bottle's top",
+        "answer": "a corkscrew"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "This liquor was watered down & passed around as sailor's \"grog\"",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "What golfers call their clubhouse bar",
+        "answer": "the 19th hole"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "High protein food swallowed whole in a \"morning after\" prairie oyster",
+        "answer": "an egg"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "",
+        "answer": "="
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A glass of dark British beer goes by this \"portly\" name",
+        "answer": "stout"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Traditional Kentucky Derby drink",
+        "answer": "mint julep"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "Edgar Allan Poe's scary story featured a \"Cask\" of this sherry",
+        "answer": "Amontillado"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "Fruit that puts the \"sloe\" in sloe gin",
+        "answer": "sloe berry (plums)"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Nearly all of world's hops go into brewing this",
+        "answer": "beer"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Said to have brought secret of whiskey making to Ireland along with Christianity",
+        "answer": "St. Patrick"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "They're America's largest vintners",
+        "answer": "the Gallos"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Their Golden, Colorado brewery is America's largest single one",
+        "answer": "Coors"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "Bronfman family, whose names means \"brandy man\", run this Canadian distillery, world's largest",
+        "answer": "Seagram's"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "French word for a drink or wine taken as an appetizer",
+        "answer": "aperitif"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It's what makes a whiskey sour, sour",
+        "answer": "lemon juice"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "Pirates\u2019 favorite as a yo-ho-ho & a bottle of it",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "The Irish kind has an E, the Scottish doesn't",
+        "answer": "whiskey"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "From \"voda\", meaning water in Russian",
+        "answer": "vodka"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Slaves, molasses & this liquor made up the colonial triangular trade",
+        "answer": "rum"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "A dessert wine, or the left side of a ship",
+        "answer": "port"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "When water gets gassed",
+        "answer": "carbonation"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "Ancient Greek law made it illegal not to do this during festival of Dionysus",
+        "answer": "to get drunk"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Its name comes from legend that first one was stirred with a rooster feather",
+        "answer": "cocktail"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "25.6 ounces",
+        "answer": "a fifth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "It makes a Black Russian \"white\"",
+        "answer": "cream"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "A sprinkle of salt & slice of lime traditionally accompany it",
+        "answer": "tequila"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "600",
+        "question": "Cartoon critters who share their name with holiday rum & eggnog mix",
+        "answer": "Tom & Jerry"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "800",
+        "question": "The liquid you use less of to make your martini dry",
+        "answer": "vermouth"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "1000",
+        "question": "A wine's fragrance",
+        "answer": "bouquet"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "100",
+        "question": "In 1935 Kreuger's Cream Ale was the first beer sold in these",
+        "answer": "cans"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "200",
+        "question": "Never swallowing, they sip, swish, gargle, then spit out what they sample",
+        "answer": "what wine tasters do"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "300",
+        "question": "This 19th century Philadelphia distiller's name became slang for liquor",
+        "answer": "Booze"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "400",
+        "question": "Derived from Hindu word for \"5\", describing number of ingredients mixed in a large bowl",
+        "answer": "punch"
+    },
+    {
+        "category": "POTENT POTABLES",
+        "dollar_value": "500",
+        "question": "C2H5OH",
+        "answer": "the formula for alcohol"
+    }
+]
