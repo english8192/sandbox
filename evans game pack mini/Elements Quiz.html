@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      max-width: 50%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+	  font-size: 30px
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      font-weight: bold;
+    }
+
+    .firework-container {
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .firework {
+      position: absolute;
+      width: 70px;
+      height: 70px; /*change these to change size of firework images*/
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      pointer-events: none;
+      animation: explode 0.5s ease-out forwards, move 0.5s linear forwards;
+    }
+
+    @keyframes explode {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(50);
+        opacity: 0;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translate(-50%, -50%);
+      }
+      100% {
+        transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy)));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label for="questionRange">Select Question Range:</label>
+    <input type="text" id="questionRange" placeholder="Enter range (e.g., 1-40)">
+	    <div>
+      <button id="gameMode">Game Mode: Question: Symbol, Answer: Name</button>
+    </div>
+    <p id="questionNumber"></p>
+    <img id="elementImage" src="" alt="Element Image">
+    <input type="text" id="elementInput" placeholder="Type the element name..." onkeypress="handleKeyPress(event)">
+    <button onclick="checkElement()">Check</button>
+    <button id="showAnswer1" onclick="showAnswer()">Show Answer</button>
+    <p id="result"></p>
+    <div class="firework-container" id="fireworkContainer"></div>
+  </div>
+
+  <script>
+    let elements = [
+{ number: "1", symbol: "H" , name: "Hydrogen"},
+{ number: "2", symbol: "He" , name: "Helium"},
+{ number: "3", symbol: "Li" , name: "Lithium"},
+{ number: "4", symbol: "Be" , name: "Beryllium"},
+{ number: "5", symbol: "B" , name: "Boron"},
+{ number: "6", symbol: "C" , name: "Carbon"},
+{ number: "7", symbol: "N" , name: "Nitrogen"},
+{ number: "8", symbol: "O" , name: "Oxygen"},
+{ number: "9", symbol: "F" , name: "Fluorine"},
+{ number: "10", symbol: "Ne" , name: "Neon"},
+{ number: "11", symbol: "Na" , name: "Sodium"},
+{ number: "12", symbol: "Mg" , name: "Magnesium"},
+{ number: "13", symbol: "Al" , name: "Aluminium"},
+{ number: "14", symbol: "Si" , name: "Silicon"},
+{ number: "15", symbol: "P" , name: "Phosphorus"},
+{ number: "16", symbol: "S" , name: "Sulfur"},
+{ number: "17", symbol: "Cl" , name: "Chlorine"},
+{ number: "18", symbol: "Ar" , name: "Argon"},
+{ number: "19", symbol: "K" , name: "Potassium"},
+{ number: "20", symbol: "Ca" , name: "Calcium"},
+{ number: "21", symbol: "Sc" , name: "Scandium"},
+{ number: "22", symbol: "Ti" , name: "Titanium"},
+{ number: "23", symbol: "V" , name: "Vanadium"},
+{ number: "24", symbol: "Cr" , name: "Chromium"},
+{ number: "25", symbol: "Mn" , name: "Manganese"},
+{ number: "26", symbol: "Fe" , name: "Iron"},
+{ number: "27", symbol: "Co" , name: "Cobalt"},
+{ number: "28", symbol: "Ni" , name: "Nickel"},
+{ number: "29", symbol: "Cu" , name: "Copper"},
+{ number: "30", symbol: "Zn" , name: "Zinc"},
+{ number: "31", symbol: "Ga" , name: "Gallium"},
+{ number: "32", symbol: "Ge" , name: "Germanium"},
+{ number: "33", symbol: "As" , name: "Arsenic"},
+{ number: "34", symbol: "Se" , name: "Selenium"},
+{ number: "35", symbol: "Br" , name: "Bromine"},
+{ number: "36", symbol: "Kr" , name: "Krypton"},
+{ number: "37", symbol: "Rb" , name: "Rubidium"},
+{ number: "38", symbol: "Sr" , name: "Strontium"},
+{ number: "39", symbol: "Y" , name: "Yttrium"},
+{ number: "40", symbol: "Zr" , name: "Zirconium"},
+{ number: "41", symbol: "Nb" , name: "Niobium"},
+{ number: "42", symbol: "Mo" , name: "Molybdenum"},
+{ number: "43", symbol: "Tc" , name: "Technetium"},
+{ number: "44", symbol: "Ru" , name: "Ruthenium"},
+{ number: "45", symbol: "Rh" , name: "Rhodium"},
+{ number: "46", symbol: "Pd" , name: "Palladium"},
+{ number: "47", symbol: "Ag" , name: "Silver"},
+{ number: "48", symbol: "Cd" , name: "Cadmium"},
+{ number: "49", symbol: "In" , name: "Indium"},
+{ number: "50", symbol: "Sn" , name: "Tin"},
+{ number: "51", symbol: "Sb" , name: "Antimony"},
+{ number: "52", symbol: "Te" , name: "Tellurium"},
+{ number: "53", symbol: "I" , name: "Iodine"},
+{ number: "54", symbol: "Xe" , name: "Xenon"},
+{ number: "55", symbol: "Cs" , name: "Caesium"},
+{ number: "56", symbol: "Ba" , name: "Barium"},
+{ number: "57", symbol: "La" , name: "Lanthanum"},
+{ number: "58", symbol: "Ce" , name: "Cerium"},
+{ number: "59", symbol: "Pr" , name: "Praseodymium"},
+{ number: "60", symbol: "Nd" , name: "Neodymium"},
+{ number: "61", symbol: "Pm" , name: "Promethium"},
+{ number: "62", symbol: "Sm" , name: "Samarium"},
+{ number: "63", symbol: "Eu" , name: "Europium"},
+{ number: "64", symbol: "Gd" , name: "Gadolinium"},
+{ number: "65", symbol: "Tb" , name: "Terbium"},
+{ number: "66", symbol: "Dy" , name: "Dysprosium"},
+{ number: "67", symbol: "Ho" , name: "Holmium"},
+{ number: "68", symbol: "Er" , name: "Erbium"},
+{ number: "69", symbol: "Tm" , name: "Thulium"},
+{ number: "70", symbol: "Yb" , name: "Ytterbium"},
+{ number: "71", symbol: "Lu" , name: "Lutetium"},
+{ number: "72", symbol: "Hf" , name: "Hafnium"},
+{ number: "73", symbol: "Ta" , name: "Tantalum"},
+{ number: "74", symbol: "W" , name: "Tungsten"},
+{ number: "75", symbol: "Re" , name: "Rhenium"},
+{ number: "76", symbol: "Os" , name: "Osmium"},
+{ number: "77", symbol: "Ir" , name: "Iridium"},
+{ number: "78", symbol: "Pt" , name: "Platinum"},
+{ number: "79", symbol: "Au" , name: "Gold"},
+{ number: "80", symbol: "Hg" , name: "Mercury"},
+{ number: "81", symbol: "Tl" , name: "Thallium"},
+{ number: "82", symbol: "Pb" , name: "Lead"},
+{ number: "83", symbol: "Bi" , name: "Bismuth"},
+{ number: "84", symbol: "Po" , name: "Polonium"},
+{ number: "85", symbol: "At" , name: "Astatine"},
+{ number: "86", symbol: "Rn" , name: "Radon"},
+{ number: "87", symbol: "Fr" , name: "Francium"},
+{ number: "88", symbol: "Ra" , name: "Radium"},
+{ number: "89", symbol: "Ac" , name: "Actinium"},
+{ number: "90", symbol: "Th" , name: "Thorium"},
+{ number: "91", symbol: "Pa" , name: "Protactinium"},
+{ number: "92", symbol: "U" , name: "Uranium"},
+{ number: "93", symbol: "Np" , name: "Neptunium"},
+{ number: "94", symbol: "Pu" , name: "Plutonium"},
+{ number: "95", symbol: "Am" , name: "Americium"},
+{ number: "96", symbol: "Cm" , name: "Curium"},
+{ number: "97", symbol: "Bk" , name: "Berkelium"},
+{ number: "98", symbol: "Cf" , name: "Californium"},
+{ number: "99", symbol: "Es" , name: "Einsteinium"},
+{ number: "100", symbol: "Fm" , name: "Fermium"},
+{ number: "101", symbol: "Md" , name: "Mendelevium"},
+{ number: "102", symbol: "No" , name: "Nobelium"},
+{ number: "103", symbol: "Lr" , name: "Lawrencium"},
+{ number: "104", symbol: "Rf" , name: "Rutherfordium"},
+{ number: "105", symbol: "Db" , name: "Dubnium"},
+{ number: "106", symbol: "Sg" , name: "Seaborgium"},
+{ number: "107", symbol: "Bh" , name: "Bohrium"},
+{ number: "108", symbol: "Hs" , name: "Hassium"},
+{ number: "109", symbol: "Mt" , name: "Meitnerium"},
+{ number: "110", symbol: "Ds" , name: "Darmstadtium"},
+{ number: "111", symbol: "Rg" , name: "Roentgenium"},
+{ number: "112", symbol: "Cn" , name: "Copernicium"},
+{ number: "113", symbol: "Nh" , name: "Nihonium"},
+{ number: "114", symbol: "Fl" , name: "Flerovium"},
+{ number: "115", symbol: "Mc" , name: "Moscovium"},
+{ number: "116", symbol: "Lv" , name: "Livermorium"},
+{ number: "117", symbol: "Ts" , name: "Tennessine"},
+{ number: "118", symbol: "Og" , name: "Oganesson"}
+
+    ];
+
+    let questions = [];
+    let currentQuestion = {};
+    let threshold = 0.8;
+    let questionCounter = 0;
+    let totalQuestions = 0;
+    let gameMode = "name"; // Default game mode !of the answer input
+
+    function getRandomQuestion() {
+      if (questions.length === 0) {
+        endGame();
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      return questions.splice(randomIndex, 1)[0];
+    }
+
+    function endGame() {
+      document.getElementById("elementImage").style.display = "none";
+      // Commented out the line below to keep the input box visible after game ends
+      // document.getElementById("elementInput").style.display = "none";
+      document.getElementById("result").textContent = "Game Over!";
+    }
+
+    function displayQuestion() {
+      if (questions.length === 0) {
+        endGame();
+        return;
+      }
+      const randomElement = getRandomQuestion();
+      if (!randomElement) return;
+
+      let questionText = "";
+      let answerText = "";
+      if (gameMode === "symbol") {
+        questionText = randomElement.name.toUpperCase();
+        answerText = randomElement.symbol;
+      } else {
+        questionText = randomElement.symbol;
+        answerText = randomElement.name.toUpperCase();
+      }
+
+      const elementPath = `https://dummyimage.com/300x300/ccc/000.png&text=${questionText}`;
+      document.getElementById("elementImage").src = elementPath;
+      document.getElementById("elementImage").style.display = "block";
+      document.getElementById("questionNumber").textContent = `Question ${questionCounter + 1} / ${totalQuestions}`;
+      currentQuestion = { element: answerText };
+      document.getElementById("result").textContent = "";
+      document.getElementById("elementInput").value = "";
+      document.getElementById("elementInput").style.display = "block"; // Ensure input is visible
+    }
+
+    function checkElement() {
+      const elementInput = document.getElementById("elementInput").value.trim();
+      const distance = levenshtein(elementInput.toLowerCase(), currentQuestion.element.toLowerCase());
+      const maxDistance = Math.max(elementInput.length, currentQuestion.element.length);
+      const similarity = 1 - distance / maxDistance;
+
+      if (similarity >= threshold) {
+        document.getElementById("result").textContent = "Correct!";
+        questionCounter++;
+        playFirework();
+        setTimeout(nextQuestion, 100);
+      } else {
+        document.getElementById("result").textContent = "Incorrect. Try again!";
+      }
+    }
+
+    function showAnswer() {
+      document.getElementById("result").textContent = `The answer is ${currentQuestion.element}`;
+    }
+
+    function nextQuestion() {
+      if (questionCounter >= totalQuestions) {
+        endGame();
+      } else {
+        displayQuestion();
+        document.getElementById("result").textContent = "";
+      }
+    }
+
+    function handleKeyPress(event) {
+      if (event.key === "Enter") {
+        checkElement();
+      }
+    }
+
+    function switchGameMode() {
+      gameMode = gameMode === "symbol" ? "name" : "symbol";
+      document.getElementById("gameMode").textContent = gameMode === "symbol" ? "Question: Symbol, Answer: Name" : "Question: Name, Answer: Symbol";
+      displayQuestion();
+    }
+
+    document.getElementById("questionRange").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        const rangeInput = document.getElementById("questionRange").value.trim();
+        let [start, end] = rangeInput.split("-").map(num => parseInt(num));
+
+        if (isNaN(start) || isNaN(end) || start < 1 || end > elements.length || start > end) {
+          alert("Please enter a valid range within 1 to " + elements.length + ".");
+          return;
+        }
+
+        questions = elements.slice(start - 1, end);
+        totalQuestions = questions.length;
+        questionCounter = 0;
+        displayQuestion();
+      }
+    });
+
+    // Reset the game when the range input loses focus
+    document.getElementById("questionRange").addEventListener("blur", function(event) {
+      const rangeInput = event.target.value.trim();
+      let [start, end] = rangeInput.split("-").map(num => parseInt(num));
+
+      if (isNaN(start) || isNaN(end) || start < 1 || end > elements.length || start > end) {
+        alert("Please enter a valid range within 1 to " + elements.length + ".");
+        return;
+      }
+
+      questions = elements.slice(start - 1, end);
+      totalQuestions = questions.length;
+      questionCounter = 0;
+      displayQuestion();
+    });
+
+    function playFirework() {
+      const fireworkContainer = document.getElementById("fireworkContainer");
+      const elementImage = document.getElementById("elementImage").src;
+      const numParticles = 250;
+      const spread = 1000;
+
+      for (let i = 0; i < numParticles; i++) {
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * spread;
+        const x = Math.cos(angle) * distance;
+        const y = Math.sin(angle) * distance;
+
+        const firework = document.createElement("div");
+        firework.className = "firework";
+        firework.style.top = `50%`;
+        firework.style.left = `50%`;
+        firework.style.setProperty('--dx', `${x}px`);
+        firework.style.setProperty('--dy', `${y}px`);
+        firework.style.backgroundImage = `url(${elementImage})`;
+        fireworkContainer.appendChild(firework);
+        setTimeout(() => {
+          firework.remove();
+        }, 700);
+      }
+    }
+
+    function levenshtein(s1, s2) {
+      const m = s1.length;
+      const n = s2.length;
+      const d = [];
+
+      for (let i = 0; i <= m; i++) {
+        d[i] = [i];
+      }
+      for (let j = 0; j <= n; j++) {
+        d[0][j] = j;
+      }
+
+      for (let j = 1; j <= n; j++) {
+        for (let i = 1; i <= m; i++) {
+          if (s1[i - 1] === s2[j - 1]) {
+            d[i][j] = d[i - 1][j - 1];
+          } else {
+            d[i][j] = Math.min(
+              d[i - 1][j] + 1,
+              d[i][j - 1] + 1,
+              d[i - 1][j - 1] + 1
+            );
+          }
+        }
+      }
+
+      return d[m][n];
+    }
+	
+
+
+
+    // Listen for DOMContentLoaded event to start the game
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("questionRange").value = "";
+      document.getElementById("gameMode").addEventListener("click", switchGameMode);
+	  
+	 // Add event listener for Left Control key
+	document.addEventListener("keydown", function(event) {
+	  if (event.key === "Control" && event.location === 1) {
+		document.getElementById("showAnswer1").click();
+	  }
+	});
+
+    });
+
+  </script>
+</body>
+</html>

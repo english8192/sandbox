@@ -1,0 +1,187 @@
+[
+{ "question": "Princeton",
+ "answer": "Princeton New Jersey",
+ "image": "images/Princeton.png",
+"answer2": "Tigers"
+},
+
+{ "question": "MIT",
+ "answer": "Boston",
+ "image": "images/MIT.png",
+"answer2": "Engineers"},
+
+{ "question": "Harvard",
+ "answer": "Boston",
+ "image": "images/Harvard.png",
+"answer2": "Crimson"},
+
+{ "question": "Stanford",
+ "answer": "Stanford California",
+ "image": "images/Stanford.png",
+"answer2": "Cardinals"},
+
+{ "question": "Yale",
+ "answer": "New Haven Connecticut",
+ "image": "images/Yale.png",
+"answer2": "Bulldogs"},
+
+{ "question": "UPenn",
+ "answer": "Philadelphia",
+ "image": "images/UPenn.png",
+"answer2": "Quakers"},
+
+{ "question": "Caltech",
+ "answer": "Pasadena California",
+ "image": "images/Caltech.png",
+"answer2": "Beavers"},
+
+{ "question": "Duke",
+ "answer": "Durham North Carolina",
+ "image": "images/Duke.png",
+"answer2": "Blue Devils"},
+
+{ "question": "Brown",
+ "answer": "Providence Rhode Island",
+ "image": "images/Brown.png",
+"answer2": "Bears"},
+
+{ "question": "John's Hopkins",
+ "answer": "Baltimore",
+ "image": "images/John's Hopkins.png",
+"answer2": "Blue Jays"},
+
+{ "question": "Northwestern",
+ "answer": "Evanston Illinois",
+ "image": "images/Northwestern.png",
+"answer2": "Wildcats"},
+
+{ "question": "Columbia",
+ "answer": "NYC",
+ "image": "images/Columbia.png",
+"answer2": "Lions"},
+
+{ "question": "Cornell",
+ "answer": "Ithaca New York",
+ "image": "images/Cornell.png",
+"answer2": "Big Red"},
+
+{ "question": "University of Chicago",
+ "answer": "Chicago",
+ "image": "images/University of Chicago.png",
+"answer2": "Maroons"},
+
+{ "question": "Berkeley (University of California)",
+ "answer": "Berkeley",
+ "image": "images/Berkeley.png",
+"answer2": "Golden Bears"},
+
+{ "question": "Rice",
+ "answer": "Houston Texas",
+ "image": "images/Rice.png",
+"answer2": "Owls"},
+
+{ "question": "Dartmouth",
+ "answer": "Hanover New Hampshire",
+ "image": "images/Dartmouth.png",
+"answer2": "Big Green"},
+
+{ "question": "Vanderbilt",
+ "answer": "Nashville",
+ "image": "images/Vanderbilt.png",
+"answer2": "Commodores"},
+
+{ "question": "University of Notre Dame",
+ "answer": "Notre Dame Indiana",
+ "image": "images/University of Notre Dame.png",
+"answer2": "Fighting Irish"},
+
+{ "question": "University of Michigan",
+ "answer": "Ann Arbor",
+ "image": "images/University of Michigan.png",
+"answer2": "Wolverines"},
+
+{ "question": "Georgetown",
+ "answer": "Washington DC",
+ "image": "images/Georgetown.png",
+"answer2": "Hoyas"},
+
+{ "question": "Carnegie Mellon University",
+ "answer": "Pittsburgh",
+ "image": "images/Carnegie Mellon University.png",
+"answer2": "Tartan"},
+
+{ "question": "Emory",
+ "answer": "Brookhaven Georgia",
+ "image": "images/Emory.png",
+"answer2": "Eagles"},
+
+{ "question": "University of Virginia",
+ "answer": "Charlottesville Virginia",
+ "image": "images/University of Virginia.png",
+"answer2": "Cavaliers"},
+
+{ "question": "University of Florida",
+ "answer": "Gainesville Florida",
+ "image": "images/University of Florida.png",
+"answer2": "Gators"},
+
+{ "question": "University of Southern California",
+ "answer": "Los Angeles",
+ "image": "images/University of Southern California.png",
+"answer2": "Trojans"},
+
+{ "question": "Georgia Tech",
+ "answer": "Atlanta",
+ "image": "images/Georgia Tech.png",
+"answer2": "Yellow Jackets"},
+
+{ "question": "Boston College",
+ "answer": "Chestnut Hill Massachusetts",
+ "image": "images/Boston College.png",
+"answer2": "Eagles"},
+
+{ "question": "Rutgers",
+ "answer": "New Brunswick New Jersey",
+ "image": "images/Rutgers.png",
+"answer2": "Scarlet Knights"},
+
+{ "question": "Tufts",
+ "answer": "Medford and Somerville Massachusetts",
+ "image": "images/Tufts.png",
+"answer2": "Jumbos"},
+
+{ "question": "University of Washington",
+ "answer": "Seattle Washington",
+ "image": "images/University of Washington.png",
+"answer2": "Huskies"},
+
+{ "question": "Purdue",
+ "answer": "West Lafayette Indiana",
+ "image": "images/Purdue.png",
+"answer2": "Boilermakers"},
+
+{ "question": "Lehigh",
+ "answer": "Bethlehem Pennsylvania",
+ "image": "images/Lehigh.png",
+"answer2": "Mountain Hawks"},
+
+{ "question": "Texas A&M",
+ "answer": "College Station Texas",
+ "image": "images/Texas A&M.png",
+"answer2": "Aggies"},
+
+{ "question": "University of Georgia",
+ "answer": "Athens Georgia",
+ "image": "images/University of Georgia.png",
+"answer2": "Bulldogs"},
+
+{ "question": "Virginia Tech",
+ "answer": "Blacksburg Virginia",
+ "image": "images/Virginia Tech.png",
+"answer2": "Hokies"},
+
+{ "question": "Wake Forest",
+ "answer": "Winston-Salem North Carolina",
+ "image": "images/Wake Forest.png",
+"answer2": "Demon Deacons"}
+]

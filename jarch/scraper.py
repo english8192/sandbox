@@ -5,6 +5,21 @@ from icecream import ic
 import re
 
 
+def extract_category_dollar_value(text):
+    match = re.search(r'^(.*?)(?:\$(\d+)):', text)
+    if match:
+        category = match.group(1).strip()
+        dollar_value = match.group(2) if match.group(2) else 'Unknown'
+        return category, dollar_value
+    return 'Unknown', 'Unknown'
+
+def clean_question_text(question_text, answer_text):
+
+    # Remove any occurrence of the answer text from the question text
+    question_text_cleaned1 = re.sub(r'^\s*.*?\$(\d+):', '', question_text).strip()
+    question_text_cleaned2 = re.sub(re.escape(answer_text), '', question_text_cleaned1).strip()
+    return question_text_cleaned2
+
 def scrape_questions(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
@@ -46,19 +61,16 @@ def scrape_questions(url):
             if answer_span:
                 answer_text = answer_span.get_text(strip=True)
                 
-                # Clean up the question text by removing the answer part if included
-                # Remove any occurrence of the answer text from the question text
-                mdata=re.match(r'^(.*?:)',question_text).group(1)
-                category=re.match(r'^(.*?)\$(\d+)',mdata).group(1)
-                dollar_value=re.match(r'^(.*?)\$(\d+)',mdata).group(2)
-                question_text_cleaned1 = re.sub(r'^(.*?:)', '', question_text).strip()
-
-                question_text_cleaned2 = re.sub(re.escape(answer_text), '', question_text_cleaned1).strip()
+                # Extract category and dollar value
+                category, dollar_value = extract_category_dollar_value(question_text)
+                
+                # Clean up the question text
+                question_text_cleaned = clean_question_text(question_text, answer_text)
 
                 questions.append({
                     'category': category,
-                    'dollar_value':dollar_value,
-                    'question': question_text_cleaned2,
+                    'dollar_value': dollar_value,
+                    'question': question_text_cleaned,
                     'answer': answer_text
                 })
                 
@@ -67,7 +79,7 @@ def scrape_questions(url):
     ic(questions[0])
     return questions
 def main():
-    url = 'https://j-archive.com/search.php?search=potent+potables&submit=Search'
+    url = 'https://j-archive.com/search.php?search=geography&submit=Search'
     questions = scrape_questions(url)
     
     # Save the scraped questions to a JSON file

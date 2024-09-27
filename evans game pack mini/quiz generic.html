@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>___TITLE___</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #2f4f4f;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    select {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    #regionSelect {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: auto;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+	
+	#question {
+	font-size: 30px;
+	font-weight: bold;
+	
+	}
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      font-weight: bold;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <p id="questionNumber"></p>
+
+    <p id="question"></p>
+    <img id="questionImage" style="max-width: 100%; display: none;" alt="Question Image">
+
+    <input type="text" id="answerInput" placeholder="placeholder" onkeypress="handleKeyPress(event)">
+    <button onclick="checkAnswer()">Check</button>
+    <button onclick="showAnswer()">Show Answer</button>
+    <p id="result"></p>
+  </div>
+  <select id="regionSelect" onchange="selectRegion()">
+    <option value = "test_option">Test Option2</option>
+    <!-- <option value="all">All Regions</option>
+    <option value="north america">North America</option>
+    <option value="south america">South America</option>
+    <option value="central america/caribbean">Central America/Caribbean</option>
+    <option value="asia">Asia</option>
+    <option value="africa">Africa</option>
+    <option value="europe">Europe</option>
+    <option value="oceania">Oceania</option> -->
+  </select>
+  
+  <script>
+
+   let items = [
+    ];
+    
+    fetch('quiz_data.json')
+      .then(response => response.json())
+      .then(data => {
+        items = data;
+        questions = [...items];
+        displayQuestion();
+      })
+      .catch(error => console.error('Error loading quiz data:', error));
+ 
+    let questions = [...items]; // Create a copy of the original questions array
+    let currentQuestion = {};
+    let threshold = 0.8; // Set the threshold for correctness
+    let questionCounter = 1;
+
+
+    function getRandomQuestion() {
+      if (questions.length === 0) {
+        // If all questions have been answered, end the game
+        endGame();
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      return questions.splice(randomIndex, 1)[0];
+    }
+
+    function endGame() {
+      document.getElementById("question").textContent = "Game Over!";
+      document.getElementById("answerInput").style.display = "none";
+      document.getElementById("result").textContent = "";
+    }
+
+    function displayQuestion() {
+    currentQuestion = getRandomQuestion();
+    if (!currentQuestion) return; // Stop if there are no more questions
+
+    document.getElementById("questionNumber").textContent = `Question ${questionCounter} / ${questions.length+questionCounter}`;
+    document.getElementById("question").textContent = currentQuestion.question;
+    document.getElementById("result").textContent = "";
+    document.getElementById("answerInput").value = "";
+
+    // Handle the image
+    const questionImage = document.getElementById("questionImage");
+    if (currentQuestion.image) {
+      questionImage.src = currentQuestion.image;
+      questionImage.style.display = "block";
+    } else {
+      questionImage.style.display = "none";
+    }
+  }
+
+
+    function selectRegion() {
+      const regionSelect = document.getElementById("regionSelect");
+      const selectedRegion = regionSelect.options[regionSelect.selectedIndex].value;
+      if (selectedRegion === "all") {
+        questions = [...items];
+      } else {
+        questions = items.filter(question => question.region.toLowerCase() === selectedRegion);
+      }
+      questionCounter = 1;
+      displayQuestion();
+    }
+
+    function checkAnswer() {
+      const answerInput = document.getElementById("answerInput").value.trim();
+      const distance = levenshtein(answerInput.toLowerCase(), currentQuestion.answer.toLowerCase());
+      const maxDistance = Math.max(answerInput.length, currentQuestion.answer.length);
+      const similarity = 1 - distance / maxDistance;
+      if (similarity >= threshold) {
+        document.getElementById("result").textContent = "Correct!";
+        questionCounter++;
+		
+        setTimeout(nextQuestion, 100); // Automatically move to next question after 1 second
+      } else {
+        document.getElementById("result").textContent = "Incorrect. Try again!";
+      }
+    }
+
+    function showAnswer() {
+      document.getElementById("result").textContent = `The answer is ${currentQuestion.answer}`;
+    }
+
+    function nextQuestion() {
+      displayQuestion();
+    }
+
+	let currentMatchIndex =-1;
+
+	function handleKeyPress(event) {
+	  if (event.key === "Enter") {
+	    event.preventDefault(); // Prevent default form submission behavior
+		checkAnswer();
+	  } else if (event.key === "Tab") {
+		event.preventDefault();
+		autofillAnswer();
+	  } else if (event.key === "Control") {
+		event.preventDefault();
+		showAnswer();
+	  }
+	}
+
+
+    function autofillAnswer() {
+      const answerInput = document.getElementById("answerInput");
+      const currentInput = answerInput.value.toLowerCase();
+	  const matchingAnswers = items.filter(question => question.answer.toLowerCase().startsWith(currentInput));			
+
+
+      if (matchingAnswers.length > 0) {
+        currentMatchIndex = (currentMatchIndex + 1) % matchingAnswers.length;
+        const matchingCapital = matchingAnswers[currentMatchIndex].answer;
+        const remainingText = matchingCapital.substring(currentInput.length);
+        answerInput.value = currentInput + remainingText;
+        answerInput.setSelectionRange(currentInput.length, answerInput.value.length);
+      } else {
+        currentMatchIndex = -1;
+      }
+    }
+
+    document.getElementById("answerInput").addEventListener("keydown", handleKeyPress);
+    document.getElementById("showAnswer").addEventListener("keydown", handleKeyPress);
+
+    // Levenshtein distance algorithm
+    function levenshtein(s1, s2) {
+      const m = s1.length;
+      const n = s2.length;
+      const d = [];
+
+      for (let i = 0; i <= m; i++) {
+        d[i] = [i];
+      }
+
+      for (let j = 0; j <= n; j++) {
+        d[0][j] = j;
+      }
+
+      for (let j = 1; j <= n; j++) {
+        for (let i = 1; i <= m; i++) {
+          if (s1[i - 1] === s2[j - 1]) {
+            d[i][j] = d[i - 1][j - 1];
+          } else {
+            d[i][j] = Math.min(
+              d[i - 1][j] + 1, // deletion
+              d[i][j - 1] + 1, // insertion
+              d[i - 1][j - 1] + 1 // substitution
+            );
+          }
+        }
+      }
+
+      return d[m][n];
+    }
+
+    // Display the first question when the page loads
+    displayQuestion();
+  </script>
+</body>
+</html>

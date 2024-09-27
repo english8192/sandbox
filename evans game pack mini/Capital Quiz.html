@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Capital Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #2f4f4f;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    select {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    #regionSelect {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: auto;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+	
+	#country {
+	font-size: 30px;
+	font-weight: bold;
+	
+	}
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <p id="questionNumber"></p>
+
+    <p id="country"></p>
+    <select id="regionSelect" onchange="selectRegion()">
+      <option value="all">All Regions</option>
+      <option value="north america">North America</option>
+      <option value="south america">South America</option>
+      <option value="central america/caribbean">Central America/Caribbean</option>
+      <option value="asia">Asia</option>
+      <option value="africa">Africa</option>
+      <option value="europe">Europe</option>
+      <option value="oceania">Oceania</option>
+    </select>
+    <input type="text" id="capitalInput" placeholder="Type the capital..." onkeypress="handleKeyPress(event)">
+    <button onclick="checkCapital()">Check</button>
+    <button onclick="showAnswer()">Show Answer</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+
+   let countries = [
+{ country: "Albania", capital: "Tirana" , region: "Europe"},
+{ country: "Andorra", capital: "Andorra la Vella" , region: "Europe"},
+{ country: "Austria", capital: "Vienna" , region: "Europe"},
+{ country: "Belarus", capital: "Minsk" , region: "Europe"},
+{ country: "Belgium", capital: "Brussels" , region: "Europe"},
+{ country: "Bosnia and Herzegovina", capital: "Sarajevo" , region: "Europe"},
+{ country: "Bulgaria", capital: "Sofia" , region: "Europe"},
+{ country: "Croatia", capital: "Zagreb" , region: "Europe"},
+{ country: "Czechia", capital: "Prague" , region: "Europe"},
+{ country: "Denmark", capital: "Copenhagen" , region: "Europe"},
+{ country: "Estonia", capital: "Tallinn" , region: "Europe"},
+{ country: "Finland", capital: "Helsinki" , region: "Europe"},
+{ country: "France", capital: "Paris" , region: "Europe"},
+{ country: "Germany", capital: "Berlin" , region: "Europe"},
+{ country: "Greece", capital: "Athens" , region: "Europe"},
+{ country: "Hungary", capital: "Budapest" , region: "Europe"},
+{ country: "Iceland", capital: "Reykjavík" , region: "Europe"},
+{ country: "Ireland", capital: "Dublin" , region: "Europe"},
+{ country: "Italy", capital: "Rome" , region: "Europe"},
+{ country: "Kosovo", capital: "Pristina" , region: "Europe"},
+{ country: "Latvia", capital: "Riga" , region: "Europe"},
+{ country: "Liechtenstein", capital: "Vaduz" , region: "Europe"},
+{ country: "Lithuania", capital: "Vilnius" , region: "Europe"},
+{ country: "Luxembourg", capital: "Luxembourg" , region: "Europe"},
+{ country: "Malta", capital: "Valletta" , region: "Europe"},
+{ country: "Moldova", capital: "Chisinau" , region: "Europe"},
+{ country: "Monaco", capital: "Monaco" , region: "Europe"},
+{ country: "Montenegro", capital: "Podgorica" , region: "Europe"},
+{ country: "Netherlands", capital: "Amsterdam" , region: "Europe"},
+{ country: "North Macedonia", capital: "Skopje" , region: "Europe"},
+{ country: "Norway", capital: "Oslo" , region: "Europe"},
+{ country: "Poland", capital: "Warsaw" , region: "Europe"},
+{ country: "Portugal", capital: "Lisbon" , region: "Europe"},
+{ country: "Romania", capital: "Bucharest" , region: "Europe"},
+{ country: "Russia", capital: "Moscow" , region: "Europe"},
+{ country: "San Marino", capital: "San Marino" , region: "Europe"},
+{ country: "Serbia", capital: "Belgrade" , region: "Europe"},
+{ country: "Slovakia", capital: "Bratislava" , region: "Europe"},
+{ country: "Slovenia", capital: "Ljubljana" , region: "Europe"},
+{ country: "Spain", capital: "Madrid" , region: "Europe"},
+{ country: "Sweden", capital: "Stockholm" , region: "Europe"},
+{ country: "Switzerland", capital: "Bern" , region: "Europe"},
+{ country: "Ukraine", capital: "Kyiv" , region: "Europe"},
+{ country: "United Kingdom", capital: "London" , region: "Europe"},
+{ country: "The Vatican", capital: "Vatican City" , region: "Europe"},
+{ country: "Antigua and Barbuda", capital: "Saint John’s" , region: "Central America/Caribbean"},
+{ country: "Argentina", capital: "Buenos Aires" , region: "South America"},
+{ country: "Bahamas", capital: "Nassau" , region: "Central America/Caribbean"},
+{ country: "Barbados", capital: "Bridgetown" , region: "Central America/Caribbean"},
+{ country: "Belize", capital: "Belmopan" , region: "Central America/Caribbean"},
+{ country: "Bolivia", capital: "Sucre La Paz" , region: "South America"},
+{ country: "Brazil", capital: "Brasilia" , region: "South America"},
+{ country: "Canada", capital: "Ottawa" , region: "North America"},
+{ country: "Chile", capital: "Santiago" , region: "South America"},
+{ country: "Colombia", capital: "Bogota" , region: "South America"},
+{ country: "Costa Rica", capital: "San José" , region: "Central America/Caribbean"},
+{ country: "Cuba", capital: "Havana" , region: "Central America/Caribbean"},
+{ country: "Dominica", capital: "Roseau" , region: "Central America/Caribbean"},
+{ country: "Dominican Republic", capital: "Santo Domingo" , region: "Central America/Caribbean"},
+{ country: "Ecuador", capital: "Quito" , region: "South America"},
+{ country: "El Salvador", capital: "San Salvador" , region: "Central America/Caribbean"},
+{ country: "Grenada", capital: "Saint George's" , region: "Central America/Caribbean"},
+{ country: "Guatemala", capital: "Guatemala City" , region: "Central America/Caribbean"},
+{ country: "Guyana", capital: "Georgetown" , region: "South America"},
+{ country: "Haiti", capital: "PortauPrince" , region: "Central America/Caribbean"},
+{ country: "Honduras", capital: "Tegucigalpa" , region: "Central America/Caribbean"},
+{ country: "Jamaica", capital: "Kingston" , region: "Central America/Caribbean"},
+{ country: "Mexico", capital: "Mexico City" , region: "North America"},
+{ country: "Nicaragua", capital: "Managua" , region: "Central America/Caribbean"},
+{ country: "Panama", capital: "Panama City" , region: "Central America/Caribbean"},
+{ country: "Paraguay", capital: "Asuncion" , region: "South America"},
+{ country: "Peru", capital: "Lima" , region: "South America"},
+{ country: "Puerto Rico", capital: "San Juan" , region: "Central America/Caribbean"},
+{ country: "Saint Kitts and Nevis", capital: "Basseterre" , region: "Central America/Caribbean"},
+{ country: "Saint Lucia", capital: "Castries" , region: "Central America/Caribbean"},
+{ country: "Saint Vincent and the Grenadines", capital: "Kingstown" , region: "Central America/Caribbean"},
+{ country: "Suriname", capital: "Paramaribo" , region: "South America"},
+{ country: "Trinidad and Tobago", capital: "PortofSpain" , region: "Central America/Caribbean"},
+{ country: "United States", capital: "DC" , region: "North America"},
+{ country: "Uruguay", capital: "Montevideo" , region: "South America"},
+{ country: "Venezuela", capital: "Caracas" , region: "South America"},
+{ country: "Afghanistan", capital: "Kabul" , region: "Asia"},
+{ country: "Armenia", capital: "Yerevan" , region: "Asia"},
+{ country: "Azerbaijan", capital: "Baku" , region: "Asia"},
+{ country: "Bahrain", capital: "Manama" , region: "Asia"},
+{ country: "Bangladesh", capital: "Dhaka" , region: "Asia"},
+{ country: "Bhutan", capital: "Thimphu" , region: "Asia"},
+{ country: "Brunei", capital: "Bandar Seri Begawan" , region: "Asia"},
+{ country: "Cambodia", capital: "Phnom Penh" , region: "Asia"},
+{ country: "China", capital: "Beijing" , region: "Asia"},
+{ country: "Cyprus", capital: "Nicosia" , region: "Europe"},
+{ country: "East Timor", capital: "Dili" , region: "Asia"},
+{ country: "Georgia", capital: "Tbilisi" , region: "Asia"},
+{ country: "India", capital: "New Delhi" , region: "Asia"},
+{ country: "Indonesia", capital: "Jakarta" , region: "Asia"},
+{ country: "Iran", capital: "Tehran" , region: "Asia"},
+{ country: "Iraq", capital: "Baghdad" , region: "Asia"},
+{ country: "Israel", capital: "Jerusalem" , region: "Asia"},
+{ country: "Japan", capital: "Tokyo" , region: "Asia"},
+{ country: "Jordan", capital: "Amman" , region: "Asia"},
+{ country: "Kazakhstan", capital: "Astana" , region: "Asia"},
+{ country: "Kuwait", capital: "Kuwait City" , region: "Asia"},
+{ country: "Kyrgyzstan", capital: "Bishkek" , region: "Asia"},
+{ country: "Laos", capital: "Vientiane" , region: "Asia"},
+{ country: "Lebanon", capital: "Beirut" , region: "Asia"},
+{ country: "Malaysia", capital: "Kuala Lumpur" , region: "Asia"},
+{ country: "Maldives", capital: "Male" , region: "Asia"},
+{ country: "Mongolia", capital: "Ulaanbaatar" , region: "Asia"},
+{ country: "Myanmar", capital: "Naypyidaw" , region: "Asia"},
+{ country: "Nepal", capital: "Kathmandu" , region: "Asia"},
+{ country: "North Korea", capital: "Pyongyang" , region: "Asia"},
+{ country: "Oman", capital: "Muscat" , region: "Asia"},
+{ country: "Pakistan", capital: "Islamabad" , region: "Asia"},
+{ country: "Palestine", capital: "Ramallah " , region: "Asia"},
+{ country: "Philippines", capital: "Manila" , region: "Asia"},
+{ country: "Qatar", capital: "Doha" , region: "Asia"},
+{ country: "Saudi Arabia", capital: "Riyadh" , region: "Asia"},
+{ country: "Singapore", capital: "Singapore" , region: "Asia"},
+{ country: "South Korea", capital: "Seoul" , region: "Asia"},
+{ country: "Sri Lanka", capital: "Sri Jayawardenepura Kotte" , region: "Asia"},
+{ country: "Syria", capital: "Damascus" , region: "Asia"},
+{ country: "Taiwan", capital: "Taipei" , region: "Asia"},
+{ country: "Tajikistan", capital: "Dushanbe" , region: "Asia"},
+{ country: "Thailand", capital: "Bangkok" , region: "Asia"},
+{ country: "Turkey", capital: "Ankara" , region: "Asia"},
+{ country: "Turkmenistan", capital: "Ashgabat" , region: "Asia"},
+{ country: "United Arab Emirates", capital: "Abu Dhabi" , region: "Asia"},
+{ country: "Uzbekistan", capital: "Tashkent" , region: "Asia"},
+{ country: "Vietnam", capital: "Hanoi" , region: "Asia"},
+{ country: "Yemen", capital: "Sanaa" , region: "Africa"},
+{ country: "Algeria", capital: "Algiers" , region: "Africa"},
+{ country: "Angola", capital: "Luanda" , region: "Africa"},
+{ country: "Benin", capital: "PortoNovo" , region: "Africa"},
+{ country: "Botswana", capital: "Gaborone" , region: "Africa"},
+{ country: "Burkina Faso", capital: "Ouagadougou" , region: "Africa"},
+{ country: "Burundi", capital: "Gitega" , region: "Africa"},
+{ country: "Cameroon", capital: "Yaounde" , region: "Africa"},
+{ country: "Cape Verde", capital: "Praia" , region: "Africa"},
+{ country: "Central African Republic", capital: "Bangui" , region: "Africa"},
+{ country: "Chad", capital: "NDjamena" , region: "Africa"},
+{ country: "Comoros", capital: "Moroni" , region: "Africa"},
+{ country: "Republic of the Congo", capital: "Brazzaville" , region: "Africa"},
+{ country: "Democratic Republic of the Congo", capital: "Kinshasa" , region: "Africa"},
+{ country: "Djibouti", capital: "Djibouti" , region: "Africa"},
+{ country: "Egypt", capital: "Cairo" , region: "Africa"},
+{ country: "Equatorial Guinea", capital: "Malabo" , region: "Africa"},
+{ country: "Eritrea", capital: "Asmara" , region: "Africa"},
+{ country: "Eswatini", capital: "Mbabane" , region: "Africa"},
+{ country: "Ethiopia", capital: "Addis Ababa" , region: "Africa"},
+{ country: "Gabon", capital: "Libreville" , region: "Africa"},
+{ country: "Gambia", capital: "Banjul" , region: "Africa"},
+{ country: "Ghana", capital: "Accra" , region: "Africa"},
+{ country: "Guinea", capital: "Conakry" , region: "Africa"},
+{ country: "Guinea-Bissau", capital: "Bissau" , region: "Africa"},
+{ country: "Ivory Coast", capital: "Yamoussoukro" , region: "Africa"},
+{ country: "Kenya", capital: "Nairobi" , region: "Africa"},
+{ country: "Lesotho", capital: "Maseru" , region: "Africa"},
+{ country: "Liberia", capital: "Monrovia" , region: "Africa"},
+{ country: "Libya", capital: "Tripoli" , region: "Africa"},
+{ country: "Madagascar", capital: "Antananarivo" , region: "Africa"},
+{ country: "Malawi", capital: "Lilongwe" , region: "Africa"},
+{ country: "Mali", capital: "Bamako" , region: "Africa"},
+{ country: "Mauritania", capital: "Nouakchott" , region: "Africa"},
+{ country: "Mauritius", capital: "Port Louis" , region: "Africa"},
+{ country: "Morocco", capital: "Rabat" , region: "Africa"},
+{ country: "Mozambique", capital: "Maputo" , region: "Africa"},
+{ country: "Namibia", capital: "Windhoek" , region: "Africa"},
+{ country: "Niger", capital: "Niamey" , region: "Africa"},
+{ country: "Nigeria", capital: "Abuja" , region: "Africa"},
+{ country: "Rwanda", capital: "Kigali" , region: "Africa"},
+{ country: "Sao Tome and Principe", capital: "Sao Tome" , region: "Africa"},
+{ country: "Senegal", capital: "Dakar" , region: "Africa"},
+{ country: "Seychelles", capital: "Victoria" , region: "Africa"},
+{ country: "Sierra Leone", capital: "Freetown" , region: "Africa"},
+{ country: "Somalia", capital: "Mogadishu" , region: "Africa"},
+{ country: "South Africa", capital: "Pretoria Bloemfontein Cape Town" , region: "Africa"},
+{ country: "South Sudan", capital: "Juba" , region: "Africa"},
+{ country: "Sudan", capital: "Khartoum" , region: "Africa"},
+{ country: "Tanzania", capital: "Dodoma" , region: "Africa"},
+{ country: "Togo", capital: "Lome" , region: "Africa"},
+{ country: "Tunisia", capital: "Tunis" , region: "Africa"},
+{ country: "Uganda", capital: "Kampala" , region: "Africa"},
+{ country: "Zambia", capital: "Lusaka" , region: "Africa"},
+{ country: "Zimbabwe", capital: "Harare" , region: "Africa"},
+{ country: "Australia", capital: "Canberra" , region: "Oceania"},
+{ country: "Fiji", capital: "Suva" , region: "Oceania"},
+{ country: "Kiribati", capital: "Tarawa" , region: "Oceania"},
+{ country: "Marshall Islands", capital: "Majuro" , region: "Oceania"},
+{ country: "Nauru", capital: "Yaren" , region: "Oceania"},
+{ country: "New Zealand", capital: "Wellington" , region: "Oceania"},
+{ country: "Papua New Guinea", capital: "Port Moresby" , region: "Oceania"},
+{ country: "Samoa", capital: "Apia" , region: "Oceania"},
+{ country: "Solomon Islands", capital: "Honiara" , region: "Oceania"},
+{ country: "Tonga", capital: "Nuku alofa" , region: "Oceania"},
+{ country: "Tuvalu", capital: "Funafuti" , region: "Oceania"},
+{ country: "Vanuatu", capital: "Port Vila" , region: "Oceania"}
+
+    ];
+
+ 
+    let questions = [...countries]; // Create a copy of the original questions array
+    let currentQuestion = {};
+    let threshold = 0.8; // Set the threshold for correctness
+    let questionCounter = 1;
+
+
+    function getRandomQuestion() {
+      if (questions.length === 0) {
+        // If all questions have been answered, end the game
+        endGame();
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      return questions.splice(randomIndex, 1)[0];
+    }
+
+    function endGame() {
+      document.getElementById("country").textContent = "Game Over!";
+      document.getElementById("capitalInput").style.display = "none";
+      document.getElementById("result").textContent = "";
+    }
+
+    function displayQuestion() {
+      currentQuestion = getRandomQuestion();
+      if (!currentQuestion) return; // Stop if there are no more questions
+      document.getElementById("questionNumber").textContent = `Question ${questionCounter} / ${questions.length+questionCounter}`;
+	  
+      document.getElementById("country").textContent = `${currentQuestion.country}`;
+      document.getElementById("result").textContent = "";
+      document.getElementById("capitalInput").value = "";
+	  
+    }
+
+    function selectRegion() {
+      const regionSelect = document.getElementById("regionSelect");
+      const selectedRegion = regionSelect.options[regionSelect.selectedIndex].value;
+      if (selectedRegion === "all") {
+        questions = [...countries];
+      } else {
+        questions = countries.filter(country => country.region.toLowerCase() === selectedRegion);
+      }
+      questionCounter = 1;
+      displayQuestion();
+    }
+
+    function checkCapital() {
+      const capitalInput = document.getElementById("capitalInput").value.trim();
+      const distance = levenshtein(capitalInput.toLowerCase(), currentQuestion.capital.toLowerCase());
+      const maxDistance = Math.max(capitalInput.length, currentQuestion.capital.length);
+      const similarity = 1 - distance / maxDistance;
+      if (similarity >= threshold) {
+        document.getElementById("result").textContent = "Correct!";
+        questionCounter++;
+		
+        setTimeout(nextQuestion, 100); // Automatically move to next question after 1 second
+      } else {
+        document.getElementById("result").textContent = "Incorrect. Try again!";
+      }
+    }
+
+    function showAnswer() {
+      document.getElementById("result").textContent = `The answer is ${currentQuestion.capital}`;
+    }
+
+    function nextQuestion() {
+      displayQuestion();
+    }
+
+	let currentMatchIndex =-1;
+
+	function handleKeyPress(event) {
+	  if (event.key === "Enter") {
+	    event.preventDefault(); // Prevent default form submission behavior
+		checkCapital();
+	  } else if (event.key === "Tab") {
+		event.preventDefault();
+		autofillCapital();
+	  }
+	}
+
+
+    function autofillCapital() {
+      const capitalInput = document.getElementById("capitalInput");
+      const currentInput = capitalInput.value.toLowerCase();
+	  const matchingCapitals = countries.filter(country => country.capital.toLowerCase().startsWith(currentInput));			
+
+
+      if (matchingCapitals.length > 0) {
+        currentMatchIndex = (currentMatchIndex + 1) % matchingCapitals.length;
+        const matchingCapital = matchingCapitals[currentMatchIndex].capital;
+        const remainingText = matchingCapital.substring(currentInput.length);
+        capitalInput.value = currentInput + remainingText;
+        capitalInput.setSelectionRange(currentInput.length, capitalInput.value.length);
+      } else {
+        currentMatchIndex = -1;
+      }
+    }
+
+    document.getElementById("capitalInput").addEventListener("keydown", handleKeyPress);
+
+    // Levenshtein distance algorithm
+    function levenshtein(s1, s2) {
+      const m = s1.length;
+      const n = s2.length;
+      const d = [];
+
+      for (let i = 0; i <= m; i++) {
+        d[i] = [i];
+      }
+
+      for (let j = 0; j <= n; j++) {
+        d[0][j] = j;
+      }
+
+      for (let j = 1; j <= n; j++) {
+        for (let i = 1; i <= m; i++) {
+          if (s1[i - 1] === s2[j - 1]) {
+            d[i][j] = d[i - 1][j - 1];
+          } else {
+            d[i][j] = Math.min(
+              d[i - 1][j] + 1, // deletion
+              d[i][j - 1] + 1, // insertion
+              d[i - 1][j - 1] + 1 // substitution
+            );
+          }
+        }
+      }
+
+      return d[m][n];
+    }
+
+    // Display the first question when the page loads
+    displayQuestion();
+  </script>
+</body>
+</html>

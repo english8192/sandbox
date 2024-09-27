@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flag Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #2f4f4f;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      max-width: 50%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      font-weight: bold;
+    }
+
+    .firework-container {
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .firework {
+      position: absolute;
+      width: 70px;
+      height: 70px; /*change these to change size of firework images*/
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      pointer-events: none;
+      animation: explode 0.5s ease-out forwards, move 0.5s linear forwards;
+    }
+
+    @keyframes explode {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(50);
+        opacity: 0;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translate(-50%, -50%);
+      }
+      100% {
+        transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy)));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <p id="questionNumber"></p>
+    <img id="flagImage" src="" alt="Flag Image">
+    <input type="text" id="countryInput" placeholder="Type the country name..." onkeypress="handleKeyPress(event)">
+    <button onclick="checkCountry()">Check</button>
+    <button onclick="showAnswer()">Show Answer</button>
+    <p id="result"></p>
+    <div class="firework-container" id="fireworkContainer"></div>
+  </div>
+
+  <script>
+    let flags = [
+      "afghanistan.png",
+"albania.png",
+"algeria.png",
+"andorra.png",
+"angola.png",
+"antigua and barbuda.png",
+"argentina.png",
+"armenia.png",
+"australia.png",
+"austria.png",
+"azerbaijan.png",
+"bahamas.png",
+"bahrain.png",
+"bangladesh.png",
+"barbados.png",
+"belarus.png",
+"belgium.png",
+"belize.png",
+"benin.png",
+"bhutan.png",
+"bolivia.png",
+"bosnia and herzegovina.png",
+"botswana.png",
+"brazil.png",
+"brunei.png",
+"bulgaria.png",
+"burkina faso.png",
+"burundi.png",
+"cambodia.png",
+"cameroon.png",
+"canada.png",
+"cape verde.png",
+"car.png",
+"chad.png",
+"chile.png",
+"china.png",
+"colombia.png",
+"comoros.png",
+"costa rica.png",
+"croatia.png",
+"cuba.png",
+"cyprus.png",
+"czechia.png",
+"denmark.png",
+"djibouti.png",
+"dominica.png",
+"dominican republic.png",
+"drc.png",
+"east timor.png",
+"ecuador.png",
+"egypt.png",
+"el salvador.png",
+"equatorial guinea.png",
+"eritrea.png",
+"estonia.png",
+"eswatini.png",
+"ethiopia.png",
+"fiji.png",
+"finland.png",
+"france.png",
+"french guiana.png",
+"gabon.png",
+"gambia.png",
+"england.png",
+"germany.png",
+"ghana.png",
+"greece.png",
+"greeland.png",
+"grenada.png",
+"guatemala.png",
+"guinea bissau.png",
+"guinea.png",
+"guyana.png",
+"haiti.png",
+"honduras.png",
+"hong kong.png",
+"hungary.png",
+"india.png",
+"iran.png",
+"iraq.png",
+"ireland.png",
+"iceland.png",
+"israel.png",
+"italy.png",
+"ivory coast.png",
+"jamaica.png",
+"japan.png",
+"jordan.png",
+"kazakhstan.png",
+"kenya.png",
+"kiribati.png",
+"south korea.png",
+"kosovo.png",
+"kuwait.png",
+"kyrgyzstan.png",
+"laos.png",
+"latvia.png",
+"lebanon.png",
+"lesotho.png",
+"liberia.png",
+"libya.png",
+"liechtenstein.png",
+"lithuania.png",
+"luxembourg.png",
+"macedonia.png",
+"madagascar.png",
+"malawi.png",
+"malaysia.png",
+"maldives.png",
+"mali.png",
+"malta.png",
+"marshall islands.png",
+"mauritania.png",
+"mauritius.png",
+"mexico.png",
+"micronesia.png",
+"moldova.png",
+"monaco.png",
+"mongolia.png",
+"montenegro.png",
+"morocco.png",
+"mozambique.png",
+"myanmar.png",
+"namibia.png",
+"nauru.png",
+"nepal.png",
+"netherlands.png",
+"new zealand.png",
+"nicaragua.png",
+"niger.png",
+"nigeria.png",
+"north korea.png",
+"norway.png",
+"oman.png",
+"pakistan.png",
+"palau.png",
+"palestine.png",
+"panama.png",
+"papua new guinea.png",
+"paraguay.png",
+"peru.png",
+"phillipines.png",
+"poland.png",
+"portugal.png",
+"puerto rico.png",
+"qatar.png",
+"roc.png",
+"romania.png",
+"russia.png",
+"rwanda.png",
+"samoa.png",
+"san marino.png",
+"sao tome and principe.png",
+"saudi arabia.png",
+"senegal.png",
+"serbia.png",
+"seychelles.png",
+"sierra leone.png",
+"singapore.png",
+"slovakia.png",
+"slovenia.png",
+"solomon islands.png",
+"somalia.png",
+"south africa.png",
+"south sudan.png",
+"spain.png",
+"sri lanka.png",
+"st kitts and nevis.png",
+"st lucia.png",
+"st vincent and grenadines.png",
+"sudan.png",
+"suriname.png",
+"sweden.png",
+"switzerland.png",
+"syria.png",
+"taiwan.png",
+"tajikistan.png",
+"tanzania.png",
+"thailand.png",
+"togo.png",
+"tonga.png",
+"trinidad.png",
+"tunisia.png",
+"turkey.png",
+"turkmenistan.png",
+"tuvalu.png",
+"uae.png",
+"uganda.png",
+"uk.png",
+"ukraine.png",
+"uruguay.png",
+"usa.png",
+"uzbekistan.png",
+"vanuatu.png",
+"vatican city.png",
+"venezuela.png",
+"vietnam.png",
+"yemen.png",
+"zambia.png",
+"zimbabwe.png"
+      // Add more flag image filenames here...
+    ];
+    let questions = [...flags];
+    let currentQuestion = {};
+    let threshold = 0.8;
+    let questionCounter = 1;
+
+    function getRandomQuestion() {
+      if (questions.length === 0) {
+        endGame();
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      return questions.splice(randomIndex, 1)[0];
+    }
+
+    function endGame() {
+      document.getElementById("flagImage").style.display = "none";
+      document.getElementById("countryInput").style.display = "none";
+      document.getElementById("result").textContent = "Game Over!";
+    }
+
+    function displayQuestion() {
+      const randomFlag = getRandomQuestion();
+      if (!randomFlag) return;
+	  
+	  
+
+      const flagPath = randomFlag;
+      document.getElementById("flagImage").src = flagPath;
+      document.getElementById("flagImage").style.display = "block";
+      document.getElementById("questionNumber").textContent = `Question ${questionCounter} / ${questions.length}`;
+      currentQuestion = { country: randomFlag.split(".")[0].toUpperCase() };
+      document.getElementById("result").textContent = "";
+      document.getElementById("countryInput").value = "";
+    }
+
+    function checkCountry() {
+      const countryInput = document.getElementById("countryInput").value.trim();
+      const distance = levenshtein(countryInput.toLowerCase(), currentQuestion.country.toLowerCase());
+      const maxDistance = Math.max(countryInput.length, currentQuestion.country.length);
+      const similarity = 1 - distance / maxDistance;
+
+      if (similarity >= threshold) {
+        document.getElementById("result").textContent = "Correct!";
+        questionCounter++;
+        playFirework();
+        setTimeout(nextQuestion, 0);
+      } else {
+        document.getElementById("result").textContent = "Incorrect. Try again!";
+      }
+    }
+
+    function showAnswer() {
+      document.getElementById("result").textContent = `The answer is ${currentQuestion.country}`;
+    }
+
+    function nextQuestion() {
+      displayQuestion();
+      document.getElementById("result").textContent = "";
+    }
+	
+let currentMatchIndex = -1;
+
+function handleKeyPress(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent default form submission behavior
+    checkCountry();
+  } else if (event.key === "Tab") {
+    event.preventDefault();
+    autofillCountry();
+  }
+}
+
+function autofillCountry() {
+  const countryInput = document.getElementById("countryInput");
+  const currentInput = countryInput.value.toLowerCase();
+  const matchingCountries = flags.filter(flag => flag.toLowerCase().startsWith(currentInput));
+
+  if (matchingCountries.length > 0) {
+    currentMatchIndex = (currentMatchIndex + 1) % matchingCountries.length;
+    const matchingCountry = matchingCountries[currentMatchIndex];
+    const countryName = matchingCountry.split(".")[0]; // Remove file extension
+    const remainingText = countryName.substring(currentInput.length);
+    countryInput.value = currentInput + remainingText;
+    countryInput.setSelectionRange(currentInput.length, countryInput.value.length);
+  } else {
+    currentMatchIndex = -1;
+  }
+}
+
+document.getElementById("countryInput").addEventListener("keydown", handleKeyPress);
+
+    function playFirework() {
+      const fireworkContainer = document.getElementById("fireworkContainer");
+      const flagImage = document.getElementById("flagImage").src;
+      const numParticles = 250;
+      const spread = 1000;
+
+      for (let i = 0; i < numParticles; i++) {
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * spread;
+        const x = Math.cos(angle) * distance;
+        const y = Math.sin(angle) * distance;
+
+        const firework = document.createElement("div");
+        firework.className = "firework";
+        firework.style.top = `50%`;
+        firework.style.left = `50%`;
+        firework.style.setProperty('--dx', `${x}px`);
+        firework.style.setProperty('--dy', `${y}px`);
+        firework.style.backgroundImage = `url(${flagImage})`;
+        fireworkContainer.appendChild(firework);
+        setTimeout(() => {
+          firework.remove();
+        }, 700);
+      }
+    }
+
+    function levenshtein(s1, s2) {
+      const m = s1.length;
+      const n = s2.length;
+      const d = [];
+
+      for (let i = 0; i <= m; i++) {
+        d[i] = [i];
+      }
+
+      for (let j = 0; j <= n; j++) {
+        d[0][j] = j;
+      }
+
+      for (let j = 1; j <= n; j++) {
+        for (let i = 1; i <= m; i++) {
+          if (s1[i - 1] === s2[j - 1]) {
+            d[i][j] = d[i - 1][j - 1];
+          } else {
+            d[i][j] = Math.min(
+              d[i - 1][j] + 1,
+              d[i][j - 1] + 1,
+              d[i - 1][j - 1] + 1
+            );
+          }
+        }
+      }
+
+      return d[m][n];
+    }
+
+    displayQuestion();
+  </script>
+</body>
+</html>

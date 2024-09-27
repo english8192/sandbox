@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universities of USA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #2f4f4f;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    select {
+      width: calc(100% - 80px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+	
+	#question {
+	font-size: 30px;
+	font-weight: bold;
+	
+	}
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <p id="questionNumber"></p>
+
+    <p id="question"></p>
+    <img id="questionImage" style="max-width: 300px; max-height: 300px ; display: none;"  alt="">
+
+    <input type="text" id="answerInput1" placeholder="Location" onkeypress="handleKeyPress(event)">
+    <input type="text" id="answerInput2" placeholder="Mascot" onkeypress="handleKeyPress(event)">
+    <button onclick="checkAnswer()">Check</button>
+    <button onclick="showAnswer()">Show Answer</button>
+    <p id="result"></p>
+  </div>
+  
+  <script>
+
+   let items = [
+   ];
+
+   fetch('quiz_data.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Quiz data loaded successfully:', data); // For debugging
+        items = data;
+        questions = [...items];
+        displayQuestion();
+      })
+      .catch(error => {
+        console.error('Error loading quiz data:', error);
+        document.getElementById("question").textContent = "Failed to load quiz data.";
+      });
+
+    let questions = [...items];
+    let currentQuestion = {};
+    let threshold = 0.8;
+    let questionCounter = 1;
+
+    function getRandomQuestion() {
+      if (questions.length === 0) {
+        endGame();
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      return questions.splice(randomIndex, 1)[0];
+    }
+
+    function endGame() {
+      document.getElementById("question").textContent = "Game Over!";
+      document.getElementById("answerInput1").style.display = "none";
+      document.getElementById("answerInput2").style.display = "none";
+      document.getElementById("result").textContent = "";
+    }
+
+    function displayQuestion() {
+      currentQuestion = getRandomQuestion();
+      if (!currentQuestion) return;
+
+      document.getElementById("questionNumber").textContent = `Question ${questionCounter} / ${questions.length+questionCounter}`;
+      document.getElementById("question").textContent = `${currentQuestion.question}`;
+      document.getElementById("result").textContent = "";
+      document.getElementById("answerInput1").value = "";
+      document.getElementById("answerInput2").value = "";
+      document.getElementById("answerInput1").focus()
+      const questionImage = document.getElementById("questionImage");
+      if (currentQuestion.image) {
+        questionImage.src = currentQuestion.image;
+        questionImage.style.display = "block";
+      } else {
+        questionImage.style.display = "none";
+      }
+    }
+
+    function checkAnswer() {
+      const answerInput1 = document.getElementById("answerInput1").value.trim();
+      const answerInput2 = document.getElementById("answerInput2").value.trim();
+
+      const distance1 = levenshtein(answerInput1.toLowerCase(), currentQuestion.answer.toLowerCase());
+      const distance2 = levenshtein(answerInput2.toLowerCase(), currentQuestion.answer2.toLowerCase());
+
+      const maxDistance1 = Math.max(answerInput1.length, currentQuestion.answer.length);
+      const maxDistance2 = Math.max(answerInput2.length, currentQuestion.answer2.length);
+
+      const similarity1 = 1 - distance1 / maxDistance1;
+      const similarity2 = 1 - distance2 / maxDistance2;
+
+      if (similarity1 >= threshold && similarity2 >= threshold) {
+        document.getElementById("result").textContent = "Both answers are correct!";
+        questionCounter++;
+        setTimeout(nextQuestion, 100);
+      } else {
+        document.getElementById("result").textContent = "One or both answers are incorrect. Try again!";
+      }
+    }
+
+    function showAnswer() {
+      document.getElementById("result").textContent = `The answers are ${currentQuestion.answer} and ${currentQuestion.answer2}`;
+    }
+
+    function nextQuestion() {
+      displayQuestion();
+    }
+
+    function handleKeyPress(event) {
+	  if (event.key === "Enter") {
+	    event.preventDefault(); // Prevent default form submission behavior
+		checkAnswer();
+	  //} //else if (event.key === "Tab") {
+		//event.preventDefault();
+		//autofillAnswer();
+	  } else if (event.key === "Control") {
+		event.preventDefault();
+		showAnswer();
+	  }
+	}
+
+
+
+    document.getElementById("answerInput1").addEventListener("keydown", handleKeyPress);
+    document.getElementById("answerInput2").addEventListener("keydown", handleKeyPress);
+    document.getElementById("showAnswer").addEventListener("keydown", handleKeyPress);
+
+
+    function levenshtein(s1, s2) {
+      const m = s1.length;
+      const n = s2.length;
+      const d = [];
+      for (let i = 0; i <= m; i++) {
+        d[i] = [i];
+      }
+      for (let j = 0; j <= n; j++) {
+        d[0][j] = j;
+      }
+      for (let j = 1; j <= n; j++) {
+        for (let i = 1; i <= m; i++) {
+          if (s1[i - 1] === s2[j - 1]) {
+            d[i][j] = d[i - 1][j - 1];
+          } else {
+            d[i][j] = Math.min(
+              d[i - 1][j] + 1,
+              d[i][j - 1] + 1,
+              d[i - 1][j - 1] + 1
+            );
+          }
+        }
+      }
+      return d[m][n];
+    }
+  </script>
+</body>
+</html>
