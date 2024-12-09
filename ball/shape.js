@@ -1,4 +1,4 @@
-export function createShape(x, y, width, height, speedX, speedY, color) {
+export function createShape(x, y, width, height, speedX, speedY, color, reflectint=0) {
     const canvas = document.getElementById('myCanvas');
 
     return {
@@ -10,8 +10,10 @@ export function createShape(x, y, width, height, speedX, speedY, color) {
         speedX: speedX,
         speedY: speedY,
         color : `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+        reflectint:reflectint,
 
-        move: function() {
+        move: function(intersection) {
+            
             // Check if the shape hits the canvas boundaries horizontally
             if (this.x + this.width >= canvas.width || this.x  <= 0) {
                 this.speedX = -this.speedX;
@@ -21,26 +23,40 @@ export function createShape(x, y, width, height, speedX, speedY, color) {
             if (this.y + this.height  >= canvas.height || this.y  <= 0) {
                 this.speedY = -this.speedY;
             }
-
+            
+            if (intersection == true) {
+                if (this.reflectint == 0) {
+                    
+                    this.speedX = -this.speedX;
+                    this.speedY = -this.speedY;
+                    this.reflectint++ 
+                } else if (this.reflectint > 0 && this.reflectint < this.width) {
+                    this.reflectint = 0
+                }
+            }
+            
             // Update position
             this.x += this.speedX;
             this.y += this.speedY;
         },
         getPoints: function() {
-            let vectors = []
+            // let vectors = []
             let points  = [{x:this.x,y:this.y},{x:this.x+this.width,y:this.y},{x:this.x,y:this.y+this.height},{x:this.x+this.width,y:this.y+this.height}]
 
-            for (let i = 0; i <= points.length - 1; i++) {
-                const p1 = points[i];
-                const p2 = points[(i+1) % points.length];
+        //     for (let i = 0; i <= points.length - 1; i++) {
+        //         const p1 = points[i];
+        //         const p2 = points[(i+1) % points.length];
 
-                const vector = {
-                    x:p2.x - p1.x,
-                    y:p2.y - p1.y
-                };
-                vectors.push(vector)
-        }
-        return [points,vectors]
+        //         const vector = {
+        //             x:p2.x - p1.x,
+        //             y:p2.y - p1.y
+        //         };
+        //         vectors.push(vector)
+        // }
+        
+        return points
     }
+
 }
 }
+

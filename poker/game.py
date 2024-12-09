@@ -68,7 +68,7 @@ give_stacks(player_list, 10000)
 
 
 
-get_player_by_role("LITTLE").infront = 50
+# get_player_by_role("LITTLE").infront = 50
 deck.shuffle()
 
 community=p.Community()
