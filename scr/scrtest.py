@@ -30,7 +30,7 @@ def get_color(name):
 pygame.init()
 
 # Set the screen to full-screen mode
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+
 colors = {
     "BLACK": (0, 0, 0),
     "WHITE": (255, 255, 255),
@@ -77,20 +77,122 @@ cell_width = screen_width // 95
 cell_height = screen_height // 53*2
 
 
-# Create a square
-square_size = 50
-square_x = 100
-square_y = 100
-square_speed_x = 50
-square_speed_y = 3
+
 # Define the font and size
 font = pygame.font.Font("scr\\JetBrainsMono-Bold.ttf", 30)  # None for default font, 36 for size
+
+
+
+
+class Canvas:
+    """
+    Represents the whole screen and stores its height and width. Gets
+    overwritten whenever the screen resizes. Serves as a container for columns.
+    """
+
+    def __init__(self,screen):
+
+        screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        screen.fill(get_color("BLACK"))
+        self.screen_width = 1920 # Each column is 10 pixels wide
+        self.screen_height = 1080 # Each row is 20 pixels high
+        self.screen = pygame.display.set_mode((screen_width, screen_height))
+        cell_width = screen_width // 95
+        cell_height = screen_height // 53*2
+        rows = 95
+        cols = 53
+        self.col_count = cols
+        self.row_count = rows
+        #self.size_changed = False
+        self.columns = []
+        #for col in range(0, cols, 2):
+        for col in range(0,cols):
+            self.columns.append(Column(col*cell_width, self.row_count))
+        self.nodes = []
+        #self.flashers = set()
+
+
+class Column:
+    """
+    Creates nodes (points that move down the screen) that are then stored in
+    canvas.nodes. Countdown timer determines time to spawn new node.
+    """
+
+    def __init__(self, x_coord, row_count):
+        self.drawing = None  # None means not yet. Later will be True or False
+        self.x_coord = x_coord
+        self.timer = randint(1, row_count)
+        self.async_speed = randint(1, 3)
+        # if args.single_wave:
+        #     # Speeds it up a bit
+        #     self.timer = int(0.6 * self.timer)
+
+    def spawn_node(self, canvas):
+        """
+        Creates nodes: points that move down the screen either writing or
+        erasing characters as they go down
+        """
+        # if args.single_wave and self.drawing is False:
+        #     return
+
+        self.drawing = not self.drawing
+
+        # Multiplier (mult) is for spawning slow-moving asynchronous nodes
+        # less frequently in order to maintain their length
+        if args.asynchronous:
+            mult = self.async_speed
+        else:
+            mult = 1
+
+        if self.drawing:
+            # "max_range" prevents crash with very small terminal height
+            max_range = max((3 * mult), ((canvas.row_count - 3) * mult))
+            self.timer = randint(3 * mult, max_range)
+            # if args.single_wave:
+            #     # A bit faster for single wave mode
+            #     self.timer = int(0.8 * self.timer)
+        else:
+            self.timer = randint(1 * mult, canvas.row_count * mult)
+
+        x = self.x_coord
+        n_type = 'eraser'
+        async_speed = self.async_speed
+        white = False
+        if self.drawing:
+            n_type = 'writer'
+            if randint(0, 2) == 0:
+                white = True
+
+        canvas.nodes.append(Node(x, n_type, async_speed, white))
+
+
+class Node:
+    """
+    A point that runs down the screen drawing or erasing characters.
+    n_type    -> 'writer' or 'eraser'
+    white     -> Bool. If True, a white char is written before the green one.
+    last_char -> Stores last character, since white characters have to be
+                     overwritten with the same one in green one.
+    expired   -> Bool. If True, node is marked for deletion
+    """
+
+    def __init__(self, x_coord, n_type, async_speed, white=False):
+        self.x_coord = x_coord
+        self.y_coord = 0
+        self.n_type = n_type
+        self.white = white
+        self.last_char = None
+        self.expired = False
+        self.async_speed = async_speed
+
+
+
 
 
 # Main loop for the screensaver
 running = True
 while running:
-    screen.fill(get_color("BLACK"))
+
     for row in range(53):
         for col in range(95):
             # Calculate the top-left corner of each cell
@@ -105,17 +207,6 @@ while running:
             running = False
         elif event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
             running = False  # Exit on any key press or mouse click
-    # Move the square
-    # square_x += square_speed_x
-    # square_y += square_speed_y
-
-    # # Bounce the square off the screen edges
-    # if square_x < 0 or square_x + square_size > screen.get_width():
-    #     square_speed_x = -square_speed_x
-    # if square_y < 0 or square_y + square_size > screen.get_height():
-    #     square_speed_y = -square_speed_y
-
-    # Fill the screen with black
 
 
     # Draw the red square
