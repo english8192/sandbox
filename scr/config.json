@@ -1,0 +1,15 @@
+{
+    "ox": 2,
+    "oy": 6,
+    "chars": "p",
+    "custom_chars": "",
+    "screen_width": 1920,
+    "screen_height": 1080,
+    "col_width": 40,
+    "row_height": 22,
+    "font_size": 20,
+    "color_pair": "GRAY",
+    "leader_color": "RED",
+    "tickrate": 30
+  }
+  

@@ -5,6 +5,10 @@ import time
 from random import choice,randint
 import copy
 
+
+num_drawing_frames=30
+tickrate = 30
+
 colors = {
     "BLACK": (0, 0, 0),
     "WHITE": (255, 255, 255),
@@ -41,17 +45,6 @@ def get_color(name):
         return color
     color = colors.get(name)
     return color
-def compute_num_matching_points(rect1,rect2):
-    rect1.sort()
-    rect2.sort()
-    both = []
-
-    for point in rect1:
-        if point in rect2:
-            both.append(point)
-    return len(both)
-
-
 
 
 class Canvas:
@@ -62,19 +55,133 @@ class Canvas:
 
     def __init__(self):
 
-        self.screen_width = 1920//2 # Each column is 10 pixels wide
-        self.screen_height = 1080//2 # Each row is 20 pixels high
+        self.screen_width = 1920#/2 # Each column is 10 pixels wide
+        self.screen_height = 1080#//2 # Each row is 20 pixels high
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))#,pygame.FULLSCREEN)
         self.row_height = 20
         self.col_width = 20
         self.col_count = self.screen_width // self.col_width
         self.row_count = self.screen_height // self.row_height
+        self.num_cells = self.col_count*self.row_count
         self.columns = []
-        self.starting_number = randint(0,(self.screen_width/self.col_width)*(self.screen_height / self.row_height))
-        # for col in range(0,self.col_count):
-        #     self.columns.append(Column(col*cell_width, self.row_count))
-        # self.nodes = []
-        #self.flashers = set
+        self.starting_number = randint(1,self.num_cells+1)
+        for col in range(0, self.col_count):
+            self.columns.append(Column(col*self.col_width))
+        # self.cells = []
+        self.blossoms=[]
+
+
+class Column:
+
+    """
+    Creates nodes (points that move down the screen) that are then stored in
+    canvas.nodes. Countdown timer determines time to spawn new node.
+    """
+
+    def __init__(self, x_coord):
+        self.drawing = None  # None means not yet. Later will be True or False
+        self.x_coord = x_coord #0->128 step: 15
+        self.num_drawing_frames = num_drawing_frames
+        self.timer = None
+        self.set_col_timer()
+
+
+
+    def set_col_timer(self):
+        self.timer =  randint(self.num_drawing_frames*2, self.num_drawing_frames*12+1)
+        
+
+
+class Cell:
+
+    def __init__(self,x_coord,y_coord):
+        self.x_coord = x_coord
+        self.y_coord = y_coord
+
+class Blossom:
+    def __init__(self):
+        self.start_cell = None
+        self.num_drawing_frames = num_drawing_frames
+        self.cells=[]
+        self.cardinal_cells=[]
+        self.step=0
+        self.blossom_color = get_color("random")
+
+
+    def get_start_cell(self,canvas,column):
+        row = randint(1,canvas.row_count+1)
+        #col = randint(1,canvas.col_count+1)
+        x = column.x_coord
+        y = row*canvas.row_height
+        start_cell = Cell(x,y)
+        self.start_cell = start_cell
+        #self.cells.append(start_cell)
+        return start_cell
+
+    def get_cardinal_cells(self,canvas):
+        self.cardinal_cells=[]
+        d = self.step-1
+        cell_size = canvas.row_height #could be col_width as well since they are squares
+        total_distance=cell_size*d
+        startx=self.start_cell.x_coord
+        starty=self.start_cell.y_coord
+        north = Cell(startx,starty-total_distance)
+        south = Cell(startx,starty+total_distance)
+        east =  Cell(startx+total_distance,starty)
+        west =  Cell(startx-total_distance,starty)
+        cardinal_cells = [north,east,south,west]
+        for ccell in cardinal_cells:
+            self.cells.append(ccell)
+            self.cardinal_cells.append(ccell)
+        
+        
+
+    def get_diagonal_cells(self,canvas):
+        cardinal_cells = self.cardinal_cells
+        cell_size = canvas.row_height #could be col_width as well since they are squares
+        num_diagonal_cells = self.step-2
+        
+        ccell = cardinal_cells[0]
+        for i in range(1,num_diagonal_cells+1):
+            self.cells.append(Cell(ccell.x_coord+(cell_size*i),ccell.y_coord+(cell_size*i)))
+        ccell = cardinal_cells[1]
+        for i in range(1,num_diagonal_cells+1):
+            self.cells.append(Cell(ccell.x_coord-(cell_size*i),ccell.y_coord+(cell_size*i)))
+        ccell = cardinal_cells[2]
+        for i in range(1,num_diagonal_cells+1):
+            self.cells.append(Cell(ccell.x_coord-(cell_size*i),ccell.y_coord-(cell_size*i)))
+        ccell = cardinal_cells[3]
+        for i in range(1,num_diagonal_cells+1):
+            self.cells.append(Cell(ccell.x_coord+(cell_size*i),ccell.y_coord-(cell_size*i)))
+        
+        return 
+
+
+    def draw_cell(self,cell,canvas):
+        step =self.step 
+        num_drawing_frames = self.num_drawing_frames
+        v = 255
+        r = None
+        color_blossom = False
+        decrement =v//num_drawing_frames
+        if r:
+            color = r
+        elif color_blossom:
+            color  = self.blossom_color
+            color2 = tuple(max(0, min(255, int(c * 0.99))) for c in color)
+            self.blossom_color = color2
+                
+        elif step==0:
+            value = v
+            color = (value,value,value)
+        else:
+            value = (v-(decrement*(step-1)))
+            color = (value,value,value)
+        
+        if 0 > cell.x_coord > canvas.screen_width or 0 > cell.y_coord > canvas.screen_height:
+            return
+        else:
+            pygame.draw.rect(canvas.screen, color, (cell.x_coord, cell.y_coord, canvas.col_width, canvas.row_height), 1) 
 
 
 
@@ -84,94 +191,105 @@ pygame.init()
 def main():
     # Main loop for the screensaver
     canvas=Canvas()
-    h = canvas.row_height
-    w = canvas.col_width
     frame_count=1
-    rect_list=[]
-    rect_points_list=[]
-    white_rects=[]
-    white_rects_new=[]
+
+
+
     running = True
+    #canvas.screen.fill(get_color("BLACK"))
+
+    paused = False
+    manual_step =False
+
     while running:
-        ic(frame_count)
-        canvas.screen.fill(get_color("BLACK"))
-        for row in range(canvas.row_count):
-            for col in range(canvas.col_count):
-                # Calculate the top-left corner of each cell
-                x = col * canvas.col_width
-                y = row * canvas.row_height
-                # Draw the cell (you can adjust the color as needed)
+        if not paused or manual_step:
+            canvas.screen.fill(get_color("BLACK"))
+            for row in range(canvas.row_count):
+                for col in range(canvas.col_count):
+                    # Calculate the top-left corner of each cell
+                    x = col * canvas.col_width
+                    y = row * canvas.row_height
+                    color = (20,20,20)
+                    pygame.draw.rect(canvas.screen, color, (x, y, canvas.col_width, canvas.row_height), 1) 
+            for col in canvas.columns:
+                if col.timer ==0:# and col.x_coord ==canvas.columns[40].x_coord:
+                    #ic(col.x_coord)
+                    blossom=Blossom() #create blossom obj
+                    canvas.blossoms.append(blossom) #add it to list of all blossoms
+                    blossom.get_start_cell(canvas,col) #get a start cell and add to b attr
+                    blossom.draw_cell(blossom.start_cell, canvas)  #draw start cell
+                    col.set_col_timer() #reset the col timer
+                    blossom.step +=1     
+                else:
+                    col.timer -=1
+                                    #incr the blossom step
+            # ic(len(canvas.blossoms))
+            for b in canvas.blossoms:
+                #ic(b.__dict__)
 
-                rect_points_real = [(x,y),(x+w,y),(x+w,y+h),(x,y+h)]
-                # if randint(1,3) ==2:
-                #     color = get_color("random")
+                if b.step == 1:
+                    b.get_cardinal_cells(canvas) #add card cells to cardinal cells list and full cells list for the blossom
+                    for cell in b.cells:
+                        b.draw_cell(cell,canvas) #draw all the cells in main cell list (should just be the cardinal cell at this point)
+                    b.cardinal_cells = []  #set the cardinal cells list to blank for the next step
+                    b.step +=1
+                elif b.step >= 2 and b.step <= b.num_drawing_frames:
+                    b.get_cardinal_cells(canvas) 
+                    b.get_diagonal_cells(canvas)
+                    for cell in b.cells:
+                        b.draw_cell(cell,canvas)
+                    b.cells = []
+                    b.step +=1
 
+                else:# b.step > b.num_drawing_frames:
+                    canvas.blossoms.remove(b)
                 # else:
-                color = (20,20,20)
+                #     b.step =+1
+            pygame.display.flip()
+            if not paused:
+                frame_count += 1
+                pygame.time.Clock().tick(tickrate)
+            manual_step = False  # Reset the manual step flag after updating
 
-
-                rect_points_list.append(rect_points_real)
-                pygame.draw.rect(canvas.screen, color, (x, y, canvas.col_width, canvas.row_height), 1) 
-
-
-
-        starting_rect_points= rect_points_list[canvas.starting_number]
-        #ic(starting_rect_points)
- 
-        if frame_count ==1:
- 
-            pygame.draw.polygon(canvas.screen, get_color("WHITE"),starting_rect_points,1)
-            white_rects.append(starting_rect_points)
-            
-        else:
-            if white_rects: # if the white rects list has the starting cell
-                previous_white_list = copy.copy(white_rects) #set the 'previous whites' list to it (the one cell)
-            else: #if white rects has been cleared by me
-                previous_white_list = copy.copy(white_rects_new)
-
-            for wr in previous_white_list:
-                #wr = [(x,y),(x+w,y),(x+w,y+h),(x,y+h)]
-                x = wr[0][0]
-                y = wr[0][1]
-                
-                top=[(x,y-h),(x+w,y-h),(wr[1]),(wr[0])]
-                right=[(wr[1]),(x+2*w,y),(x+2*w,y+h),(wr[2])]
-                left=[(x-w,y),(wr[0]),(wr[3]),(x-w,y+h)]
-                bottom=[(wr[3]),(wr[2]),(x+w,y+2*h),(x,y+2*h)]
-                new=[top,right,left,bottom]
-
-                for new_rect in new:
-                    if new_rect not in previous_white_list:
-                        pygame.draw.polygon(canvas.screen,get_color("WHITE"),new_rect,1)
-                        white_rects_new.append(new_rect)
-                
-                white_rects = []
-
-
-   
-
-
-
-
-
-        # Event handling (check for user input to stop the screensaver)
+        # Event handling
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            elif event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
-                running = False  # Exit on any key press or mouse click
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:  # Press 'Q' to quit
+                    running = False
+                elif event.key == pygame.K_p:  # Press 'P' to pause/unpause
+                    paused = not paused
+                    print(f"Paused: {paused}")
+                elif event.key == pygame.K_RIGHT and paused:  # Step manually if paused
+                    manual_step = True
+                    print("Manually stepped frame.")
+                elif event.key == pygame.K_r:  # Reset frame count
+                    frame_count = 1
+                    print("Frame count reset.")      
+
+                
+            
+
+
+            # # Event handling (check for user input to stop the screensaver)
+            # for event in pygame.event.get():
+            #     if event.type == pygame.QUIT:
+            #         running = False
+            #     elif event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
+            #         running = False  # Exit on any key press or mouse click
 
 
         # Draw the red square
         #pygame.draw.rect(screen, get_color("RED"), (square_x, square_y, square_size, square_size))
 
-        # # Update the screen
-        # if frame_count % 4 == 0:
-        pygame.display.flip()
-        frame_count+=1
-        #pygame.display.update()
-        # Set the frame rate
-        pygame.time.Clock().tick(1)
+        # # # Update the screen
+        # # if frame_count % 4 == 0:
+        #     pygame.display.flip()
+        #     frame_count+=1
+        #     #pygame.display.update()
+        #     # Set the frame rate
+        #     pygame.time.Clock().tick(15)
 
 # Quit pygame and exit
     pygame.quit()
